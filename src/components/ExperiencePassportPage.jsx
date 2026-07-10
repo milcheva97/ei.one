@@ -1,4 +1,4 @@
-import { useEffect } from 'react'
+﻿import { useEffect } from 'react'
 import Header from './Header.jsx'
 import Footer from './Footer.jsx'
 
@@ -67,8 +67,8 @@ function ExperiencePassportPage() {
           <div className="wrap human-center-grid">
             <div className="human-center-copy">
               <h2>The CV is broken. The Identity fixes it.</h2>
-              <p>A CV says whatever you want it to. It also says very little of substance: job titles, years, keywords. In the age of the AI transition, that's not enough for anyone — not for job seekers, not for employers.</p>
-              <p>The Experience Identity is different. Every experience you add is attested by whoever had you do it — a company in the ecosystem, an Academy partner, a real project. What people see is your actual work, not your self-promotion.</p>
+              <p>A CV says whatever you want it to. It also says very little of substance: job titles, years, keywords. In the age of the AI transition, that's not enough for anyone â€” not for job seekers, not for employers.</p>
+              <p>The Experience Identity is different. Every experience you add is attested by whoever had you do it â€” a company in the ecosystem, an Academy partner, a real project. What people see is your actual work, not your self-promotion.</p>
             </div>
             <div className="human-center-visual" aria-label="People connected through knowledge, education and shared opportunity">
               <img src="/images/identity.jpg" alt="identity" />
@@ -85,23 +85,146 @@ function ExperiencePassportPage() {
             </div>
             <div className="education-pillar-grid">
               <article>
-                <i class="fa-solid fa-fingerprint"></i>
+                <i className="fa-solid fa-fingerprint"></i>
                 <span className="training-step">01</span>
                 <h3>Create your Identity</h3>
                 <p>A unique digital profile with a shareable link. It's yours, it follows you across your whole working life, no matter where you work.</p>
               </article>
               <article>
-                <i class="fa-solid fa-layer-group"></i>
+                <i className="fa-solid fa-layer-group"></i>
                 <span className="training-step">02</span>
                 <h3>Collect verified experience</h3>
-                <p>Every experience at an ecosystem company is attested by whoever had you do it and recorded on the blockchain as an immutable credential. Attachments, roles, results — all verifiable.</p>
+                <p>Every experience at an ecosystem company is attested by whoever had you do it and recorded on the blockchain as an immutable credential. Attachments, roles, results â€” all verifiable.</p>
               </article>
               <article>
-                <i class="fa-solid fa-share-nodes"></i>
+                <i className="fa-solid fa-share-nodes"></i>
                 <span className="training-step">03</span>
                 <h3>Share when it counts</h3>
                 <p>Choose field by field what's public, what's private, what's visible only to people with the link. You decide who sees what.</p>
               </article>
+            </div>
+          </div>
+        </section>
+
+        <section className="identity-inputs" aria-labelledby="identity-inputs-title">
+          <div className="wrap">
+            <div className="identity-inputs-head">
+              <h2 id="identity-inputs-title">What you can put in the Identity</h2>
+              <p>Concrete experience, not generic keywords.</p>
+            </div>
+
+            <div className="identity-inputs-grid">
+              <article className="identity-input-card work">
+                <span className="identity-card-number">01</span>
+                <span className="identity-input-icon"><i className="fa-solid fa-briefcase" aria-hidden="true"></i></span>
+                <h3>Work experience</h3>
+                <p>Roles, projects, responsibilities at ecosystem companies.</p>
+              </article>
+              <article className="identity-input-card academy">
+                <span className="identity-card-number">02</span>
+                <span className="identity-input-icon"><i className="fa-solid fa-graduation-cap" aria-hidden="true"></i></span>
+                <h3>Academy tracks</h3>
+                <p>Courses and training completed with sponsors and learning partners.</p>
+              </article>
+              <article className="identity-input-card projects">
+                <span className="identity-card-number">03</span>
+                <span className="identity-input-icon"><i className="fa-solid fa-diagram-project" aria-hidden="true"></i></span>
+                <h3>Projects</h3>
+                <p>Work delivered, with results, duration and the role you played.</p>
+              </article>
+              <article className="identity-input-card skills">
+                <span className="identity-card-number">04</span>
+                <span className="identity-input-icon"><i className="fa-solid fa-language" aria-hidden="true"></i></span>
+                <h3>Skills &amp; languages</h3>
+                <p>Technical skills, soft skills, languages - linked to the experience that proves them.</p>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section className="identity-difference" aria-labelledby="identity-difference-title">
+          <div className="wrap">
+            <div className="identity-difference-head">
+              <h2 id="identity-difference-title">Why it's different</h2>
+            </div>
+
+            <div className="identity-difference-grid">
+              <article>
+                <span className="difference-line"></span>
+                <span className="difference-icon"><i className="fa-solid fa-file-signature" aria-hidden="true"></i></span>
+                <h3>Verified at the source, signed on-chain</h3>
+                <p>Every experience is attested by whoever had you do it and anchored on the blockchain as a verifiable credential. Not words, cryptographic proof.</p>
+              </article>
+              <article>
+                <span className="difference-line"></span>
+                <span className="difference-icon"><i className="fa-solid fa-user-lock" aria-hidden="true"></i></span>
+                <h3>Under your control</h3>
+                <p>You decide what's public, what's private and what's visible only via a shared link.</p>
+              </article>
+              <article>
+                <span className="difference-line"></span>
+                <span className="difference-icon"><i className="fa-solid fa-infinity" aria-hidden="true"></i></span>
+                <h3>For your whole career</h3>
+                <p>The Identity follows you from one role to the next. It grows with you, even if you change company.</p>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section className="ecosystem-connect" aria-labelledby="ecosystem-connect-title">
+          <div className="wrap ecosystem-connect-grid">
+            <div className="ecosystem-connect-media">
+              <img src="/images/connected-ecosystem.jpeg" alt="ecosystem workspace" />
+              <div className="ecosystem-connect-badge">
+                <i className="fa-solid fa-link" aria-hidden="true"></i>
+                Identity connects the ecosystem
+              </div>
+            </div>
+
+            <div className="ecosystem-connect-copy">
+              <h2 id="ecosystem-connect-title">Connected to the rest of the ecosystem</h2>
+              <p>The Identity isn't an isolated page. It's where the two doors of ei.one meet.</p>
+
+              <div className="ecosystem-connection-list">
+                <article>
+                  <span className="ecosystem-connection-icon"><i className="fa-solid fa-graduation-cap" aria-hidden="true"></i></span>
+                  <strong>Academy</strong>
+                  <p>when you finish a learning track, the experience lands straight in your Identity</p>
+                  <em>coming soon</em>
+                </article>
+                <article>
+                  <span className="ecosystem-connection-icon"><i className="fa-solid fa-handshake" aria-hidden="true"></i></span>
+                  <strong>Recruitment</strong>
+                  <p>companies search on the experience in your Identity, not on CVs</p>
+                  <em>coming soon</em>
+                </article>
+                <article>
+                  <span className="ecosystem-connection-icon"><i className="fa-solid fa-people-group" aria-hidden="true"></i></span>
+                  <strong>Business Ecosystem</strong>
+                  <p>the ecosystem companies attest the experience you've built working with them</p>
+                </article>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section className="identity-start" aria-labelledby="identity-start-title">
+          <div className="wrap identity-start-grid">
+            <div className="identity-start-copy">
+              <h2 id="identity-start-title">Start building your Identity.</h2>
+              <p>Open the app, sign up and start adding your first experiences.</p>
+              <div className="identity-start-actions">
+                <a className="button identity-primary" href="/register">Create your Identity</a>
+                <a className="button identity-login" href="/login">Log in</a>
+                <a className="button identity-outline" href="/talent">Back to Talent</a>
+              </div>
+            </div>
+
+            <div className="identity-start-preview" aria-hidden="true">
+              <span className="identity-start-dot"></span>
+              <div><strong>01</strong><span>Create Identity</span></div>
+              <div><strong>02</strong><span>Add experience</span></div>
+              <div><strong>03</strong><span>Share proof</span></div>
             </div>
           </div>
         </section>
