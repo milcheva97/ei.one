@@ -2,6 +2,7 @@
 import EducationPage from './components/EducationPage.jsx'
 import ExperiencePassportPage from './components/ExperiencePassportPage.jsx'
 import EconomyPage from './components/EconomyPage.jsx'
+import EnvironmentPage from './components/EnvironmentPage.jsx'
 import Header from './components/Header.jsx'
 import Footer from './components/Footer.jsx'
 
@@ -18,6 +19,10 @@ function App() {
 
   if (path.includes('/economy')) {
     return <EconomyPage />
+  }
+
+  if (path.includes('/environment')) {
+    return <EnvironmentPage />
   }
 
   return (

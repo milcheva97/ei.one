@@ -24,7 +24,7 @@ const navGroups = [
   },
   {
     label: 'Environment',
-    href: '/en/environment.php',
+    href: '/environment',
     links: [
       ['Sustainability', '/en/environment.php'],
       ['Projects', '/en/projects.php'],
