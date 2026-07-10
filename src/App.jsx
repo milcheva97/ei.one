@@ -4,6 +4,7 @@ import ExperiencePassportPage from './components/ExperiencePassportPage.jsx'
 import EconomyPage from './components/EconomyPage.jsx'
 import EnvironmentPage from './components/EnvironmentPage.jsx'
 import PartnerPage from './components/PartnerPage.jsx'
+import InvestorPage from './components/InvestorPage.jsx'
 import Header from './components/Header.jsx'
 import Footer from './components/Footer.jsx'
 
@@ -28,6 +29,10 @@ function App() {
 
   if (path.includes('/partner')) {
     return <PartnerPage />
+  }
+
+  if (path.includes('/investor')) {
+    return <InvestorPage />
   }
 
   return (

@@ -18,7 +18,7 @@ const navGroups = [
     links: [
       ['Business Ecosystem', '/en/business-club.php'],
       ['Become a partner', '/partner'],
-      ['Investor', '/en/investor.php'],
+      ['Investor', '/investor'],
       ['Service and Product', '/en/services-products.php'],
     ],
   },
