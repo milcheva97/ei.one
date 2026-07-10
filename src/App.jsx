@@ -1,26 +1,23 @@
 ﻿import { WebGLShader } from './components/WebGLShader.jsx'
+import EducationPage from './components/EducationPage.jsx'
+import ExperiencePassportPage from './components/ExperiencePassportPage.jsx'
+import Header from './components/Header.jsx'
+import Footer from './components/Footer.jsx'
 
 function App() {
+  const path = window.location.pathname.toLowerCase()
+
+  if (path.includes('/education')) {
+    return <EducationPage />
+  }
+
+  if (path.includes('/experience-passport')) {
+    return <ExperiencePassportPage />
+  }
+
   return (
     <>
-<header className="site-header">
-    <nav className="nav" aria-label="Primary navigation">
-      <a className="brand" href="#">
-        <img className="header-logo" src="images/logo.png" alt="EI.one" />
-      </a>
-      <div className="nav-links">
-        <a href="#about">About</a>
-        <a href="#economy">Economy</a>
-        <a href="#education">Education</a>
-        <a href="#environment">Environment</a>
-        <a href="#contact">Contact</a>
-      </div>
-      <div className="lang" aria-label="Language selector">
-        <a href="#">DE</a><span>|</span><a href="#">IT</a><span>|</span><a href="#">FR</a><span>|</span><strong>EN</strong>
-      </div>
-      <a className="button secondary" href="#login">Login</a>
-    </nav>
-  </header>
+<Header />
 
   <main>
     <section className="hero">
@@ -32,9 +29,9 @@ function App() {
           <p className="hero-copy">EI.one connects <strong>companies, people and schools</strong> to turn every collaboration into new relationships, clients, talent and shared knowledge.</p>
           <p className="hero-copy">Every experience feeds a patrimony of value that makes the entire ecosystem stronger, smarter and more capable of growth.</p>
           <div className="actions">
-            <a className="button" href="/business-club">I'm a company →</a>
-            <a className="button secondary" href="/talent">I'm a person →</a>
-            <a className="button secondary" href="/education">I'm a school →</a>
+            <a className="button" href="/business-club">I'm a company &rarr;</a>
+            <a className="button secondary" href="/talent">I'm a person &rarr;</a>
+            <a className="button secondary" href="/education">I'm a school &rarr;</a>
           </div>
         </div>
         <aside className="login-panel" id="login" aria-label="Login panel">
@@ -47,7 +44,7 @@ function App() {
           <div className="login-options">
             <a href="#">Forgot password?</a>
           </div>
-          <a className="button full" href="#">Log in →</a>
+          <a className="button full" href="#">Log in &rarr;</a>
           <p className="login-join">No account yet? <a className="text-link" href="/register">Join ei.one</a></p>
         </aside>
       </div>
@@ -56,26 +53,26 @@ function App() {
       <div className="wrap">
         <div className="protagonists-head">
           <h2 id="protagonists-title">Three protagonists. One same growth.</h2>
-          <p>Entrepreneurs, investors and talents enter the same ecosystem from different starting points, then grow through authentic relationships, shared knowledge and measurable impact.</p>
+          <p>Experience is the raw material. ei.one turns it into value for all three.</p>
         </div>
         <div className="protagonists-grid">
           <article className="protagonist-card">
             <h3>For companies — Business growth</h3>
             <p>Turn internships, project work and mentoring into a channel of verified talent, trusted partnerships and qualified commercial network.</p>
             <p className="protagonist-quote">"Your experiences attract the best. The best grow your business."</p>
-            <a className="protagonist-link" href="/economy">For companies →</a>
+            <a className="protagonist-link" href="/economy">For companies &rarr;</a>
           </article>
           <article className="protagonist-card">
             <h3>For talents — Experience Passport</h3>
             <p>Transform internships, projects, mentoring and learning experiences into a verified record of your growth.</p>
             <p className="protagonist-quote">"Your experiences become your proof. Your proof becomes your opportunity."</p>
-            <a className="protagonist-link" href="/experience-passport">For people →</a>
+            <a className="protagonist-link" href="/experience-passport">For people &rarr;</a>
           </article>
           <article className="protagonist-card">
             <h3>For education — Academy growth</h3>
             <p>Connect learning paths, projects and mentoring into an ecosystem where skills become visible and development continues.</p>
             <p className="protagonist-quote">"When learning is connected, growth becomes measurable."</p>
-            <a className="protagonist-link" href="/education">For Schools →</a>
+            <a className="protagonist-link" href="/education">For Schools &rarr;</a>
           </article>
         </div>
       </div>
@@ -84,6 +81,7 @@ function App() {
     <section className="connections" aria-labelledby="connections-title">
       <div className="wrap">
         <div className="connections-head">
+          <p className="connections-kicker">Network signals</p>
           <h2 id="connections-title">Who we're connected with</h2>
           <p>For clarity, here is the nature of each relationship below.</p>
         </div>
@@ -177,7 +175,7 @@ function App() {
               <li><i className="fa-solid fa-handshake entry-check" aria-hidden="true"></i><span><strong>Become a Partner</strong><small>Franchise, license, white label</small></span></li>
               <li><i className="fa-solid fa-chart-line entry-check" aria-hidden="true"></i><span><strong>Sponsor &amp; Investor</strong><small>Presence and growth</small></span></li>
             </ul>
-            <a className="entry-link" href="/business-club">Enter Companies →</a>
+            <a className="entry-link" href="/business-club">Enter Companies &rarr;</a>
           </article>
           <article className="entry-card talents">
             <div className="entry-kicker">For talents</div>
@@ -188,7 +186,7 @@ function App() {
               <li><i className="fa-solid fa-graduation-cap entry-check" aria-hidden="true"></i><span><strong>Academy</strong><small>Learn on the job</small></span><em className="entry-pill preview">Soon</em></li>
               <li><i className="fa-solid fa-magnifying-glass-chart entry-check" aria-hidden="true"></i><span><strong>Recruitment</strong><small>Get found</small></span><em className="entry-pill preview">Soon</em></li>
             </ul>
-            <a className="entry-link" href="/talent">Enter Talents →</a>
+            <a className="entry-link" href="/talent">Enter Talents &rarr;</a>
           </article>
         </div>
       </div>
@@ -249,21 +247,21 @@ function App() {
             <span className="training-icon" aria-hidden="true"><i className="fa-solid fa-graduation-cap"></i></span>
             <h3>1. Academy <span className="module-pill">Preview</span></h3>
             <p>Sponsors and partners of the ecosystem build the learning paths. You learn where you work.</p>
-            <span className="training-link">Discover Academy→</span>
+            <span className="training-link">Discover Academy&rarr;</span>
           </a>
           <a className="training-card identity" href="/experience-passport">
             <span className="training-step">02</span>
             <span className="training-icon" aria-hidden="true"><i className="fa-solid fa-passport"></i></span>
             <h3>2. Experience Identity <span className="module-pill live">Live</span></h3>
             <p>Your digital record of what you actually did. Verified by the ecosystem's companies who saw you do it.</p>
-            <span className="training-link">Discover the Identity→</span>
+            <span className="training-link">Discover the Identity&rarr;</span>
           </a>
           <a className="training-card recruitment" href="/recruitment">
             <span className="training-step">03</span>
             <span className="training-icon" aria-hidden="true"><i className="fa-solid fa-handshake"></i></span>
             <h3>3. Recruitment <span className="module-pill">Preview</span></h3>
             <p>Companies hire on Identity experience, not CV keywords. The matches are real.</p>
-            <span className="training-link">Discover Recruitment→</span>
+            <span className="training-link">Discover Recruitment&rarr;</span>
           </a>
         </div>
       </div>
@@ -288,7 +286,6 @@ function App() {
     <section className="building" aria-labelledby="building-title">
       <div className="wrap">
         <div className="building-head">
-          <p className="building-kicker">Infrastructure layer</p>
           <h2 id="building-title">What we're building</h2>
         </div>
         <div className="building-callout">
@@ -349,61 +346,7 @@ function App() {
 
   </main>
 
-  <footer className="site-footer">
-    <div className="wrap">
-      <div className="footer-grid">
-        <div className="footer-about">
-          <a className="footer-logo" href="#" aria-label="ei.one">
-            <img src="images/logo.png" alt="ei.one" />
-          </a>
-          <p>ei.one — The ecosystem where people build real experience and companies grow by hiring on what people can actually do.</p>
-        </div>
-        <div>
-          <h3>Companies</h3>
-          <ul>
-            <li><a href="/business-club">Business Ecosystem</a></li>
-            <li><a href="/partner">Become a Partner</a></li>
-            <li><a href="/sponsor">Sponsor</a></li>
-            <li><a href="/investors">Investors</a></li>
-            <li><a href="/services-products">Services &amp; Products</a></li>
-          </ul>
-        </div>
-        <div>
-          <h3>Talents</h3>
-          <ul>
-            <li><a href="/experience-passport">Experience Identity</a></li>
-            <li><a href="/academy">Academy</a></li>
-            <li><a href="/recruitment">Recruitment</a></li>
-          </ul>
-        </div>
-        <div>
-          <h3>Ecosystem</h3>
-          <ul>
-            <li><a href="/about">About Us</a></li>
-            <li><a href="/education">Education</a></li>
-            <li><a href="/economy">Economy</a></li>
-            <li><a href="/environment">Environment</a></li>
-            <li><a href="/projects">Projects</a></li>
-            <li><a href="/contact">Contact</a></li>
-          </ul>
-        </div>
-      </div>
-
-      <div className="footer-contact">
-        <h3>Contact</h3>
-        <p><strong>ei.one</strong><br />Netmaster (Schweiz) AG<br />Tödistrasse 56<br />CH – 8810 Horgen</p>
-        <p><strong>Tel:</strong> +41 44 542 47 47</p>
-      </div>
-
-      <div className="copyright">
-        <span>© 2026 ei.one — Ecosystem Intelligence. All rights reserved.</span>
-        <span className="footer-legal">
-          <a href="/privacy-policy">Privacy Policy</a>
-          <a href="/terms-and-conditions">Terms and Conditions</a>
-        </span>
-      </div>
-    </div>
-  </footer>
+  <Footer />
 
   <aside className="cookie" aria-label="Cookie notice">
     We use cookies to improve your experience. By continuing, you accept our privacy policy.
