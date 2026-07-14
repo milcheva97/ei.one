@@ -8,6 +8,7 @@ import InvestorPage from './components/InvestorPage.jsx'
 import EntrepreneurPage from './components/EntrepreneurPage.jsx'
 import AboutPage from './components/AboutPage.jsx'
 import ContactPage from './components/ContactPage.jsx'
+import TalentPage from './components/TalentPage.jsx'
 import Header from './components/Header.jsx'
 import Footer from './components/Footer.jsx'
 
@@ -48,6 +49,10 @@ function App() {
 
   if (path.includes('/contact')) {
     return <ContactPage />
+  }
+
+  if (path.includes('/talent')) {
+    return <TalentPage />
   }
 
   return (
