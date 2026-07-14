@@ -21,15 +21,6 @@ const navGroups = [
       ['Business Ecosystem', '/en/business-club.php'],
       ['Become a partner', '/partner'],
       ['Investor', '/investor'],
-      ['Service and Product', '/en/services-products.php'],
-    ],
-  },
-  {
-    label: 'Environment',
-    href: '/environment',
-    links: [
-      ['Sustainability', '/en/environment.php'],
-      ['Projects', '/en/projects.php'],
     ],
   },
   {

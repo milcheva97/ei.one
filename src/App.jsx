@@ -3,6 +3,7 @@ import EducationPage from './components/EducationPage.jsx'
 import ExperiencePassportPage from './components/ExperiencePassportPage.jsx'
 import EconomyPage from './components/EconomyPage.jsx'
 import EnvironmentPage from './components/EnvironmentPage.jsx'
+import ProjectsPage from './components/ProjectsPage.jsx'
 import PartnerPage from './components/PartnerPage.jsx'
 import InvestorPage from './components/InvestorPage.jsx'
 import EntrepreneurPage from './components/EntrepreneurPage.jsx'
@@ -30,6 +31,10 @@ function App() {
 
   if (path.includes('/economy')) {
     return <EconomyPage />
+  }
+
+  if (path.includes('/projects')) {
+    return <ProjectsPage />
   }
 
   if (path.includes('/environment')) {
@@ -94,8 +99,8 @@ function App() {
           <p className="hero-copy">EI.one connects <strong>companies, people and schools</strong> to turn every collaboration into new relationships, clients, talent and shared knowledge.</p>
           <p className="hero-copy">Every experience feeds a patrimony of value that makes the entire ecosystem stronger, smarter and more capable of growth.</p>
           <div className="actions">
-            <a className="button" href="/business-club">I'm a company &rarr;</a>
-            <a className="button secondary" href="/talent">I'm a person &rarr;</a>
+            <a className="button" href="/economy">I'm a company &rarr;</a>
+            <a className="button secondary" href="/experience-passport">I'm a person &rarr;</a>
             <a className="button secondary" href="/education">I'm a school &rarr;</a>
           </div>
         </div>
@@ -153,33 +158,31 @@ function App() {
         <div className="connections-grid">
           <div className="connection-item">
             <a className="connection-logo logo-togo" href="https://stiftung-togo.ch/" target="_blank" rel="noopener" aria-label="ToGo opening eyes">
-              <span>To<span className="red">Go</span> <span className="green">opening eyes</span></span>
+              <img src="/images/togo-opening-eyes.png" alt="ToGo opening eyes" />
             </a>
             <div className="connection-label">Supported Foundation</div>
           </div>
           <div className="connection-item">
             <a className="connection-logo logo-sva" href="https://svazurich.ch/" target="_blank" rel="noopener" aria-label="SVA Zurich">
-              <span><strong>SVA</strong> Zürich</span>
+              <img src="/images/sva-zuerich.png" alt="SVA Zürich" />
             </a>
             <div className="connection-label">Award Received</div>
           </div>
           <div className="connection-item">
             <a className="connection-logo logo-innovation" href="https://www.standort-zuerich.ch/" target="_blank" rel="noopener" aria-label="Innovation Zurich">
-              <span className="innovation-mark" aria-hidden="true"></span>
-              <span>Innovation<br />Zurich</span>
+              <img src="/images/innovation-zuerich.webp" alt="Innovation Zurich" />
             </a>
             <div className="connection-label">Local Network</div>
           </div>
           <div className="connection-item">
             <a className="connection-logo logo-eye" href="https://augenarztpraxis-baden.ch/" target="_blank" rel="noopener" aria-label="AugenarztpraxisPlus">
-              AugenarztpraxisPlus
+              <img src="/images/augenarztpraxisplus.png" alt="AugenarztpraxisPlus" />
             </a>
             <div className="connection-label">Sponsor</div>
           </div>
           <div className="connection-item">
             <a className="connection-logo logo-sgo" href="https://www.sgo-verein.ch/" target="_blank" rel="noopener" aria-label="SGO Verein">
-              <span>SGO</span>
-              <small>www.sgo-verein.ch</small>
+              <img src="/images/sgo.svg" alt="SGO Verein" />
             </a>
             <div className="connection-label">Professional Network</div>
           </div>
