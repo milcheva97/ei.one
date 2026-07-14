@@ -32,6 +32,15 @@ const navGroups = [
       ['Projects', '/en/projects.php'],
     ],
   },
+  {
+    label: 'About',
+    href: '/about',
+    links: [
+      ['Our Commitments', '/engagements'],
+      ['Environment', '/environment'],
+      ['Projects', '/projects'],
+    ],
+  },
 ]
 
 function Header({ loginHref = '/login', languagePage = 'index.php' }) {
@@ -59,7 +68,6 @@ function Header({ loginHref = '/login', languagePage = 'index.php' }) {
               <a href={group.href} key={group.label}>{group.label}</a>
             )
           ))}
-          <a href="/about">About</a>
         </div>
         <a className="button secondary" href={loginHref}>Login</a>
         <div className="lang has-submenu" aria-label="Language selector">

@@ -9,9 +9,11 @@ import EntrepreneurPage from './components/EntrepreneurPage.jsx'
 import AboutPage from './components/AboutPage.jsx'
 import ContactPage from './components/ContactPage.jsx'
 import TalentPage from './components/TalentPage.jsx'
+import BusinessClubPage from './components/BusinessClubPage.jsx'
 import RegisterPage from './components/RegisterPage.jsx'
 import LoginPage from './components/LoginPage.jsx'
 import ForgotPasswordPage from './components/ForgotPasswordPage.jsx'
+import EngagementsPage from './components/EngagementsPage.jsx'
 import Header from './components/Header.jsx'
 import Footer from './components/Footer.jsx'
 
@@ -32,6 +34,10 @@ function App() {
 
   if (path.includes('/environment')) {
     return <EnvironmentPage />
+  }
+
+  if (path.includes('/engagements')) {
+    return <EngagementsPage />
   }
 
   if (path.includes('/partner')) {
@@ -56,6 +62,10 @@ function App() {
 
   if (path.includes('/talent')) {
     return <TalentPage />
+  }
+
+  if (path.includes('/business-club')) {
+    return <BusinessClubPage />
   }
 
   if (path.includes('/register')) {

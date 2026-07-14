@@ -36,7 +36,7 @@ function ExperiencePassportPage() {
 
   return (
     <>
-      <Header loginHref="#experience-login" languagePage="experience-passport.php" />
+      <Header loginHref="/login" languagePage="experience-passport.php" />
 
       <main className="experience-page">
         <section className="experience-hero">
