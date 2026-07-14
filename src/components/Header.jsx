@@ -34,7 +34,7 @@ const navGroups = [
   },
 ]
 
-function Header({ loginHref = '#login', languagePage = 'index.php' }) {
+function Header({ loginHref = '/login', languagePage = 'index.php' }) {
   return (
     <header className="site-header">
       <nav className="nav" aria-label="Primary navigation">

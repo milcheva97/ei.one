@@ -9,6 +9,9 @@ import EntrepreneurPage from './components/EntrepreneurPage.jsx'
 import AboutPage from './components/AboutPage.jsx'
 import ContactPage from './components/ContactPage.jsx'
 import TalentPage from './components/TalentPage.jsx'
+import RegisterPage from './components/RegisterPage.jsx'
+import LoginPage from './components/LoginPage.jsx'
+import ForgotPasswordPage from './components/ForgotPasswordPage.jsx'
 import Header from './components/Header.jsx'
 import Footer from './components/Footer.jsx'
 
@@ -53,6 +56,18 @@ function App() {
 
   if (path.includes('/talent')) {
     return <TalentPage />
+  }
+
+  if (path.includes('/register')) {
+    return <RegisterPage />
+  }
+
+  if (path.includes('/forgot-password')) {
+    return <ForgotPasswordPage />
+  }
+
+  if (path.includes('/login')) {
+    return <LoginPage />
   }
 
   return (

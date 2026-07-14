@@ -36,7 +36,7 @@ function EducationPage() {
 
   return (
     <>
-      <Header loginHref="#education-login" languagePage="education.php" />
+      <Header loginHref="/login" languagePage="education.php" />
 
       <main className="education-page">
         <section className="education-hero">
