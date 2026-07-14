@@ -5,6 +5,8 @@ import EconomyPage from './components/EconomyPage.jsx'
 import EnvironmentPage from './components/EnvironmentPage.jsx'
 import PartnerPage from './components/PartnerPage.jsx'
 import InvestorPage from './components/InvestorPage.jsx'
+import EntrepreneurPage from './components/EntrepreneurPage.jsx'
+import AboutPage from './components/AboutPage.jsx'
 import Header from './components/Header.jsx'
 import Footer from './components/Footer.jsx'
 
@@ -33,6 +35,14 @@ function App() {
 
   if (path.includes('/investor')) {
     return <InvestorPage />
+  }
+
+  if (path.includes('/entrepreneur')) {
+    return <EntrepreneurPage />
+  }
+
+  if (path.includes('/about') || path.includes('/about-us')) {
+    return <AboutPage />
   }
 
   return (

@@ -1,16 +1,18 @@
 const navGroups = [
   {
     label: 'Education',
-    href: '/en/education.php',
-    links: [
-      ['Community', '/en/member.php'],
-      ['School Ecosystem', '/en/education.php'],
-    ],
+    href: '/education',
+    links: [],
   },
   {
     label: 'Experience',
     href: '/en/experience-passport.php',
-    links: [['Experience Identity', '/en/experience-passport.php']],
+    links: [['Marketplace', '/business-club']],
+  },
+  {
+    label: 'Entrepreneur',
+    href: '/entrepreneur',
+    links: [],
   },
   {
     label: 'Enterprise',
@@ -42,18 +44,22 @@ function Header({ loginHref = '#login', languagePage = 'index.php' }) {
         <div className="nav-links">
           <a href="/en/index.php">Home</a>
           {navGroups.map((group) => (
-            <div className="nav-item has-submenu" key={group.label}>
-              <a href={group.href}>
-                {group.label} <i className="fa-solid fa-chevron-down" aria-hidden="true"></i>
-              </a>
-              <div className="submenu">
-                {group.links.map(([label, href]) => (
-                  <a href={href} key={label}>{label}</a>
-                ))}
+            group.links.length ? (
+              <div className="nav-item has-submenu" key={group.label}>
+                <a href={group.href}>
+                  {group.label} <i className="fa-solid fa-chevron-down" aria-hidden="true"></i>
+                </a>
+                <div className="submenu">
+                  {group.links.map(([label, href]) => (
+                    <a href={href} key={label}>{label}</a>
+                  ))}
+                </div>
               </div>
-            </div>
+            ) : (
+              <a href={group.href} key={group.label}>{group.label}</a>
+            )
           ))}
-          <a href="/en/about-us.php">About</a>
+          <a href="/about">About</a>
         </div>
         <a className="button secondary" href={loginHref}>Login</a>
         <div className="lang has-submenu" aria-label="Language selector">
