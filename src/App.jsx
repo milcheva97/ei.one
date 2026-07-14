@@ -7,6 +7,7 @@ import PartnerPage from './components/PartnerPage.jsx'
 import InvestorPage from './components/InvestorPage.jsx'
 import EntrepreneurPage from './components/EntrepreneurPage.jsx'
 import AboutPage from './components/AboutPage.jsx'
+import ContactPage from './components/ContactPage.jsx'
 import Header from './components/Header.jsx'
 import Footer from './components/Footer.jsx'
 
@@ -43,6 +44,10 @@ function App() {
 
   if (path.includes('/about') || path.includes('/about-us')) {
     return <AboutPage />
+  }
+
+  if (path.includes('/contact')) {
+    return <ContactPage />
   }
 
   return (
