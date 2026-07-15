@@ -85,10 +85,7 @@ function EconomyPage() {
 
             <div className="economic-thinking-media">
               <img src="/images/economic-thinking.jpg" alt="Digital economic sustainability and business innovation concept" />
-              <div className="economic-thinking-stat">
-                <strong>Long-term value</strong>
-                <span>companies + technologies + talents + investors</span>
-              </div>
+              
             </div>
           </div>
         </section>

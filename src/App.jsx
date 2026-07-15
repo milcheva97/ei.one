@@ -346,7 +346,7 @@ function App() {
           </div>
         </div>
         <div className="why-media">
-          <img src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=1300&q=82" alt="Bright office desk with computer analytics dashboard and plants" />
+          <img src="/images/why-now.jpg" alt="Why now" />
         </div>
       </div>
     </section>

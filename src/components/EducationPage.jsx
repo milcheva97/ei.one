@@ -47,7 +47,7 @@ function EducationPage() {
               <p>Transform your students into talent recognised by the territory. Data-driven guidance, sponsored programs, direct bridge with companies. Your students' experiences become your prestige.</p>
             </div>
             <div className="education-hero-card" id="education-login">
-              <img src="https://images.unsplash.com/photo-1523580846011-d3a5bc25702b?auto=format&fit=crop&w=1000&q=84" alt="Students collaborating in a bright learning environment" />
+              <img src="/images/schools-hero.jpg" alt="Students collaborating in a bright learning environment" />
               <div>
                 <strong>School Ecosystem</strong>
                 <span>Learning, mentoring, projects and verified experiences connected in one growth path.</span>
@@ -64,7 +64,7 @@ function EducationPage() {
               <p>At EI.one, we believe that sustainable innovation can only emerge when people have access to knowledge, education, and new opportunities. That is why we promote a corporate culture based on collaboration, trust, diversity, and personal development.</p>
             </div>
             <div className="human-center-visual" aria-label="People connected through knowledge, education and shared opportunity">
-              <img src="/images/human-at-center.png" alt="People collaborating around a table in a bright learning community" />
+              <img src="/images/human-at-the-center.jpg" alt="Human at the center" />
               <div className="human-center-glow"></div>
             </div>
           </div>

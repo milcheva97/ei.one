@@ -185,7 +185,7 @@ function AboutPage() {
             </div>
 
             <div className="about-problems-visual">
-              <img src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=1300&q=82" alt="Bright office desk with analytics screen" />
+              <img src="/images/answer-to-global-problems.jpg" alt="Answer to global problems" />
               <div className="about-problems-card">
                 <strong>We are not spectators of change</strong>
                 <p>We are the designers of change. EI.one is the home of the EI Generation.</p>
