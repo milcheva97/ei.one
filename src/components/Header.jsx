@@ -1,3 +1,5 @@
+import { useLanguage } from '../i18n.jsx'
+
 const navGroups = [
   {
     label: 'Education',
@@ -35,6 +37,12 @@ const navGroups = [
 ]
 
 function Header({ loginHref = '/login', languagePage = 'index.php' }) {
+  const { language, setLanguage } = useLanguage()
+  const handleLanguage = (event, nextLanguage) => {
+    event.preventDefault()
+    setLanguage(nextLanguage)
+  }
+
   return (
     <header className="site-header">
       <nav className="nav" aria-label="Primary navigation">
@@ -63,13 +71,13 @@ function Header({ loginHref = '/login', languagePage = 'index.php' }) {
         <a className="button secondary" href={loginHref}>Login</a>
         <div className="lang has-submenu" aria-label="Language selector">
           <button type="button">
-            EN <i className="fa-solid fa-caret-down" aria-hidden="true"></i>
+            {language.toUpperCase()} <i className="fa-solid fa-caret-down" aria-hidden="true"></i>
           </button>
           <div className="submenu lang-menu">
-            <a href={`/de/${languagePage}`}>DE</a>
-            <a href={`/it/${languagePage}`}>IT</a>
-            <a href={`/fr/${languagePage}`}>FR</a>
-            <a href={`/en/${languagePage}`}>EN</a>
+            <a href={`/de/${languagePage}`} onClick={(event) => handleLanguage(event, 'de')}>DE</a>
+            <a href={`/it/${languagePage}`} onClick={(event) => handleLanguage(event, 'en')}>IT</a>
+            <a href={`/fr/${languagePage}`} onClick={(event) => handleLanguage(event, 'en')}>FR</a>
+            <a href={`/en/${languagePage}`} onClick={(event) => handleLanguage(event, 'en')}>EN</a>
           </div>
         </div>
       </nav>
