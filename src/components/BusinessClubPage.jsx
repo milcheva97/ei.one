@@ -226,22 +226,22 @@ function BusinessClubPage() {
                 <p>All modules work together</p>
               </article>
               <article>
-                <i className="fa-solid fa-star" aria-hidden="true"></i>
+                <i className="fa-solid fa-check" aria-hidden="true"></i>
                 <h3>Constant Quality</h3>
                 <p>High standards guaranteed</p>
               </article>
               <article>
-                <i className="fa-solid fa-shield-halved" aria-hidden="true"></i>
+                <i className="fa-solid fa-check" aria-hidden="true"></i>
                 <h3>Governance</h3>
                 <p>Clear and transparent structure</p>
               </article>
               <article>
-                <i className="fa-solid fa-gauge-high" aria-hidden="true"></i>
+                <i className="fa-solid fa-check" aria-hidden="true"></i>
                 <h3>Efficiency</h3>
                 <p>Optimized processes</p>
               </article>
               <article>
-                <i className="fa-solid fa-chart-line" aria-hidden="true"></i>
+                <i className="fa-solid fa-check" aria-hidden="true"></i>
                 <h3>Scalability</h3>
                 <p>Controlled growth</p>
               </article>

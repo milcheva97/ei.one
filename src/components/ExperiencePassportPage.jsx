@@ -1,5 +1,6 @@
 ﻿import { useEffect } from 'react'
 import Header from './Header.jsx'
+import { useRef, useState } from 'react'
 import Footer from './Footer.jsx'
 
 function setMeta(name, content, attr = 'name') {
@@ -13,6 +14,9 @@ function setMeta(name, content, attr = 'name') {
 }
 
 function ExperiencePassportPage() {
+  const orbitDrag = useRef({ active: false, x: 0, y: 0 })
+  const [orbitTilt, setOrbitTilt] = useState({ x: 10, y: -8, active: false })
+
   useEffect(() => {
     const title = 'Experience Passport - EI.one Experience Identity'
     const description = 'The EI.one Experience Passport turns real work, learning, mentoring and projects into verified proof of what people can actually do.'
@@ -34,6 +38,35 @@ function ExperiencePassportPage() {
     canonical.setAttribute('href', 'https://ei.one/en/experience-passport')
   }, [])
 
+  const handleOrbitPointerDown = (event) => {
+    orbitDrag.current = {
+      active: true,
+      x: event.clientX,
+      y: event.clientY,
+      startTiltX: orbitTilt.x,
+      startTiltY: orbitTilt.y,
+    }
+    event.currentTarget.setPointerCapture?.(event.pointerId)
+    setOrbitTilt((tilt) => ({ ...tilt, active: true }))
+  }
+
+  const handleOrbitPointerMove = (event) => {
+    if (!orbitDrag.current.active) return
+
+    const deltaX = event.clientX - orbitDrag.current.x
+    const deltaY = event.clientY - orbitDrag.current.y
+    const nextX = Math.max(-16, Math.min(16, orbitDrag.current.startTiltX - deltaY * 0.07))
+    const nextY = Math.max(-18, Math.min(18, orbitDrag.current.startTiltY + deltaX * 0.07))
+
+    setOrbitTilt({ x: nextX, y: nextY, active: true })
+  }
+
+  const handleOrbitPointerUp = (event) => {
+    orbitDrag.current.active = false
+    event.currentTarget.releasePointerCapture?.(event.pointerId)
+    setOrbitTilt((tilt) => ({ ...tilt, active: false }))
+  }
+
   return (
     <>
       <Header loginHref="/login" languagePage="experience-passport.php" />
@@ -48,17 +81,25 @@ function ExperiencePassportPage() {
             </div>
 
             <div className="experience-proof-map" id="experience-login" aria-label="Experience Identity proof flow">
-              <div className="proof-orbit">
-                <span className="proof-core"><i className="fa-solid fa-fingerprint" aria-hidden="true"></i></span>
+              <div
+                className={`proof-orbit${orbitTilt.active ? ' is-dragging' : ''}`}
+                style={{ '--orbit-drag-x': `${orbitTilt.x}deg`, '--orbit-drag-y': `${orbitTilt.y}deg` }}
+                onPointerDown={handleOrbitPointerDown}
+                onPointerMove={handleOrbitPointerMove}
+                onPointerUp={handleOrbitPointerUp}
+                onPointerCancel={handleOrbitPointerUp}
+              >
+                <div className="proof-phone" aria-hidden="true">
+                  <span className="proof-phone-speaker"></span>
+                  <span className="proof-core"><i className="fa-solid fa-fingerprint" aria-hidden="true"></i></span>
+                  <strong>Experience Identity</strong>
+                  <small>Verified proof</small>
+                </div>
                 <span className="proof-node work"><i className="fa-solid fa-briefcase" aria-hidden="true"></i><strong>Work</strong></span>
                 <span className="proof-node learn"><i className="fa-solid fa-graduation-cap" aria-hidden="true"></i><strong>Learn</strong></span>
                 <span className="proof-node mentor"><i className="fa-solid fa-handshake" aria-hidden="true"></i><strong>Mentor</strong></span>
               </div>
-              <div className="proof-lines">
-                <div><span>01</span><strong>Do real work</strong></div>
-                <div><span>02</span><strong>Get it verified</strong></div>
-                <div><span>03</span><strong>Build your future</strong></div>
-              </div>
+              
             </div>
           </div>
         </section>
@@ -84,24 +125,21 @@ function ExperiencePassportPage() {
               <p>Three steps to build a Identity that actually shows what you can do.</p>
             </div>
             <div className="education-pillar-grid">
-              <article>
-                <i className="fa-solid fa-fingerprint"></i>
-                <span className="training-step">01</span>
-                <h3>Create your Identity</h3>
-                <p>A unique digital profile with a shareable link. It's yours, it follows you across your whole working life, no matter where you work.</p>
-              </article>
-              <article>
-                <i className="fa-solid fa-layer-group"></i>
-                <span className="training-step">02</span>
-                <h3>Collect verified experience</h3>
-                <p>Every experience at an ecosystem company is attested by whoever had you do it and recorded on the blockchain as an immutable credential. Attachments, roles, results â€” all verifiable.</p>
-              </article>
-              <article>
-                <i className="fa-solid fa-share-nodes"></i>
-                <span className="training-step">03</span>
-                <h3>Share when it counts</h3>
-                <p>Choose field by field what's public, what's private, what's visible only to people with the link. You decide who sees what.</p>
-              </article>
+          <article>
+            <i className="fa-solid fa-fingerprint"></i>
+            <h3>Create your Identity</h3>
+            <p>A unique digital profile with a shareable link. It's yours, it follows you across your whole working life, no matter where you work.</p>
+          </article>
+          <article>
+            <i className="fa-solid fa-layer-group"></i>
+            <h3>Collect verified experience</h3>
+            <p>Every experience at an ecosystem company is attested by whoever had you do it and recorded on the blockchain as an immutable credential. Attachments, roles, results â€” all verifiable.</p>
+          </article>
+          <article>
+            <i className="fa-solid fa-share-nodes"></i>
+            <h3>Share when it counts</h3>
+            <p>Choose field by field what's public, what's private, what's visible only to people with the link. You decide who sees what.</p>
+          </article>
             </div>
           </div>
         </section>
@@ -115,25 +153,21 @@ function ExperiencePassportPage() {
 
             <div className="identity-inputs-grid">
               <article className="identity-input-card work">
-                <span className="identity-card-number">01</span>
                 <span className="identity-input-icon"><i className="fa-solid fa-briefcase" aria-hidden="true"></i></span>
                 <h3>Work experience</h3>
                 <p>Roles, projects, responsibilities at ecosystem companies.</p>
               </article>
               <article className="identity-input-card academy">
-                <span className="identity-card-number">02</span>
                 <span className="identity-input-icon"><i className="fa-solid fa-graduation-cap" aria-hidden="true"></i></span>
                 <h3>Academy tracks</h3>
                 <p>Courses and training completed with sponsors and learning partners.</p>
               </article>
               <article className="identity-input-card projects">
-                <span className="identity-card-number">03</span>
                 <span className="identity-input-icon"><i className="fa-solid fa-diagram-project" aria-hidden="true"></i></span>
                 <h3>Projects</h3>
                 <p>Work delivered, with results, duration and the role you played.</p>
               </article>
               <article className="identity-input-card skills">
-                <span className="identity-card-number">04</span>
                 <span className="identity-input-icon"><i className="fa-solid fa-language" aria-hidden="true"></i></span>
                 <h3>Skills &amp; languages</h3>
                 <p>Technical skills, soft skills, languages - linked to the experience that proves them.</p>
@@ -221,10 +255,9 @@ function ExperiencePassportPage() {
             </div>
 
             <div className="identity-start-preview" aria-hidden="true">
-              <span className="identity-start-dot"></span>
-              <div><strong>01</strong><span>Create Identity</span></div>
-              <div><strong>02</strong><span>Add experience</span></div>
-              <div><strong>03</strong><span>Share proof</span></div>
+              <div><span>Create Identity</span></div>
+              <div><span>Add experience</span></div>
+              <div><span>Share proof</span></div>
             </div>
           </div>
         </section>

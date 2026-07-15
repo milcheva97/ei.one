@@ -112,7 +112,7 @@ function App() {
           <label className="field-label" htmlFor="login-password">Password</label>
           <input className="field" id="login-password" type="password" placeholder="••••••••" />
           <div className="login-options">
-            <a href="#">Forgot password?</a>
+            <a href="/forgot-password">Forgot password?</a>
           </div>
           <a className="button full" href="#">Log in &rarr;</a>
           <p className="login-join">No account yet? <a className="text-link" href="/register">Join ei.one</a></p>
@@ -127,22 +127,25 @@ function App() {
         </div>
         <div className="protagonists-grid">
           <article className="protagonist-card">
+            <span className="protagonist-icon" aria-hidden="true"><i className="fa-solid fa-building"></i></span>
             <h3>For companies — Business growth</h3>
             <p>Turn internships, project work and mentoring into a channel of verified talent, trusted partnerships and qualified commercial network.</p>
             <p className="protagonist-quote">"Your experiences attract the best. The best grow your business."</p>
             <a className="protagonist-link" href="/economy">For companies &rarr;</a>
           </article>
           <article className="protagonist-card">
-            <h3>For talents — Experience Passport</h3>
-            <p>Transform internships, projects, mentoring and learning experiences into a verified record of your growth.</p>
-            <p className="protagonist-quote">"Your experiences become your proof. Your proof becomes your opportunity."</p>
+            <span className="protagonist-icon" aria-hidden="true"><i className="fa-solid fa-user"></i></span>
+            <h3>For people — Personal growth</h3>
+            <p>Every experience lived becomes an on-chain credential that belongs to you forever. An asset that follows you, independent of who had you do it.</p>
+            <p className="protagonist-quote">"Your experiences build your future."</p>
             <a className="protagonist-link" href="/experience-passport">For people &rarr;</a>
           </article>
           <article className="protagonist-card">
-            <h3>For education — Academy growth</h3>
-            <p>Connect learning paths, projects and mentoring into an ecosystem where skills become visible and development continues.</p>
-            <p className="protagonist-quote">"When learning is connected, growth becomes measurable."</p>
-            <a className="protagonist-link" href="/education">For Schools &rarr;</a>
+            <span className="protagonist-icon" aria-hidden="true"><i className="fa-solid fa-graduation-cap"></i></span>
+            <h3>For schools — Growth of relevance</h3>
+            <p>Turn students into talent recognised by the territory. Data-driven guidance, sponsored programs, direct bridge to companies.</p>
+            <p className="protagonist-quote">"Your students' experiences become your prestige."</p>
+            <a className="protagonist-link" href="/education">For schools &rarr;</a>
           </article>
         </div>
       </div>
@@ -268,31 +271,26 @@ function App() {
         </div>
         <div className="effects-grid">
           <article className="effect-card">
-            <span className="effect-number">01</span>
             <span className="effect-icon" aria-hidden="true"><i className="fa-solid fa-handshake"></i></span>
             <h3>New commercial relationships</h3>
             <p>Access to the Business Units and the customers already operating inside the ecosystem.</p>
           </article>
           <article className="effect-card">
-            <span className="effect-number">02</span>
             <span className="effect-icon" aria-hidden="true"><i className="fa-solid fa-graduation-cap"></i></span>
             <h3>Talent attracted</h3>
             <p>The best people come to companies that offer experience verifiable in the Identity.</p>
           </article>
           <article className="effect-card">
-            <span className="effect-number">03</span>
             <span className="effect-icon" aria-hidden="true"><i className="fa-solid fa-brain"></i></span>
             <h3>Skills developed</h3>
             <p>The workplace becomes a learning engine for the people who work in it.</p>
           </article>
           <article className="effect-card">
-            <span className="effect-number">04</span>
             <span className="effect-icon" aria-hidden="true"><i className="fa-solid fa-eye"></i></span>
             <h3>Amplified visibility</h3>
             <p>Presence inside the marketplace and across ecosystem activations.</p>
           </article>
           <article className="effect-card">
-            <span className="effect-number">05</span>
             <span className="effect-icon" aria-hidden="true"><i className="fa-solid fa-leaf"></i></span>
             <h3>Measurable ESG impact</h3>
             <p>Real indicators on sustainability, inclusion, and governance — verifiable.</p>
@@ -311,23 +309,20 @@ function App() {
         </div>
         <div className="training-grid">
           <a className="training-card academy" href="/academy">
-            <span className="training-step">01</span>
             <span className="training-icon" aria-hidden="true"><i className="fa-solid fa-graduation-cap"></i></span>
-            <h3>1. Academy <span className="module-pill">Preview</span></h3>
+            <h3>Academy <span className="module-pill">Preview</span></h3>
             <p>Sponsors and partners of the ecosystem build the learning paths. You learn where you work.</p>
             <span className="training-link">Discover Academy&rarr;</span>
           </a>
           <a className="training-card identity" href="/experience-passport">
-            <span className="training-step">02</span>
             <span className="training-icon" aria-hidden="true"><i className="fa-solid fa-passport"></i></span>
-            <h3>2. Experience Identity <span className="module-pill live">Live</span></h3>
+            <h3>Experience Identity <span className="module-pill live">Live</span></h3>
             <p>Your digital record of what you actually did. Verified by the ecosystem's companies who saw you do it.</p>
             <span className="training-link">Discover the Identity&rarr;</span>
           </a>
           <a className="training-card recruitment" href="/recruitment">
-            <span className="training-step">03</span>
             <span className="training-icon" aria-hidden="true"><i className="fa-solid fa-handshake"></i></span>
-            <h3>3. Recruitment <span className="module-pill">Preview</span></h3>
+            <h3>Recruitment <span className="module-pill">Preview</span></h3>
             <p>Companies hire on Identity experience, not CV keywords. The matches are real.</p>
             <span className="training-link">Discover Recruitment&rarr;</span>
           </a>
@@ -387,28 +382,25 @@ function App() {
 
     <section className="cta" id="contact">
       <div className="wrap cta-box">
-        <div>
+        <div className="cta-main">
           <h2>Let's build it together.</h2>
           <p>Activate the ecosystem for your company, or start building your Experience Identity.</p>
+          <div className="actions cta-actions">
+            <a className="button" href="/business-club">For Companies</a>
+            <a className="button secondary" href="/talent">For Talents</a>
+            <a className="button secondary" href="/contact">Contact us</a>
+          </div>
         </div>
-        <div className="actions" style={{ margin: 0 }}>
-          <a className="button" href="/business-club">For Companies</a>
-          <a className="button secondary" href="/talent">For Talents</a>
-          <a className="button secondary" href="/contact">Contact us</a>
+        <div className="cta-newsletter">
+          <h3>Stay up to date</h3>
+          <form className="newsletter-form">
+            <input type="email" placeholder="Email address" aria-label="Email address" />
+            <button className="button" type="submit">
+              <i className="fa-solid fa-envelope" aria-hidden="true"></i>
+              Subscribe
+            </button>
+          </form>
         </div>
-      </div>
-    </section>
-
-    <section className="newsletter">
-      <div className="wrap">
-        <div>
-          <h2>Stay up to date</h2>
-          <p>Subscribe to the newsletter for updates from the ecosystem.</p>
-        </div>
-        <form className="newsletter-form">
-          <input type="email" placeholder="Email address" aria-label="Email address" />
-          <button className="button" type="submit">Subscribe</button>
-        </form>
       </div>
     </section>
 
