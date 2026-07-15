@@ -1,3 +1,4 @@
+import { useState } from 'react'
 import { useLanguage } from '../i18n.jsx'
 
 const navGroups = [
@@ -38,46 +39,64 @@ const navGroups = [
 
 function Header({ loginHref = '/login', languagePage = 'index.php' }) {
   const { language, setLanguage } = useLanguage()
+  const [menuOpen, setMenuOpen] = useState(false)
+
   const handleLanguage = (event, nextLanguage) => {
     event.preventDefault()
     setLanguage(nextLanguage)
+    setMenuOpen(false)
   }
+
+  const closeMenu = () => setMenuOpen(false)
 
   return (
     <header className="site-header">
-      <nav className="nav" aria-label="Primary navigation">
-        <a className="brand" href="/en/index.php">
+      <nav className={`nav${menuOpen ? ' is-open' : ''}`} aria-label="Primary navigation">
+        <a className="brand" href="/en/index.php" onClick={closeMenu}>
           <img className="header-logo" src="/images/logo.png" alt="EI.one" />
         </a>
-        <div className="nav-links">
-          <a href="/en/index.php">Home</a>
-          {navGroups.map((group) => (
-            group.links.length ? (
-              <div className="nav-item has-submenu" key={group.label}>
-                <a href={group.href}>
-                  {group.label} <i className="fa-solid fa-chevron-down" aria-hidden="true"></i>
-                </a>
-                <div className="submenu">
-                  {group.links.map(([label, href]) => (
-                    <a href={href} key={label}>{label}</a>
-                  ))}
+        <button
+          className="mobile-menu-toggle"
+          type="button"
+          aria-label={menuOpen ? 'Close menu' : 'Open menu'}
+          aria-expanded={menuOpen}
+          onClick={() => setMenuOpen((open) => !open)}
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <div className="nav-menu">
+          <div className="nav-links">
+            <a href="/en/index.php" onClick={closeMenu}>Home</a>
+            {navGroups.map((group) => (
+              group.links.length ? (
+                <div className="nav-item has-submenu" key={group.label}>
+                  <a href={group.href} onClick={closeMenu}>
+                    {group.label} <i className="fa-solid fa-chevron-down" aria-hidden="true"></i>
+                  </a>
+                  <div className="submenu">
+                    {group.links.map(([label, href]) => (
+                      <a href={href} key={label} onClick={closeMenu}>{label}</a>
+                    ))}
+                  </div>
                 </div>
-              </div>
-            ) : (
-              <a href={group.href} key={group.label}>{group.label}</a>
-            )
-          ))}
-        </div>
-        <a className="button secondary" href={loginHref}>Login</a>
-        <div className="lang has-submenu" aria-label="Language selector">
-          <button type="button">
-            {language.toUpperCase()} <i className="fa-solid fa-caret-down" aria-hidden="true"></i>
-          </button>
-          <div className="submenu lang-menu">
-            <a href={`/de/${languagePage}`} onClick={(event) => handleLanguage(event, 'de')}>DE</a>
-            <a href={`/it/${languagePage}`} onClick={(event) => handleLanguage(event, 'en')}>IT</a>
-            <a href={`/fr/${languagePage}`} onClick={(event) => handleLanguage(event, 'en')}>FR</a>
-            <a href={`/en/${languagePage}`} onClick={(event) => handleLanguage(event, 'en')}>EN</a>
+              ) : (
+                <a href={group.href} key={group.label} onClick={closeMenu}>{group.label}</a>
+              )
+            ))}
+          </div>
+          <a className="button secondary" href={loginHref} onClick={closeMenu}>Login</a>
+          <div className="lang has-submenu" aria-label="Language selector">
+            <button type="button">
+              {language.toUpperCase()} <i className="fa-solid fa-caret-down" aria-hidden="true"></i>
+            </button>
+            <div className="submenu lang-menu">
+              <a href={`/de/${languagePage}`} onClick={(event) => handleLanguage(event, 'de')}>DE</a>
+              <a href={`/it/${languagePage}`} onClick={(event) => handleLanguage(event, 'en')}>IT</a>
+              <a href={`/fr/${languagePage}`} onClick={(event) => handleLanguage(event, 'en')}>FR</a>
+              <a href={`/en/${languagePage}`} onClick={(event) => handleLanguage(event, 'en')}>EN</a>
+            </div>
           </div>
         </div>
       </nav>

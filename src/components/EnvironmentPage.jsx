@@ -136,7 +136,7 @@ function EnvironmentPage() {
             </div>
 
             <div className="ecological-progress-visual">
-              <img src="/images/circular-progress.png" alt="Bright circular economy loop with renewable energy and recycled materials" />
+              <img src="/images/circular-progress.jpg" alt="Bright circular economy loop with renewable energy and recycled materials" />
             </div>
           </div>
         </section>
