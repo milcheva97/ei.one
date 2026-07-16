@@ -1,0 +1,10 @@
+Marketplace => Marketplace
+Ecosystem Intelligence => Ecosystem Intelligence
+Sponsor => Sponsor
+Experience Identity => Experience Identity
+Partners => Partner
+Identity => Identity
+Business Dev => Business Dev
+Marketing => Marketing
+Governance => Governance
+Live => Live

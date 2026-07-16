@@ -31,6 +31,7 @@ const navGroups = [
     href: '/about',
     links: [
       ['Our Commitments', '/engagements'],
+      ['Sponsor', '/sponsor'],
       ['Environment', '/environment'],
       ['Projects', '/projects'],
     ],
@@ -43,7 +44,11 @@ function Header({ loginHref = '/login', languagePage = 'index.php' }) {
 
   const handleLanguage = (event, nextLanguage) => {
     event.preventDefault()
+    const nextPath = event.currentTarget.getAttribute('href')
     setLanguage(nextLanguage)
+    if (nextPath && window.location.pathname !== nextPath) {
+      window.history.pushState({}, '', nextPath)
+    }
     setMenuOpen(false)
   }
 
@@ -87,14 +92,14 @@ function Header({ loginHref = '/login', languagePage = 'index.php' }) {
             ))}
           </div>
           <a className="button secondary" href={loginHref} onClick={closeMenu}>Login</a>
-          <div className="lang has-submenu" aria-label="Language selector">
+          <div className="lang has-submenu" aria-label="Language selector" data-no-translate>
             <button type="button">
               {language.toUpperCase()} <i className="fa-solid fa-caret-down" aria-hidden="true"></i>
             </button>
             <div className="submenu lang-menu">
               <a href={`/de/${languagePage}`} onClick={(event) => handleLanguage(event, 'de')}>DE</a>
-              <a href={`/it/${languagePage}`} onClick={(event) => handleLanguage(event, 'en')}>IT</a>
-              <a href={`/fr/${languagePage}`} onClick={(event) => handleLanguage(event, 'en')}>FR</a>
+              <a href={`/it/${languagePage}`} onClick={(event) => handleLanguage(event, 'it')}>IT</a>
+              <a href={`/fr/${languagePage}`} onClick={(event) => handleLanguage(event, 'fr')}>FR</a>
               <a href={`/en/${languagePage}`} onClick={(event) => handleLanguage(event, 'en')}>EN</a>
             </div>
           </div>

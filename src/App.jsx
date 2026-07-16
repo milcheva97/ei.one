@@ -8,6 +8,7 @@ import PartnerPage from './components/PartnerPage.jsx'
 import InvestorPage from './components/InvestorPage.jsx'
 import EntrepreneurPage from './components/EntrepreneurPage.jsx'
 import AboutPage from './components/AboutPage.jsx'
+import SponsorPage from './components/SponsorPage.jsx'
 import ContactPage from './components/ContactPage.jsx'
 import TalentPage from './components/TalentPage.jsx'
 import BusinessClubPage from './components/BusinessClubPage.jsx'
@@ -43,6 +44,10 @@ function App() {
 
   if (path.includes('/engagements')) {
     return <EngagementsPage />
+  }
+
+  if (path.includes('/sponsor')) {
+    return <SponsorPage />
   }
 
   if (path.includes('/partner')) {
@@ -94,10 +99,10 @@ function App() {
       <WebGLShader />
       <div className="hero-inner">
         <div>
-          <p className="eyebrow">Ecosystem Intelligence</p>
-          <h1>The infrastructure that turns every collaboration <span className="hero-accent">into new opportunities for growth.</span></h1>
-          <p className="hero-copy">EI.one connects <strong>companies, people and schools</strong> to turn every collaboration into new relationships, clients, talent and shared knowledge.</p>
-          <p className="hero-copy">Every experience feeds a patrimony of value that makes the entire ecosystem stronger, smarter and more capable of growth.</p>
+          <p className="eyebrow hero-eyebrow-main">Ecosystem Intelligence</p>
+          <h1 className="hero-title-main">Human-centered Ecosystem</h1>
+          <p className="hero-copy hero-copy-lead">The infrastructure that turns every collaboration into new opportunities for growth.</p>
+          <p className="hero-copy">EI.one connects companies, people and schools to turn every collaboration into new relationships, clients, talent and shared knowledge.</p>
           <div className="actions">
             <a className="button" href="/economy">I'm a company &rarr;</a>
             <a className="button secondary" href="/experience-passport">I'm a person &rarr;</a>
