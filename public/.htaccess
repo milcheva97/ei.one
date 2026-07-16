@@ -1,0 +1,14 @@
+# SPA fallback: serve index.html for all routes handled by the React app
+RewriteEngine On
+
+# Strip trailing slashes (e.g. /education/ -> /education) so relative asset paths resolve
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.+)/$ /$1 [R=301,L]
+
+# Serve existing files and directories as-is
+RewriteCond %{REQUEST_FILENAME} -f [OR]
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteRule ^ - [L]
+
+# Everything else falls back to index.html
+RewriteRule ^ index.html [L]

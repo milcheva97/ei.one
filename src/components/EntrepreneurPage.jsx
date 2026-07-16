@@ -1,6 +1,7 @@
-import { useEffect } from 'react'
+import { useEffect, useState } from 'react'
 import Header from './Header.jsx'
 import Footer from './Footer.jsx'
+import { submitContact } from '../lib/api.js'
 
 function setMeta(name, content, attr = 'name') {
   let tag = document.head.querySelector(`meta[${attr}="${name}"]`)
@@ -13,6 +14,37 @@ function setMeta(name, content, attr = 'name') {
 }
 
 function EntrepreneurPage() {
+  const [status, setStatus] = useState('idle')
+
+  async function handleRequestSubmit(event) {
+    event.preventDefault()
+    const form = event.currentTarget
+    const data = new FormData(form)
+    const company = (data.get('company') || '').toString().trim()
+    const email = (data.get('email') || '').toString().trim()
+    const requestType = (data.get('requestType') || '').toString().trim()
+    const message = (data.get('message') || '').toString().trim()
+
+    if (!company || !email || !message) {
+      setStatus('invalid')
+      return
+    }
+
+    setStatus('sending')
+    try {
+      await submitContact({
+        name: company,
+        email,
+        subject: requestType || 'Entrepreneur Request',
+        message,
+      })
+      setStatus('success')
+      form.reset()
+    } catch {
+      setStatus('error')
+    }
+  }
+
   useEffect(() => {
     const title = 'Entrepreneur - EI.one'
     const description = 'EI.one Entrepreneur is for people who want to build, activate, and grow inside a structured ecosystem.'
@@ -197,7 +229,7 @@ function EntrepreneurPage() {
               </div>
             </div>
 
-            <form className="entrepreneur-request-form">
+            <form className="entrepreneur-request-form" onSubmit={handleRequestSubmit}>
               <label>
                 <span>Company Name / Contact</span>
                 <input type="text" name="company" placeholder="Company Name / Contact" />
@@ -223,7 +255,25 @@ function EntrepreneurPage() {
                 <textarea name="message" rows="5" placeholder="Tell us about your company..."></textarea>
               </label>
 
-              <button type="submit">Send Request</button>
+              <button type="submit" disabled={status === 'sending'}>
+                {status === 'sending' ? 'Sending…' : 'Send Request'}
+              </button>
+
+              {status === 'success' && (
+                <p className="form-status form-status-success" role="status">
+                  Thank you! Your request has been sent. We will get back to you soon.
+                </p>
+              )}
+              {status === 'error' && (
+                <p className="form-status form-status-error" role="alert">
+                  Something went wrong. Please try again or email info@ei.one.
+                </p>
+              )}
+              {status === 'invalid' && (
+                <p className="form-status form-status-error" role="alert">
+                  Please fill in all required fields.
+                </p>
+              )}
             </form>
           </div>
         </section>

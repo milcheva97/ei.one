@@ -36,8 +36,81 @@
       }
     </script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
-    <script type="module" crossorigin src="./assets/index-BcNgkpd0.js"></script>
-    <link rel="stylesheet" crossorigin href="./assets/index-xxY-FkeR.css">
+
+    <!-- Google tag (gtag.js) with Consent Mode v2 -->
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('consent', 'default', {
+        'ad_storage': 'denied',
+        'ad_user_data': 'denied',
+        'ad_personalization': 'denied',
+        'analytics_storage': 'denied',
+        'wait_for_update': 500
+      });
+      try {
+        if (localStorage.getItem('ei_cookie_consent') === 'granted') {
+          gtag('consent', 'update', { 'analytics_storage': 'granted' });
+        }
+      } catch (e) {}
+      gtag('js', new Date());
+      gtag('config', 'G-QJQ4YY0MEM', { 'anonymize_ip': true });
+    </script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-QJQ4YY0MEM"></script>
+
+    <!-- Cookie consent banner -->
+    <style>
+      #ei-cookie-bar{position:fixed;left:16px;right:16px;bottom:16px;z-index:99999;max-width:920px;margin:0 auto;
+        background:#10222e;color:#eaf2ec;border-radius:14px;box-shadow:0 12px 40px rgba(0,0,0,.28);
+        padding:18px 22px;display:flex;gap:18px;align-items:center;flex-wrap:wrap;
+        font-family:'Inter',system-ui,sans-serif;font-size:.9rem;line-height:1.5;}
+      #ei-cookie-bar .ei-cc-text{flex:1;min-width:240px;}
+      #ei-cookie-bar a{color:#8fe04f;text-decoration:underline;}
+      #ei-cookie-bar .ei-cc-actions{display:flex;gap:10px;flex-shrink:0;}
+      #ei-cookie-bar button{border:none;border-radius:9px;padding:11px 20px;font-weight:600;font-size:.88rem;
+        cursor:pointer;font-family:inherit;transition:opacity .2s;}
+      #ei-cookie-bar button:hover{opacity:.88;}
+      #ei-cc-accept{background:#58c913;color:#fff;}
+      #ei-cc-reject{background:transparent;color:#cdd8d0;border:1px solid rgba(255,255,255,.25);}
+      @media(max-width:560px){#ei-cookie-bar{flex-direction:column;align-items:stretch;padding:16px;}
+        #ei-cookie-bar .ei-cc-actions{justify-content:flex-end;}}
+    </style>
+    <script>
+      (function(){
+        try { if (localStorage.getItem('ei_cookie_consent')) return; } catch(e) { return; }
+        var L = (location.pathname.match(/^\/(it|en|de|fr)(?:\/|$)/) || [])[1] || 'en';
+        var T = {
+          it:{t:"Usiamo cookie per analizzare il traffico e migliorare il sito. Puoi accettare o rifiutare i cookie di analisi.",a:"Accetta",r:"Rifiuta"},
+          en:{t:"We use cookies to analyze traffic and improve the site. You can accept or reject analytics cookies.",a:"Accept",r:"Reject"},
+          de:{t:"Wir verwenden Cookies, um den Traffic zu analysieren und die Website zu verbessern. Sie können Analyse-Cookies akzeptieren oder ablehnen.",a:"Akzeptieren",r:"Ablehnen"},
+          fr:{t:"Nous utilisons des cookies pour analyser le trafic et améliorer le site. Vous pouvez accepter ou refuser les cookies d'analyse.",a:"Accepter",r:"Refuser"}
+        };
+        var s = T[L] || T.en;
+        function ready(fn){ if(document.body){fn();} else {document.addEventListener('DOMContentLoaded',fn);} }
+        ready(function(){
+          var bar = document.createElement('div');
+          bar.id = 'ei-cookie-bar';
+          bar.innerHTML =
+            '<div class="ei-cc-text">'+s.t+'</div>'+
+            '<div class="ei-cc-actions">'+
+              '<button id="ei-cc-reject">'+s.r+'</button>'+
+              '<button id="ei-cc-accept">'+s.a+'</button>'+
+            '</div>';
+          document.body.appendChild(bar);
+          function choose(v){
+            try { localStorage.setItem('ei_cookie_consent', v); } catch(e){}
+            if (v === 'granted' && typeof gtag === 'function') {
+              gtag('consent', 'update', { 'analytics_storage': 'granted' });
+            }
+            bar.parentNode && bar.parentNode.removeChild(bar);
+          }
+          document.getElementById('ei-cc-accept').onclick = function(){ choose('granted'); };
+          document.getElementById('ei-cc-reject').onclick = function(){ choose('denied'); };
+        });
+      })();
+    </script>
+    <script type="module" crossorigin src="/assets/index-FxfZpSxv.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-D_knYA-o.css">
   </head>
   <body>
     <div id="root"></div>

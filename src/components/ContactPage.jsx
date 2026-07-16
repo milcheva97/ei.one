@@ -1,7 +1,35 @@
+import { useState } from 'react'
 import Header from './Header.jsx'
 import Footer from './Footer.jsx'
+import { submitContact } from '../lib/api.js'
 
 function ContactPage() {
+  const [status, setStatus] = useState('idle')
+
+  async function handleContactSubmit(event) {
+    event.preventDefault()
+    const form = event.currentTarget
+    const data = new FormData(form)
+    const name = (data.get('name') || '').toString().trim()
+    const email = (data.get('email') || '').toString().trim()
+    const subject = (data.get('subject') || '').toString().trim()
+    const message = (data.get('message') || '').toString().trim()
+
+    if (!name || !email || !message) {
+      setStatus('invalid')
+      return
+    }
+
+    setStatus('sending')
+    try {
+      await submitContact({ name, email, subject, message })
+      setStatus('success')
+      form.reset()
+    } catch {
+      setStatus('error')
+    }
+  }
+
   return (
     <>
       <Header loginHref="/login" languagePage="contact" />
@@ -56,16 +84,34 @@ function ContactPage() {
               </p>
             </div>
 
-            <form id="contact-form" className="contact-form-panel" aria-label="Contact form">
+            <form id="contact-form" className="contact-form-panel" aria-label="Contact form" onSubmit={handleContactSubmit}>
               <label htmlFor="contact-name">Name</label>
-              <input id="contact-name" type="text" placeholder="Name" />
+              <input id="contact-name" name="name" type="text" placeholder="Name" />
               <label htmlFor="contact-email">Email</label>
-              <input id="contact-email" type="email" placeholder="Email" />
+              <input id="contact-email" name="email" type="email" placeholder="Email" />
               <label htmlFor="contact-subject">Subject</label>
-              <input id="contact-subject" type="text" placeholder="Subject" />
+              <input id="contact-subject" name="subject" type="text" placeholder="Subject" />
               <label htmlFor="contact-message">Message</label>
-              <textarea id="contact-message" placeholder="Message" rows="6"></textarea>
-              <button className="button" type="submit">Send Message</button>
+              <textarea id="contact-message" name="message" placeholder="Message" rows="6"></textarea>
+              <button className="button" type="submit" disabled={status === 'sending'}>
+                {status === 'sending' ? 'Sending…' : 'Send Message'}
+              </button>
+
+              {status === 'success' && (
+                <p className="form-status form-status-success" role="status">
+                  Thank you! Your message has been sent. We will get back to you soon.
+                </p>
+              )}
+              {status === 'error' && (
+                <p className="form-status form-status-error" role="alert">
+                  Something went wrong. Please try again or email info@ei.one.
+                </p>
+              )}
+              {status === 'invalid' && (
+                <p className="form-status form-status-error" role="alert">
+                  Please fill in all required fields.
+                </p>
+              )}
             </form>
           </div>
         </section>

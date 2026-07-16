@@ -18,6 +18,11 @@ import ForgotPasswordPage from './components/ForgotPasswordPage.jsx'
 import EngagementsPage from './components/EngagementsPage.jsx'
 import Header from './components/Header.jsx'
 import Footer from './components/Footer.jsx'
+import HeroLogin from './components/HeroLogin.jsx'
+import NewsletterForm from './components/NewsletterForm.jsx'
+import ComingSoonPage from './components/ComingSoonPage.jsx'
+import AcademyPage from './components/AcademyPage.jsx'
+import RecruitmentPage from './components/RecruitmentPage.jsx'
 
 function App() {
   const path = window.location.pathname.toLowerCase()
@@ -90,6 +95,25 @@ function App() {
     return <LoginPage />
   }
 
+  if (path.includes('/academy')) {
+    return <AcademyPage />
+  }
+
+  if (path.includes('/recruitment')) {
+    return <RecruitmentPage />
+  }
+
+  // Any other non-home path (e.g. /academy, /recruitment or not-yet-built
+  // routes) lands on a Coming Soon page instead of silently re-showing home.
+  const isHomePath =
+    path === '/' ||
+    /^\/(en|it|de|fr)\/?$/.test(path) ||
+    /^\/((en|it|de|fr)\/)?index(\.php)?$/.test(path)
+
+  if (!isHomePath) {
+    return <ComingSoonPage />
+  }
+
   return (
     <>
 <Header />
@@ -109,19 +133,7 @@ function App() {
             <a className="button secondary" href="/education">I'm a school &rarr;</a>
           </div>
         </div>
-        <aside className="login-panel" id="login" aria-label="Login panel">
-          <h2>Login</h2>
-          <p>Enter the platform</p>
-          <label className="field-label" htmlFor="login-email">Email</label>
-          <input className="field" id="login-email" type="email" placeholder="you@email.com" />
-          <label className="field-label" htmlFor="login-password">Password</label>
-          <input className="field" id="login-password" type="password" placeholder="••••••••" />
-          <div className="login-options">
-            <a href="/forgot-password">Forgot password?</a>
-          </div>
-          <a className="button full" href="#">Log in &rarr;</a>
-          <p className="login-join">No account yet? <a className="text-link" href="/register">Join ei.one</a></p>
-        </aside>
+        <HeroLogin />
       </div>
     </section>
     <section className="protagonists" aria-labelledby="protagonists-title">
@@ -398,13 +410,7 @@ function App() {
         </div>
         <div className="cta-newsletter">
           <h3>Stay up to date</h3>
-          <form className="newsletter-form">
-            <input type="email" placeholder="Email address" aria-label="Email address" />
-            <button className="button" type="submit">
-              <i className="fa-solid fa-envelope" aria-hidden="true"></i>
-              Subscribe
-            </button>
-          </form>
+          <NewsletterForm />
         </div>
       </div>
     </section>
@@ -412,11 +418,6 @@ function App() {
   </main>
 
   <Footer />
-
-  <aside className="cookie" aria-label="Cookie notice">
-    We use cookies to improve your experience. By continuing, you accept our privacy policy.
-    <button className="button" onClick={(event) => event.currentTarget.closest('.cookie')?.remove()}>Accept</button>
-  </aside>
     </>
   )
 }

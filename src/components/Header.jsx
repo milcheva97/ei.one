@@ -13,17 +13,20 @@ const navGroups = [
     links: [['Marketplace', '/business-club']],
   },
   {
-    label: 'Entrepreneur',
-    href: '/entrepreneur',
-    links: [],
-  },
-  {
     label: 'Enterprise',
     href: '/economy',
     links: [
       ['Business Ecosystem', '/en/business-club.php'],
       ['Become a partner', '/partner'],
       ['Investor', '/investor'],
+      ['Entrepreneur', '/entrepreneur'],
+    ],
+  },
+  {
+    label: 'Environment',
+    href: '/environment',
+    links: [
+      ['Projects', '/projects'],
     ],
   },
   {
@@ -32,8 +35,6 @@ const navGroups = [
     links: [
       ['Our Commitments', '/engagements'],
       ['Sponsor', '/sponsor'],
-      ['Environment', '/environment'],
-      ['Projects', '/projects'],
     ],
   },
 ]
@@ -41,6 +42,7 @@ const navGroups = [
 function Header({ loginHref = '/login', languagePage = 'index.php' }) {
   const { language, setLanguage } = useLanguage()
   const [menuOpen, setMenuOpen] = useState(false)
+  const [openGroup, setOpenGroup] = useState(null)
 
   const handleLanguage = (event, nextLanguage) => {
     event.preventDefault()
@@ -52,7 +54,22 @@ function Header({ loginHref = '/login', languagePage = 'index.php' }) {
     setMenuOpen(false)
   }
 
-  const closeMenu = () => setMenuOpen(false)
+  const closeMenu = () => {
+    setMenuOpen(false)
+    setOpenGroup(null)
+  }
+
+  // On mobile (the hamburger menu is open) a parent with a submenu should
+  // expand its subpages instead of navigating away. On desktop the submenu
+  // opens on hover and the parent link navigates as usual.
+  const handleGroupClick = (event, group) => {
+    if (menuOpen && group.links.length) {
+      event.preventDefault()
+      setOpenGroup((current) => (current === group.label ? null : group.label))
+      return
+    }
+    closeMenu()
+  }
 
   return (
     <header className="site-header">
@@ -76,11 +93,14 @@ function Header({ loginHref = '/login', languagePage = 'index.php' }) {
             <a href="/en/index.php" onClick={closeMenu}>Home</a>
             {navGroups.map((group) => (
               group.links.length ? (
-                <div className="nav-item has-submenu" key={group.label}>
-                  <a href={group.href} onClick={closeMenu}>
+                <div
+                  className={`nav-item has-submenu${openGroup === group.label ? ' is-open' : ''}`}
+                  key={group.label}
+                >
+                  <a href={group.href} onClick={(event) => handleGroupClick(event, group)}>
                     {group.label} <i className="fa-solid fa-chevron-down" aria-hidden="true"></i>
                   </a>
-                  <div className="submenu">
+                  <div className={`submenu${openGroup === group.label ? ' is-open' : ''}`}>
                     {group.links.map(([label, href]) => (
                       <a href={href} key={label} onClick={closeMenu}>{label}</a>
                     ))}
@@ -91,16 +111,16 @@ function Header({ loginHref = '/login', languagePage = 'index.php' }) {
               )
             ))}
           </div>
-          <a className="button secondary" href={loginHref} onClick={closeMenu}>Login</a>
+          <a className="button secondary" href="https://app.ei.one/login" onClick={closeMenu}>Login</a>
           <div className="lang has-submenu" aria-label="Language selector" data-no-translate>
             <button type="button">
               {language.toUpperCase()} <i className="fa-solid fa-caret-down" aria-hidden="true"></i>
             </button>
             <div className="submenu lang-menu">
-              <a href={`/de/${languagePage}`} onClick={(event) => handleLanguage(event, 'de')}>DE</a>
-              <a href={`/it/${languagePage}`} onClick={(event) => handleLanguage(event, 'it')}>IT</a>
-              <a href={`/fr/${languagePage}`} onClick={(event) => handleLanguage(event, 'fr')}>FR</a>
-              <a href={`/en/${languagePage}`} onClick={(event) => handleLanguage(event, 'en')}>EN</a>
+              <a className={language === 'de' ? 'active' : undefined} href={`/de/${languagePage}`} onClick={(event) => handleLanguage(event, 'de')}>DE</a>
+              <a className={language === 'it' ? 'active' : undefined} href={`/it/${languagePage}`} onClick={(event) => handleLanguage(event, 'it')}>IT</a>
+              <a className={language === 'fr' ? 'active' : undefined} href={`/fr/${languagePage}`} onClick={(event) => handleLanguage(event, 'fr')}>FR</a>
+              <a className={language === 'en' ? 'active' : undefined} href={`/en/${languagePage}`} onClick={(event) => handleLanguage(event, 'en')}>EN</a>
             </div>
           </div>
         </div>
