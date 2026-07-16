@@ -11234,7 +11234,12 @@ section {
 }
 
 .education-hero {
-  padding: 120px 0 96px;
+  min-height: calc(100svh - 76px);
+  max-height: calc(100svh - 76px);
+  display: grid;
+  align-items: center;
+  overflow: hidden;
+  padding: clamp(54px, 7vh, 88px) 0;
   color: #ffffff;
   background:
     radial-gradient(circle at 12% 10%, rgba(88, 201, 19, .24), transparent 30%),
@@ -11265,24 +11270,24 @@ section {
 
 .education-hero h1 {
   max-width: 720px;
-  margin-bottom: 24px;
+  margin-bottom: 18px;
   color: #ffffff;
-  font-size: clamp(44px, 5.2vw, 72px);
-  line-height: 1.02;
+  font-size: clamp(42px, 4.6vw, 64px);
+  line-height: 1.04;
 }
 
 .education-hero p {
   max-width: 680px;
   color: rgba(255,255,255,.82);
-  font-size: 21px;
-  line-height: 1.55;
+  font-size: clamp(18px, 1.4vw, 20px);
+  line-height: 1.45;
 }
 
 .education-actions {
   display: flex;
   flex-wrap: wrap;
   gap: 12px;
-  margin-top: 30px;
+  margin-top: 24px;
 }
 
 .education-actions .button {
@@ -11299,7 +11304,7 @@ section {
 
 .education-hero-card {
   justify-self: end;
-  width: min(100%, 520px);
+  width: min(100%, 500px);
   align-self: center;
   overflow: hidden;
   border: 1px solid rgba(255,255,255,.18);
@@ -11311,19 +11316,19 @@ section {
 
 .education-hero-card img {
   width: 100%;
-  aspect-ratio: 1.2 / .82;
+  aspect-ratio: 1.28 / .78;
   object-fit: cover;
 }
 
 .education-hero-card div {
-  padding: 24px;
+  padding: 20px 22px 22px;
 }
 
 .education-hero-card strong {
   display: block;
-  margin-bottom: 8px;
+  margin-bottom: 6px;
   color: #ffffff;
-  font-size: 22px;
+  font-size: 21px;
 }
 
 .education-hero-card span {
@@ -11665,6 +11670,22 @@ section {
 }
 
 @media (max-width: 980px) {
+  .education-hero {
+    min-height: calc(100svh - 76px);
+    max-height: none;
+    padding: 78px 0 88px;
+    overflow: visible;
+  }
+
+  .education-hero h1 {
+    font-size: clamp(40px, 9vw, 58px);
+  }
+
+  .education-hero-card {
+    justify-self: stretch;
+    width: 100%;
+  }
+
   .education-hero-grid,
   .engagements-hero-grid,
   .projects-hero-grid,
