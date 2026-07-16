@@ -2151,6 +2151,13 @@ section {
   .hero-inner, .story-grid, .split, .audience-grid, .newsletter .wrap, .cta-box, .status-grid, .entry-grid, .why-grid, .contact-hero-grid, .contact-connect-grid {
     grid-template-columns: 1fr;
   }
+  .hero-eyebrow-main {
+    font-size: 22px;
+  }
+  .hero .hero-title-main {
+    font-size: clamp(48px, 10vw, 72px);
+    margin-bottom: 30px;
+  }
   .login-panel { max-width: 520px; }
   .dimension-grid, .revenue-grid, .pill-grid, .protagonists-grid, .connections-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -2175,6 +2182,18 @@ section {
 @media (max-width: 640px) {
   section { padding: 58px 0; }
   .hero { padding-top: 38px; }
+  .hero-eyebrow-main {
+    font-size: 15px;
+  }
+  .hero .hero-title-main {
+    font-size: clamp(38px, 13vw, 52px);
+    line-height: 1.06;
+    margin-bottom: 22px;
+  }
+  .hero-copy-lead {
+    font-size: 18px;
+    line-height: 1.4;
+  }
   .nav .button { display: none; }
   .ei-tag { display: none; }
   .dimension-grid, .revenue-grid, .pill-grid, .protagonists-grid, .connections-grid, .audience ul, .footer-grid {
