@@ -74,7 +74,7 @@ function Header({ loginHref = '/login', languagePage = 'index.php' }) {
   return (
     <header className="site-header">
       <nav className={`nav${menuOpen ? ' is-open' : ''}`} aria-label="Primary navigation">
-        <a className="brand" href="/en/index.php" onClick={closeMenu}>
+        <a className="brand" href="/" onClick={closeMenu}>
           <img className="header-logo" src="/images/logo.png" alt="EI.one" />
         </a>
         <button
@@ -90,7 +90,7 @@ function Header({ loginHref = '/login', languagePage = 'index.php' }) {
         </button>
         <div className="nav-menu">
           <div className="nav-links">
-            <a href="/en/index.php" onClick={closeMenu}>Home</a>
+            <a href="/" onClick={closeMenu}>Home</a>
             {navGroups.map((group) => (
               group.links.length ? (
                 <div

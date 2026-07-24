@@ -123,7 +123,7 @@ function TalentPage() {
                 <a className="talent-module recruitment" href="/recruitment">
                   <span className="talent-module-icon"><i className="fa-solid fa-handshake" aria-hidden="true"></i></span>
                   <span className="talent-module-title">Recruitment <em>Preview</em></span>
-                  <p>Companies search directly inside the Identitys. No CVs, no keywords: only real experiences.</p>
+                  <p>Companies search directly inside the Identities. No CVs, no keywords: only real experiences.</p>
                   <strong>Discover Recruitment <i className="fa-solid fa-arrow-right" aria-hidden="true"></i></strong>
                 </a>
               </div>
@@ -151,7 +151,7 @@ function TalentPage() {
                 <span><i className="fa-solid fa-route" aria-hidden="true"></i></span>
                 <div>
                   <h3>Those who want to change</h3>
-                  <p>a Identity that tells your experiences better than any pitch.</p>
+                  <p>an Identity that tells your experiences better than any pitch.</p>
                 </div>
               </article>
               <article>

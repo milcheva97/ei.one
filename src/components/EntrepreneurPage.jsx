@@ -78,7 +78,7 @@ function EntrepreneurPage() {
               <h1>Join the EI.ONE Intelligent Ecosystem</h1>
               <p>Join an ecosystem that values cooperation over competition. Let's grow together through real connections.</p>
               <div className="entrepreneur-hero-actions">
-                <a className="button" href="/en/contact.php">Join the Ecosystem</a>
+                <a className="button" href="/contact">Join the Ecosystem</a>
               </div>
             </div>
 

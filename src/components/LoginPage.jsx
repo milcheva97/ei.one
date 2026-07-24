@@ -57,7 +57,7 @@ function LoginPage() {
     <main className="register-page login-page">
       <section className="register-shell login-shell" aria-label="Login">
         <div className="register-brand">
-          <a href="/en/index.php" aria-label="Back to ei.one home">
+          <a href="/" aria-label="Back to ei.one home">
             <img src="/images/logo.png" alt="EI.one" />
           </a>
           <p className="register-kicker">Ecosystem Intelligence</p>
@@ -95,7 +95,7 @@ function LoginPage() {
         </form>
 
         <div className="register-footer-links">
-          <a href="/en/index.php">&larr; Back to ei.one</a>
+          <a href="/">&larr; Back to ei.one</a>
           <span></span>
           <p>Experience. Education. Economy. Environment.</p>
         </div>

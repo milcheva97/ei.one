@@ -46,8 +46,8 @@ function EconomyPage() {
               <h2>Turn experience into business growth.</h2>
               <p>Internships, project work and mentoring become a channel of verified talent, trusted partnerships and a qualified commercial network. Your experiences attract the best. The best grow your business.</p>
               <div className="economy-hero-actions">
-                <a className="button" href="/en/business-club.php">Enter Business Ecosystem</a>
-                <a className="button secondary" href="/en/partner.php">Become a Partner</a>
+                <a className="button" href="/business-club">Enter Business Ecosystem</a>
+                <a className="button secondary" href="/partner">Become a Partner</a>
               </div>
             </div>
 
@@ -157,8 +157,8 @@ function EconomyPage() {
               <h2 id="economy-final-title">Ready for the Economy of the Future?</h2>
               <p>Become part of an ecosystem that generates innovation and sustainable added value.</p>
               <div className="economy-final-actions">
-                <a className="button economy-final-primary" href="/en/partner.php">Become a Partner</a>
-                <a className="button economy-final-outline" href="/en/contact.php">Contact</a>
+                <a className="button economy-final-primary" href="/partner">Become a Partner</a>
+                <a className="button economy-final-outline" href="/contact">Contact</a>
               </div>
             </div>
           </div>

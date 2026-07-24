@@ -1,0 +1,8 @@
+# OS / editor
+.DS_Store
+
+# Local agent/config
+.claude/
+
+# Dependencies (kept out of future commits; already-tracked files are unaffected)
+node_modules/

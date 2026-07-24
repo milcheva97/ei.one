@@ -32,7 +32,7 @@ function ComingSoonPage() {
               This part of the ecosystem is on its way. We are building it right now — check back shortly.
             </p>
             <div className="actions">
-              <a className="button" href="/en/index.php">Back to Home</a>
+              <a className="button" href="/">Back to Home</a>
               <a className="button secondary" href="/contact">Contact us</a>
             </div>
           </div>

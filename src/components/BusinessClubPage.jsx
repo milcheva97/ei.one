@@ -51,10 +51,10 @@ function BusinessClubPage() {
     },
     {
       name: 'Netmaster',
-      category: 'IT, AI & Academy Systems',
+      category: 'IT, AI & Cloud',
       logo: '/images/netmaster.jpg',
       accent: '#54c7df',
-      description: 'Netmaster is the technological heart of the EI.one ecosystem. We offer software development, AI solutions, cloud infrastructure, cybersecurity, and digital training through our Academy. The technological backbone that coordinates all modules, manages data, and trains the professionals of the EI Generation.',
+      description: 'Netmaster is a technology company offering software development, AI solutions, cloud infrastructure, cybersecurity, and digital training. A partner that helps businesses build, secure, and scale their digital operations.',
     },
     {
       name: 'Cleanlife',

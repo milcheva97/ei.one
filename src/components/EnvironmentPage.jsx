@@ -45,8 +45,8 @@ function EnvironmentPage() {
               <h1>Environment</h1>
               <p>Innovation and renewable energies with measurable projects. Environmental sustainability as an operational choice, not as a slogan.</p>
               <div className="environment-hero-actions">
-                <a className="button" href="/en/projects.php">Discover Projects</a>
-                <a className="button secondary" href="/en/contact.php">Contact</a>
+                <a className="button" href="/projects">Discover Projects</a>
+                <a className="button secondary" href="/contact">Contact</a>
               </div>
             </div>
 
@@ -132,7 +132,7 @@ function EnvironmentPage() {
             <div className="ecological-progress-copy">
               <h2 id="ecological-progress-title">Ecological Sustainability is Progress</h2>
               <p>For us, ecological sustainability does not mean renunciation, but progress. It stands for innovation, responsibility, and the possibility of combining economic development with the protection of our planet.</p>
-              <p>El.one pursues the vision of a future where economy, technology, and environment are in balance -- an intelligent ecosystem that enables sustainable solutions.</p>
+              <p>EI.one pursues the vision of a future where economy, technology, and environment are in balance -- an intelligent ecosystem that enables sustainable solutions.</p>
             </div>
 
             <div className="ecological-progress-visual">
@@ -146,8 +146,8 @@ function EnvironmentPage() {
             <h2 id="environment-final-title">Together for a Healthy Planet</h2>
             <p>Discover our projects for a climate-friendly economy.</p>
             <div className="environment-final-actions">
-              <a className="button environment-final-primary" href="/en/projects.php">Discover Projects</a>
-              <a className="button environment-final-outline" href="/en/contact.php">Contact</a>
+              <a className="button environment-final-primary" href="/projects">Discover Projects</a>
+              <a className="button environment-final-outline" href="/contact">Contact</a>
             </div>
           </div>
         </section>

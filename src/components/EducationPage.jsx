@@ -117,8 +117,8 @@ function EducationPage() {
               <p>Become part of a community based on trust and human growth.</p>
             </div>
             <div className="education-actions">
-              <a className="button secondary" href="/en/talent.php">Become a Talent</a>
-              <a className="button" href="/en/contact.php">Contact</a>
+              <a className="button secondary" href="/talent">Become a Talent</a>
+              <a className="button" href="/contact">Contact</a>
             </div>
           </div>
         </section>

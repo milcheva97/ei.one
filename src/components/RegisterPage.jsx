@@ -68,7 +68,7 @@ function RegisterPage() {
     <main className="register-page">
       <section className="register-shell" aria-labelledby="register-title">
         <div className="register-brand">
-          <a href="/en/index.php" aria-label="Back to ei.one home">
+          <a href="/" aria-label="Back to ei.one home">
             <img src="/images/logo.png" alt="EI.one" />
           </a>
           <p className="register-kicker">Ecosystem Intelligence</p>
@@ -128,7 +128,7 @@ function RegisterPage() {
         </form>
 
         <div className="register-footer-links">
-          <a href="/en/index.php">&larr; Back to ei.one</a>
+          <a href="/">&larr; Back to ei.one</a>
           <span></span>
           <p>Experience. Education. Economy. Environment.</p>
         </div>

@@ -45,7 +45,7 @@ function PartnerPage() {
               <h1>Partners</h1>
               <p>Building a sustainable future together. Becoming an EI.one Partner means entering a human-centric, structured, and scalable ecosystem.</p>
               <div className="partner-hero-actions">
-                <a className="button" href="/en/contact.php">Start a Partnership</a>
+                <a className="button" href="/contact">Start a Partnership</a>
                 <a className="button secondary" href="/economy">Explore Enterprise</a>
               </div>
             </div>
@@ -104,7 +104,7 @@ function PartnerPage() {
                     <li>Governance system</li>
                   </ul>
                 </div>
-                <a className="button partner-option-button" href="/en/contact.php">Become a Franchise Partner</a>
+                <a className="button partner-option-button" href="/contact">Become a Franchise Partner</a>
               </article>
 
               <article className="partner-option">
@@ -133,7 +133,7 @@ function PartnerPage() {
                     <li>Operational support</li>
                   </ul>
                 </div>
-                <a className="button partner-option-button outline" href="/en/contact.php">Activate a License</a>
+                <a className="button partner-option-button outline" href="/contact">Activate a License</a>
               </article>
 
               <article className="partner-option">
@@ -163,7 +163,7 @@ function PartnerPage() {
                     <li>Global scalability</li>
                   </ul>
                 </div>
-                <a className="button partner-option-button outline" href="/en/contact.php">Request White Label</a>
+                <a className="button partner-option-button outline" href="/contact">Request White Label</a>
               </article>
             </div>
           </div>
@@ -313,9 +313,9 @@ function PartnerPage() {
             <h2 id="partner-final-title">Are you ready to be part of the EI Generation?</h2>
             <p>Discover the model that suits you best and start your journey.</p>
             <div className="partner-final-actions">
-              <a className="button partner-final-primary" href="/en/contact.php">Become a Franchise Partner</a>
-              <a className="button" href="/en/contact.php">Activate a License</a>
-              <a className="button partner-final-outline" href="/en/contact.php">Request White Label</a>
+              <a className="button partner-final-primary" href="/contact">Become a Franchise Partner</a>
+              <a className="button" href="/contact">Activate a License</a>
+              <a className="button partner-final-outline" href="/contact">Request White Label</a>
             </div>
           </div>
         </section>

@@ -108,8 +108,8 @@ function ExperiencePassportPage() {
           <div className="wrap human-center-grid">
             <div className="human-center-copy">
               <h2>The CV is broken. The Identity fixes it.</h2>
-              <p>A CV says whatever you want it to. It also says very little of substance: job titles, years, keywords. In the age of the AI transition, that's not enough for anyone â€” not for job seekers, not for employers.</p>
-              <p>The Experience Identity is different. Every experience you add is attested by whoever had you do it â€” a company in the ecosystem, an Academy partner, a real project. What people see is your actual work, not your self-promotion.</p>
+              <p>A CV says whatever you want it to. It also says very little of substance: job titles, years, keywords. In the age of the AI transition, that's not enough for anyone — not for job seekers, not for employers.</p>
+              <p>The Experience Identity is different. Every experience you add is attested by whoever had you do it — a company in the ecosystem, an Academy partner, a real project. What people see is your actual work, not your self-promotion.</p>
             </div>
             <div className="human-center-visual" aria-label="People connected through knowledge, education and shared opportunity">
               <img src="/images/identity.jpg" alt="identity" />
@@ -122,7 +122,7 @@ function ExperiencePassportPage() {
           <div className="wrap">
             <div className="education-section-head">
               <h2>How it works</h2>
-              <p>Three steps to build a Identity that actually shows what you can do.</p>
+              <p>Three steps to build an Identity that actually shows what you can do.</p>
             </div>
             <div className="education-pillar-grid">
           <article>
@@ -133,7 +133,7 @@ function ExperiencePassportPage() {
           <article>
             <i className="fa-solid fa-layer-group"></i>
             <h3>Collect verified experience</h3>
-            <p>Every experience at an ecosystem company is attested by whoever had you do it and recorded on the blockchain as an immutable credential. Attachments, roles, results â€” all verifiable.</p>
+            <p>Every experience at an ecosystem company is attested by whoever had you do it and recorded on the blockchain as an immutable credential. Attachments, roles, results — all verifiable.</p>
           </article>
           <article>
             <i className="fa-solid fa-share-nodes"></i>

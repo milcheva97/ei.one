@@ -45,7 +45,7 @@ function InvestorPage() {
               <h1>Investing in an Ecosystem</h1>
               <p>EI.one is not a single company idea. It is a functioning scalable system built around education, experience, economy, and environment.</p>
               <div className="investor-hero-actions">
-                <a className="button" href="/en/contact.php">Talk to us</a>
+                <a className="button" href="/contact">Talk to us</a>
                 <a className="button secondary" href="/economy">Explore the Ecosystem</a>
               </div>
             </div>
@@ -183,7 +183,7 @@ function InvestorPage() {
                 <h3>Calculable Future</h3>
                 <p>Companies grow together. Talents unleash potential. Capital has a lasting impact.</p>
               </div>
-              <a className="button" href="/en/contact.php">Talk to Us</a>
+              <a className="button" href="/contact">Talk to Us</a>
             </div>
 
             <div className="capital-flow" aria-label="Capital flow from structure to impact">

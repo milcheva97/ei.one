@@ -4,7 +4,7 @@ function Footer() {
       <div className="wrap">
         <div className="footer-grid">
           <div className="footer-about">
-            <a className="footer-logo" href="/en/index.php" aria-label="ei.one">
+            <a className="footer-logo" href="/" aria-label="ei.one">
               <img src="/images/logo.png" alt="ei.one" />
             </a>
             <p>ei.one - The ecosystem where people build real experience and become entrepreneurs.</p>
@@ -12,7 +12,7 @@ function Footer() {
           <div>
             <h3>Menu</h3>
             <ul>
-              <li><a href="/en/index.php">Home</a></li>
+              <li><a href="/">Home</a></li>
               <li><a href="/education">Education</a></li>
               <li><a href="/experience-passport">Experience</a></li>
               <li><a href="/entrepreneur">Entrepreneur</a></li>
@@ -30,7 +30,7 @@ function Footer() {
           </div>
           <div className="footer-contact">
             <h3>Contact</h3>
-            <p><strong>ei.one</strong><br />Netmaster (Schweiz) AG<br />Tödistrasse 56<br />CH - 8810 Horgen</p>
+            <p><strong>ei.one</strong><br />Tödistrasse 56<br />CH - 8810 Horgen</p>
             <p><strong>Tel:</strong> +41 44 822 90 00</p>
           </div>
         </div>
