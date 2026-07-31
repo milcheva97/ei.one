@@ -124,7 +124,7 @@ function App() {
       <div className="hero-inner">
         <div>
           <p className="eyebrow hero-eyebrow-main">Ecosystem Intelligence</p>
-          <h1 className="hero-title-main">The Human-centered Ecosystem</h1>
+          <h1 className="hero-title-main">Ecosystem Growth Sharing</h1>
           <p className="hero-copy hero-copy-lead">The infrastructure that turns every collaboration into new opportunities for growth.</p>
           <p className="hero-copy">EI.one connects companies, people and schools to turn every collaboration into new relationships, clients, talent and shared knowledge.</p>
           <div className="actions">
