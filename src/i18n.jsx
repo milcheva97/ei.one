@@ -2832,21 +2832,21 @@ Object.assign(fr, {
 
 // Homepage (App.jsx) hero + a couple of labels that had no dictionary entries.
 Object.assign(it, {
-  'Ecosystem Growth Sharing': 'L’ecosistema con crescita condivisa',
+  'The Empowerment Infrastructure': 'L’infrastruttura dell’empowerment',
   'The infrastructure that turns every collaboration into new opportunities for growth.': 'L’infrastruttura che trasforma ogni collaborazione in nuove opportunità di crescita.',
   'EI.one connects companies, people and schools to turn every collaboration into new relationships, clients, talent and shared knowledge.': 'EI.one connette aziende, persone e scuole per trasformare ogni collaborazione in nuove relazioni, clienti, talenti e conoscenza condivisa.',
   '"Your students\' experiences become your prestige."': '"Le esperienze dei tuoi studenti diventano il tuo prestigio."',
   'Company learning engine': 'Motore di apprendimento aziendale',
 })
 Object.assign(de, {
-  'Ecosystem Growth Sharing': 'Ökosystem mit gemeinsamem Wachstum',
+  'The Empowerment Infrastructure': 'Die Empowerment-Infrastruktur',
   'The infrastructure that turns every collaboration into new opportunities for growth.': 'Die Infrastruktur, die jede Zusammenarbeit in neue Wachstumschancen verwandelt.',
   'EI.one connects companies, people and schools to turn every collaboration into new relationships, clients, talent and shared knowledge.': 'EI.one verbindet Unternehmen, Menschen und Schulen, um jede Zusammenarbeit in neue Beziehungen, Kunden, Talente und geteiltes Wissen zu verwandeln.',
   '"Your students\' experiences become your prestige."': '"Die Erfahrungen Ihrer Studierenden werden zu Ihrem Prestige."',
   'Company learning engine': 'Lernmotor des Unternehmens',
 })
 Object.assign(fr, {
-  'Ecosystem Growth Sharing': 'Croissance partagée de l’écosystème',
+  'The Empowerment Infrastructure': 'L’infrastructure de l’empowerment',
   'The infrastructure that turns every collaboration into new opportunities for growth.': 'L’infrastructure qui transforme chaque collaboration en nouvelles opportunités de croissance.',
   'EI.one connects companies, people and schools to turn every collaboration into new relationships, clients, talent and shared knowledge.': 'EI.one connecte entreprises, personnes et écoles pour transformer chaque collaboration en nouvelles relations, clients, talents et savoir partagé.',
   '"Your students\' experiences become your prestige."': '"Les expériences de vos étudiants deviennent votre prestige."',
