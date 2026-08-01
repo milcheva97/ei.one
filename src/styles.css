@@ -493,13 +493,10 @@ h1 {
   overflow-wrap: break-word;
 }
 
-/* IT/DE/FR titles are longer than the English one (e.g. "L'infrastruttura
-   dell'empowerment", "Die Empowerment-Infrastruktur") and get too big / slide
-   under the login form at the default size. Shrink the homepage title in these
-   languages so it fits its column cleanly. */
-html[lang="de"] .hero .hero-title-main,
-html[lang="it"] .hero .hero-title-main,
-html[lang="fr"] .hero .hero-title-main {
+/* One consistent homepage-title size across ALL languages (the localized titles
+   are longer than English, and we want them all aligned). The `html` prefix
+   lifts specificity above the responsive overrides so it holds at every width. */
+html .hero .hero-title-main {
   font-size: clamp(40px, 4.4vw, 60px);
 }
 
