@@ -493,11 +493,13 @@ h1 {
   overflow-wrap: break-word;
 }
 
-/* German compounds (e.g. "Menschenzentriertes") are far longer than the EN/IT/FR
-   titles and would slide under the login form at the big default size. Shrink the
-   homepage title ONLY in German so the word stays whole in its column — no
-   hyphenation, no mid-word cuts. */
-html[lang="de"] .hero .hero-title-main {
+/* IT/DE/FR titles are longer than the English one (e.g. "L'infrastruttura
+   dell'empowerment", "Die Empowerment-Infrastruktur") and get too big / slide
+   under the login form at the default size. Shrink the homepage title in these
+   languages so it fits its column cleanly. */
+html[lang="de"] .hero .hero-title-main,
+html[lang="it"] .hero .hero-title-main,
+html[lang="fr"] .hero .hero-title-main {
   font-size: clamp(40px, 4.4vw, 60px);
 }
 
