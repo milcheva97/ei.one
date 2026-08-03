@@ -497,7 +497,7 @@ h1 {
    are longer than English, and we want them all aligned). The `html` prefix
    lifts specificity above the responsive overrides so it holds at every width. */
 html .hero .hero-title-main {
-  font-size: clamp(40px, 4.4vw, 60px);
+  font-size: clamp(44px, 4.84vw, 66px);
 }
 
 .hero-copy-lead {
