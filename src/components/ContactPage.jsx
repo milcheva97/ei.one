@@ -54,7 +54,7 @@ function ContactPage() {
                 <i className="fa-solid fa-map-location-dot" aria-hidden="true"></i>
                 <div>
                   <h3>Headquarters</h3>
-                  <p>Tödistrasse 56, 8810 Horgen, Switzerland</p>
+                  <p>Zugerstrasse 162, 8820 Wädenswil, Switzerland</p>
                 </div>
               </article>
               <article>

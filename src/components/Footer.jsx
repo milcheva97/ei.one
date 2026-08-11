@@ -30,7 +30,7 @@ function Footer() {
           </div>
           <div className="footer-contact">
             <h3>Contact</h3>
-            <p><strong>ei.one</strong><br />Tödistrasse 56<br />CH - 8810 Horgen</p>
+            <p><strong>ei.one</strong><br />Zugerstrasse 162<br />CH - 8820 Wädenswil</p>
             <p><strong>Tel:</strong> +41 44 822 90 00</p>
           </div>
         </div>
