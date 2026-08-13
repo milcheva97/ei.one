@@ -61,7 +61,7 @@ function ContactPage() {
                 <i className="fa-solid fa-envelope-open-text" aria-hidden="true"></i>
                 <div>
                   <h3>Email &amp; Phone</h3>
-                  <p><a href="mailto:info@ei.one">info@ei.one</a> <span>|</span> <a href="tel:+41448229000">+41 44 822 90 00</a></p>
+                  <p><a href="mailto:info@ei.one">info@ei.one</a> <span>|</span> <a href="tel:+41798814747">+41 79 881 47 47</a></p>
                 </div>
               </article>
               <article>

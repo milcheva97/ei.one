@@ -31,7 +31,7 @@ function Footer() {
           <div className="footer-contact">
             <h3>Contact</h3>
             <p><strong>ei.one</strong><br />Zugerstrasse 162<br />CH - 8820 Wädenswil</p>
-            <p><strong>Tel:</strong> +41 44 822 90 00</p>
+            <p><strong>Tel:</strong> +41 79 881 47 47</p>
           </div>
         </div>
 
