@@ -1,44 +1,16 @@
 import { useState } from 'react'
 import { useLanguage } from '../i18n.jsx'
 
-const navGroups = [
-  {
-    label: 'Education',
-    href: '/education',
-    links: [],
-  },
-  {
-    label: 'Experience',
-    href: '/en/experience-passport.php',
-    links: [['Marketplace', '/business-club']],
-  },
-  {
-    label: 'Entrepreneur',
-    href: '/entrepreneur',
-    links: [],
-  },
-  {
-    label: 'Enterprise',
-    href: '/economy',
-    links: [
-      ['Business Ecosystem', '/en/business-club.php'],
-      ['Become a partner', '/partner'],
-      ['Investor', '/investor'],
-    ],
-  },
-  {
-    label: 'About',
-    href: '/about',
-    links: [
-      ['Our Commitments', '/engagements'],
-      ['Sponsor', '/sponsor'],
-      ['Environment', '/environment'],
-      ['Projects', '/projects'],
-    ],
-  },
+const navItems = [
+  ['Enterprise', '/economy'],
+  ['Education', '/education'],
+  ['Marketplace', '/business-club'],
+  ['Environment', '/environment'],
+  ['Become a Partner', '/partner'],
+  ['About', '/about'],
 ]
 
-function Header({ loginHref = '/login', languagePage = 'index.php' }) {
+function Header({ loginHref = '/login', registerHref = '/register', languagePage = 'index.php' }) {
   const { language, setLanguage } = useLanguage()
   const [menuOpen, setMenuOpen] = useState(false)
 
@@ -73,28 +45,16 @@ function Header({ loginHref = '/login', languagePage = 'index.php' }) {
         </button>
         <div className="nav-menu">
           <div className="nav-links">
-            <a href="/en/index.php" onClick={closeMenu}>Home</a>
-            {navGroups.map((group) => (
-              group.links.length ? (
-                <div className="nav-item has-submenu" key={group.label}>
-                  <a href={group.href} onClick={closeMenu}>
-                    {group.label} <i className="fa-solid fa-chevron-down" aria-hidden="true"></i>
-                  </a>
-                  <div className="submenu">
-                    {group.links.map(([label, href]) => (
-                      <a href={href} key={label} onClick={closeMenu}>{label}</a>
-                    ))}
-                  </div>
-                </div>
-              ) : (
-                <a href={group.href} key={group.label} onClick={closeMenu}>{group.label}</a>
-              )
+            {navItems.map(([label, href]) => (
+              <a href={href} key={label} onClick={closeMenu}>{label}</a>
             ))}
           </div>
-          <a className="button secondary" href={loginHref} onClick={closeMenu}>Login</a>
+          <a className="nav-login" href={loginHref} onClick={closeMenu}>Log in</a>
+          <a className="button nav-signup" href={registerHref} onClick={closeMenu}>Sign up</a>
           <div className="lang has-submenu" aria-label="Language selector" data-no-translate>
             <button type="button">
-              {language.toUpperCase()} <i className="fa-solid fa-caret-down" aria-hidden="true"></i>
+              <i className="fa-solid fa-globe" aria-hidden="true"></i>
+              {language.toUpperCase()} <i className="fa-solid fa-chevron-down" aria-hidden="true"></i>
             </button>
             <div className="submenu lang-menu">
               <a href={`/de/${languagePage}`} onClick={(event) => handleLanguage(event, 'de')}>DE</a>

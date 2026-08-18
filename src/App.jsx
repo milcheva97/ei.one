@@ -95,33 +95,62 @@ function App() {
 <Header />
 
   <main>
-    <section className="hero">
-      <WebGLShader />
-      <div className="hero-inner">
-        <div>
-          <p className="eyebrow hero-eyebrow-main">Ecosystem Intelligence</p>
-          <h1 className="hero-title-main">Human-centered Ecosystem</h1>
-          <p className="hero-copy hero-copy-lead">The infrastructure that turns every collaboration into new opportunities for growth.</p>
-          <p className="hero-copy">EI.one connects companies, people and schools to turn every collaboration into new relationships, clients, talent and shared knowledge.</p>
-          <div className="actions">
-            <a className="button" href="/economy">I'm a company &rarr;</a>
-            <a className="button secondary" href="/experience-passport">I'm a person &rarr;</a>
-            <a className="button secondary" href="/education">I'm a school &rarr;</a>
-          </div>
+    <section className="hero home-ecosystem-hero" aria-labelledby="home-ecosystem-title">
+      <div className="home-hero-shell">
+        <div className="home-hero-head">
+          <h1 id="home-ecosystem-title">The Human Growth Ecosystem</h1>
+          <p className="home-hero-subtitle">Connecting people, businesses and education to create real value. <span>Together.</span></p>
+          <p className="home-hero-intelligence"><span></span><strong>Ecosystem Intelligence.</strong> At the heart of every connection.<span></span></p>
         </div>
-        <aside className="login-panel" id="login" aria-label="Login panel">
-          <h2>Login</h2>
-          <p>Enter the platform</p>
-          <label className="field-label" htmlFor="login-email">Email</label>
-          <input className="field" id="login-email" type="email" placeholder="you@email.com" />
-          <label className="field-label" htmlFor="login-password">Password</label>
-          <input className="field" id="login-password" type="password" placeholder="••••••••" />
-          <div className="login-options">
-            <a href="/forgot-password">Forgot password?</a>
-          </div>
-          <a className="button full" href="#">Log in &rarr;</a>
-          <p className="login-join">No account yet? <a className="text-link" href="/register">Join ei.one</a></p>
-        </aside>
+
+        <div className="home-hero-primary-grid">
+          <a className="home-hero-card home-enterprise-card" href="/economy">
+            <div className="home-card-copy">
+              <span className="home-card-icon" aria-hidden="true"><i className="fa-solid fa-city"></i></span>
+              <h2>Enterprise</h2>
+              <h3>Grow your business.</h3>
+              <span className="home-card-rule"></span>
+              <p>Find opportunities, access services and collaborate to grow your company.</p>
+              <span className="home-card-button">Enter Enterprise <i className="fa-solid fa-arrow-right" aria-hidden="true"></i></span>
+            </div>
+          </a>
+
+          <a className="home-hero-card home-education-card" href="/education">
+            <div className="home-card-copy">
+              <span className="home-card-icon" aria-hidden="true"><i className="fa-solid fa-graduation-cap"></i></span>
+              <h2>Education</h2>
+              <h3>Learn. Grow. Achieve.</h3>
+              <span className="home-card-rule"></span>
+              <p>Access courses, real experiences and learning paths with companies and schools.</p>
+              <span className="home-card-button">Enter Education <i className="fa-solid fa-arrow-right" aria-hidden="true"></i></span>
+            </div>
+          </a>
+        </div>
+
+        <div className="home-hero-linkbar" aria-label="Ecosystem entry points">
+          <a href="/experience-passport">
+            <span className="home-linkbar-icon"><i className="fa-regular fa-user" aria-hidden="true"></i></span>
+            <span><strong>Experience Passport</strong><small>Your profile. Your experiences. Your opportunities.</small></span>
+          </a>
+          <a href="/business-club">
+            <span className="home-linkbar-icon blue"><i className="fa-solid fa-bag-shopping" aria-hidden="true"></i></span>
+            <span><strong>Marketplace</strong><small>Discover and offer services, products and experiences.</small></span>
+          </a>
+          <a href="/partner">
+            <span className="home-linkbar-icon"><i className="fa-regular fa-handshake" aria-hidden="true"></i></span>
+            <span><strong>Ecosystem Partners</strong><small>Collaborate with selected partners and generate impact.</small></span>
+          </a>
+        </div>
+
+        <div className="home-collaboration-strip" aria-label="Collaboration logos">
+          <span>In collaboration with</span>
+          <img className="supsi-logo"src="/images/supsi-logo-black.svg" alt="SUPSI"/>
+          <img className="fachhochschule-logo"src="/images/fachhochschule.svg" alt="fachhochschule"/>
+          <img className="esg-center"src="/images/esg-center.png" alt="esg center of excellence"/>
+          <strong>Innosuisse</strong>
+          <img src="/images/sva-zuerich.png" alt="SVA Zürich" />
+          <img src="/images/innovation-zuerich.webp" alt="Innovation Zürich" />
+        </div>
       </div>
     </section>
     <section className="protagonists" aria-labelledby="protagonists-title">
