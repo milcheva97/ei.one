@@ -16,8 +16,7 @@
 
 /* Home hero redesign */
 .home-ecosystem-hero {
-  height: calc(100svh - 78px);
-  min-height: 820px;
+  min-height: calc(100svh - 78px);
   display: flex;
   padding: clamp(18px, 2.4vh, 40px) 0 clamp(16px, 2vh, 28px);
   overflow: hidden;
@@ -36,7 +35,6 @@
   position: relative;
   z-index: 1;
   width: min(1500px, calc(100% - 72px));
-  height: 100%;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -56,7 +54,6 @@
   line-height: 1;
   font-weight: 950;
   letter-spacing: 0;
-  white-space: nowrap;
 }
 
 .home-hero-subtitle {
@@ -331,7 +328,7 @@
 .home-collaboration-strip {
   min-height: 72px;
   display: grid;
-  grid-template-columns: 1.25fr repeat(6, minmax(110px, 1fr));
+  grid-template-columns: 1.25fr minmax(110px, 1fr) minmax(110px, 1.4fr) repeat(4, minmax(110px, 1fr));
   align-items: center;
   gap: 0;
   flex: none;
@@ -359,7 +356,7 @@
 }
 
 .home-collaboration-strip strong {
-  font-size: clamp(22px, 2.1vw, 34px);
+  font-size: clamp(18px, 1.7vw, 27px);
   line-height: 1;
   font-weight: 950;
 }
@@ -376,7 +373,14 @@
   max-width: 150px;
   max-height: 42px;
   object-fit: contain;
-  filter: grayscale(1) contrast(1.15);
+  /* max-width stops them filling their column, so centre them inside it */
+  justify-self: center;
+}
+
+/* wide, short mark: lift the width cap so the shared 42px height cap binds
+   instead, matching the visual weight of the logos either side of it */
+.home-collaboration-strip .fachhochschule-logo {
+  max-width: 200px;
 }
 
 @media (max-width: 1100px) {
@@ -1017,8 +1021,7 @@ h1 {
 }
 
 .hero.home-ecosystem-hero {
-  height: calc(100svh - 78px);
-  min-height: 820px;
+  min-height: calc(100svh - 78px);
   display: flex;
   padding: clamp(18px, 2.4vh, 40px) 0 clamp(16px, 2vh, 28px);
   background: #ffffff;
@@ -1057,10 +1060,21 @@ h1 {
   font-size: clamp(48px, 4.35vw, 70px);
 }
 
-/* Single-line headline only where it actually fits */
-@media (min-width: 1101px) {
-  .hero.home-ecosystem-hero h1 {
-    white-space: nowrap;
+/* The localized titles are longer than the English one, so they would wrap to a
+   second line and push the hero past 100vh. Each language gets the largest size
+   that still fits on one line. Selector carries the extra class deliberately so
+   it outranks the rule above regardless of source order. */
+@media (min-width: 721px) {
+  :lang(de) .hero.home-ecosystem-hero h1 {
+    font-size: clamp(32px, 3.15vw, 49px);
+  }
+
+  :lang(fr) .hero.home-ecosystem-hero h1 {
+    font-size: clamp(32px, 3.5vw, 54px);
+  }
+
+  :lang(it) .hero.home-ecosystem-hero h1 {
+    font-size: clamp(32px, 4vw, 62px);
   }
 }
 

@@ -38,6 +38,25 @@ const de = {
   'Forgot your password?': 'Passwort vergessen?',
   'Log in': 'Einloggen',
   'Sign up': 'Registrieren',
+
+  // Home hero
+  'The Human Growth Ecosystem': 'Das Ökosystem für menschliches Wachstum',
+  'Connecting people, businesses and education to create real value.': 'Wir verbinden Menschen, Unternehmen und Bildung, um echten Wert zu schaffen.',
+  'Together.': 'Gemeinsam.',
+  'Ecosystem Intelligence.': 'Ecosystem Intelligence.',
+  'At the heart of every connection.': 'Im Herzen jeder Verbindung.',
+  'Grow your business.': 'Lassen Sie Ihr Unternehmen wachsen.',
+  'Find opportunities, access services and collaborate to grow your company.': 'Finden Sie Chancen, nutzen Sie Services und arbeiten Sie zusammen, um Ihr Unternehmen wachsen zu lassen.',
+  'Enter Enterprise': 'Zu Unternehmen',
+  'Learn. Grow. Achieve.': 'Lernen. Wachsen. Erreichen.',
+  'Access courses, real experiences and learning paths with companies and schools.': 'Zugang zu Kursen, echten Erfahrungen und Lernwegen mit Unternehmen und Schulen.',
+  'Enter Education': 'Zu Bildung',
+  'Experience Passport': 'Erfahrungspass',
+  'Your profile. Your experiences. Your opportunities.': 'Ihr Profil. Ihre Erfahrungen. Ihre Chancen.',
+  'Discover and offer services, products and experiences.': 'Entdecken und bieten Sie Services, Produkte und Erfahrungen an.',
+  'Ecosystem Partners': 'Ökosystem-Partner',
+  'Collaborate with selected partners and generate impact.': 'Arbeiten Sie mit ausgewählten Partnern zusammen und erzielen Sie Wirkung.',
+  'In collaboration with': 'In Zusammenarbeit mit',
   'Log in →': 'Einloggen →',
   'No account yet?': 'Noch kein Konto?',
   'Join ei.one': 'ei.one beitreten',
@@ -899,6 +918,25 @@ const it = {
   'Forgot your password?': 'Password dimenticata?',
   'Log in': 'Accedi',
   'Sign up': 'Registrati',
+
+  // Home hero
+  'The Human Growth Ecosystem': 'L’ecosistema della crescita umana',
+  'Connecting people, businesses and education to create real value.': 'Colleghiamo persone, imprese e formazione per creare valore reale.',
+  'Together.': 'Insieme.',
+  'Ecosystem Intelligence.': 'Ecosystem Intelligence.',
+  'At the heart of every connection.': 'Nel cuore di ogni connessione.',
+  'Grow your business.': 'Fai crescere la tua impresa.',
+  'Find opportunities, access services and collaborate to grow your company.': 'Trova opportunità, accedi ai servizi e collabora per far crescere la tua azienda.',
+  'Enter Enterprise': 'Entra in Impresa',
+  'Learn. Grow. Achieve.': 'Impara. Cresci. Realizza.',
+  'Access courses, real experiences and learning paths with companies and schools.': 'Accedi a corsi, esperienze reali e percorsi di apprendimento con imprese e scuole.',
+  'Enter Education': 'Entra in Educazione',
+  'Experience Passport': 'Passaporto delle Esperienze',
+  'Your profile. Your experiences. Your opportunities.': 'Il tuo profilo. Le tue esperienze. Le tue opportunità.',
+  'Discover and offer services, products and experiences.': 'Scopri e offri servizi, prodotti ed esperienze.',
+  'Ecosystem Partners': 'Partner dell’ecosistema',
+  'Collaborate with selected partners and generate impact.': 'Collabora con partner selezionati e genera impatto.',
+  'In collaboration with': 'In collaborazione con',
   'Log in â†’': 'Accedi â†’',
   'No account yet?': 'Non hai ancora un account?',
   'Join ei.one': 'Unisciti a ei.one',
@@ -1756,6 +1794,25 @@ const fr = {
   'Forgot your password?': 'Mot de passe oublié ?',
   'Log in': 'Connexion',
   'Sign up': 'S’inscrire',
+
+  // Home hero
+  'The Human Growth Ecosystem': 'L’écosystème de la croissance humaine',
+  'Connecting people, businesses and education to create real value.': 'Nous relions les personnes, les entreprises et la formation pour créer de la valeur réelle.',
+  'Together.': 'Ensemble.',
+  'Ecosystem Intelligence.': 'Ecosystem Intelligence.',
+  'At the heart of every connection.': 'Au cœur de chaque connexion.',
+  'Grow your business.': 'Développez votre entreprise.',
+  'Find opportunities, access services and collaborate to grow your company.': 'Trouvez des opportunités, accédez à des services et collaborez pour développer votre entreprise.',
+  'Enter Enterprise': 'Accéder à Entreprise',
+  'Learn. Grow. Achieve.': 'Apprendre. Grandir. Réussir.',
+  'Access courses, real experiences and learning paths with companies and schools.': 'Accédez à des cours, des expériences réelles et des parcours d’apprentissage avec des entreprises et des écoles.',
+  'Enter Education': 'Accéder à Formation',
+  'Experience Passport': 'Passeport d’Expériences',
+  'Your profile. Your experiences. Your opportunities.': 'Votre profil. Vos expériences. Vos opportunités.',
+  'Discover and offer services, products and experiences.': 'Découvrez et proposez des services, des produits et des expériences.',
+  'Ecosystem Partners': 'Partenaires de l’écosystème',
+  'Collaborate with selected partners and generate impact.': 'Collaborez avec des partenaires sélectionnés et générez de l’impact.',
+  'In collaboration with': 'En collaboration avec',
   'Log in →': 'Connexion →',
   'No account yet?': 'Pas encore de compte ?',
   'Join ei.one': 'Rejoindre ei.one',
@@ -2692,6 +2749,7 @@ export function LanguageProvider({ children }) {
   }
 
   useEffect(() => {
+    document.documentElement.lang = language
     let frame = requestAnimationFrame(() => translateDocument(language))
 
     const scheduleTranslate = () => {
