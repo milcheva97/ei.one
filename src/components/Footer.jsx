@@ -23,7 +23,7 @@ function Footer() {
           <div>
             <h3>Sections</h3>
             <ul>
-              <li><a href="/business-club">Marketplace</a></li>
+              <li><a href="/ecosystem">Ecosystem</a></li>
               <li><a href="/environment">Environment</a></li>
               <li><a href="/projects">Projects</a></li>
               <li><a href="/engagements">Our Commitments</a></li>

@@ -146,7 +146,7 @@ function BrandAuroraShowcase({
         </h2>
         <p>{subtitle}</p>
         <div className="brand-showcase-actions">
-          <a href="/business-club">For Companies</a>
+          <a href="/ecosystem">For Companies</a>
           <a href="/talent">For Talents</a>
         </div>
       </div>

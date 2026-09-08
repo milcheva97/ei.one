@@ -71,6 +71,38 @@ function AboutPage() {
           </div>
         </section>
 
+        <section className="about-why">
+          <div className="wrap">
+            <div className="section-head">
+              <h2>Why EI.one Exists.</h2>
+              <p>Ecosystem Intelligence. The vision remains based on the three original pillars.</p>
+            </div>
+            <div className="about-pillars">
+              <article className="about-pillar economy">
+                <span className="about-pillar-icon" aria-hidden="true"><i className="fa-solid fa-arrow-trend-up"></i></span>
+                <h3>Economy</h3>
+                <p>Create economic opportunities.</p>
+              </article>
+              <article className="about-pillar education">
+                <span className="about-pillar-icon" aria-hidden="true"><i className="fa-solid fa-graduation-cap"></i></span>
+                <h3>Education</h3>
+                <p>Turn economic activity into human development.</p>
+              </article>
+              <article className="about-pillar environment">
+                <span className="about-pillar-icon" aria-hidden="true"><i className="fa-solid fa-leaf"></i></span>
+                <h3>Environment</h3>
+                <p>Support responsible and sustainable growth.</p>
+              </article>
+            </div>
+            <p className="about-why-note">Economy + Education + Environment don't disappear — they become the <strong>philosophy and impact</strong> of EI.one, not the initial explanation of the product.</p>
+            <div className="about-vision">
+              <span className="about-vision-label">Vision</span>
+              <p className="about-vision-quote">What if every economic transaction could also create human growth?</p>
+              <p className="about-vision-attrib">This is the question that gave rise to EI.one.</p>
+            </div>
+          </div>
+        </section>
+
         <section className="about-founder">
           <div className="wrap about-founder-wrap">
             <div className="about-founder-card">
@@ -398,7 +430,7 @@ function AboutPage() {
               <h2>Ready to enter?</h2>
               <p>Choose the right door for you: the business ecosystem, or the talent platform.</p>
               <div className="about-final-actions">
-                <a href="/business-club">For Businesses</a>
+                <a href="/ecosystem">For Businesses</a>
                 <a href="/talent">For Talents</a>
                 <a href="/contact">Contact us</a>
               </div>

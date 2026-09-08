@@ -56,6 +56,146 @@ function EducationPage() {
           </div>
         </section>
 
+        <section className="info-section bizedu-bridge">
+          <div className="wrap">
+            <div className="section-head">
+              <h2>Where Business Meets Education.</h2>
+              <p>Now we connect corporate Academies to the education system.</p>
+            </div>
+            <div className="bizedu-bridge-grid">
+              <div className="bizedu-bridge-card companies">
+                <h3>Companies</h3>
+                <ul>
+                  <li>Real needs</li>
+                  <li>Real projects</li>
+                  <li>Know-how</li>
+                  <li>Jobs</li>
+                  <li>Business cases</li>
+                </ul>
+              </div>
+              <div className="bizedu-bridge-connector">
+                <span className="bizedu-bridge-hub" aria-hidden="true"><i className="fa-solid fa-arrows-left-right"></i></span>
+                <strong>EI.one connects</strong>
+              </div>
+              <div className="bizedu-bridge-card education">
+                <h3>Education</h3>
+                <ul>
+                  <li>Schools</li>
+                  <li>Universities</li>
+                  <li>Training providers</li>
+                  <li>Teachers</li>
+                  <li>Students</li>
+                  <li>Researchers</li>
+                </ul>
+              </div>
+            </div>
+            <p className="bizedu-bridge-note">Companies bring real problems and experiences. The education world brings knowledge, research and talent. <strong>EI.one connects the two.</strong></p>
+          </div>
+        </section>
+
+        <section className="info-section academy-company">
+          <div className="wrap">
+            <div className="section-head">
+              <p className="eyebrow">Every company can become an Academy</p>
+              <h2>Every Company Can Become an Academy.</h2>
+              <p>A share of the value generated in the Ecosystem returns to those who create it — as skills, training and career growth.</p>
+            </div>
+            <div className="acompany-panel">
+              <div className="acompany-head">
+                <span className="acompany-from">ABC Company</span>
+                <i className="fa-solid fa-arrow-right" aria-hidden="true"></i>
+                <span className="acompany-to">ABC Academy</span>
+              </div>
+              <ul className="acompany-list">
+                <li><i className="fa-solid fa-check" aria-hidden="true"></i>Employees</li>
+                <li><i className="fa-solid fa-check" aria-hidden="true"></i>Courses</li>
+                <li><i className="fa-solid fa-check" aria-hidden="true"></i>Training</li>
+                <li><i className="fa-solid fa-check" aria-hidden="true"></i>Experiences</li>
+                <li><i className="fa-solid fa-check" aria-hidden="true"></i>Mentoring</li>
+                <li><i className="fa-solid fa-check" aria-hidden="true"></i>Knowledge</li>
+                <li><i className="fa-solid fa-check" aria-hidden="true"></i>Real cases</li>
+                <li><i className="fa-solid fa-check" aria-hidden="true"></i>Career development</li>
+              </ul>
+            </div>
+            <p className="acompany-note">The Academy allows companies to transform their expertise into structured training.</p>
+          </div>
+        </section>
+
+        <section className="info-section academy-cycle">
+          <div className="wrap">
+            <div className="section-head">
+              <p className="eyebrow">From transaction to education</p>
+              <h2>From transaction to education.</h2>
+              <p>Every transaction feeds a single loop — value created in the Ecosystem returns as learning, skills and growth.</p>
+            </div>
+            <div className="acycle-rail">
+              <div className="acycle-stop">
+                <span className="acycle-dot" aria-hidden="true"><i className="fa-solid fa-right-left"></i></span>
+                <strong>Transactions</strong>
+              </div>
+              <div className="acycle-stop">
+                <span className="acycle-dot" aria-hidden="true"><i className="fa-solid fa-coins"></i></span>
+                <strong>Value generated</strong>
+              </div>
+              <div className="acycle-stop is-key">
+                <span className="acycle-dot" aria-hidden="true"><i className="fa-solid fa-graduation-cap"></i></span>
+                <strong>Academy</strong>
+              </div>
+              <div className="acycle-stop">
+                <span className="acycle-dot" aria-hidden="true"><i className="fa-solid fa-screwdriver-wrench"></i></span>
+                <strong>Skills</strong>
+              </div>
+              <div className="acycle-stop">
+                <span className="acycle-dot" aria-hidden="true"><i className="fa-solid fa-users"></i></span>
+                <strong>People</strong>
+              </div>
+              <div className="acycle-stop">
+                <span className="acycle-dot" aria-hidden="true"><i className="fa-solid fa-chart-line"></i></span>
+                <strong>Company growth</strong>
+              </div>
+            </div>
+            <p className="academy-cycle-note">The Academy is not a separate business from the Ecosystem — it is part of the cycle.<span>This connection is crucial.</span></p>
+          </div>
+        </section>
+
+        <section className="info-section realcase">
+          <div className="wrap">
+            <div className="section-head">
+              <p className="eyebrow">Real business cases</p>
+              <h2>Real Business Cases.</h2>
+              <p>A company says: “We have this problem.” A school or university can transform it into real experience.</p>
+            </div>
+            <ol className="realcase-steps">
+              <li className="realcase-step">
+                <span className="realcase-num">1</span>
+                <h4>Real case</h4>
+                <p>A real problem, straight from a company.</p>
+              </li>
+              <li className="realcase-step">
+                <span className="realcase-num">2</span>
+                <h4>Student project</h4>
+                <p>Turned into hands-on work with a school or university.</p>
+              </li>
+              <li className="realcase-step">
+                <span className="realcase-num">3</span>
+                <h4>Solution</h4>
+                <p>Students build a real answer to the problem.</p>
+              </li>
+              <li className="realcase-step">
+                <span className="realcase-num">4</span>
+                <h4>Experience</h4>
+                <p>Verified, on-record experience in the Identity.</p>
+              </li>
+              <li className="realcase-step outcome">
+                <span className="realcase-num">5</span>
+                <h4>Potential talent</h4>
+                <p>A future employee the company already knows.</p>
+              </li>
+            </ol>
+            <p className="realcase-note">Training isn't just theoretical.<span>It's connected to the real economy.</span></p>
+          </div>
+        </section>
+
         <section className="human-center">
           <div className="wrap human-center-grid">
             <div className="human-center-copy">

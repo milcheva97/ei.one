@@ -81,14 +81,14 @@ function BusinessClubPage() {
   const [activeModule, setActiveModule] = useState(null)
 
   useEffect(() => {
-    const title = 'Business Ecosystem - EI.one'
-    const description = "EI.one's Business Units work together to transform companies into engines of learning, innovation and growth."
+    const title = 'Ecosystem - EI.one'
+    const description = "EI.one's Ecosystem Providers work together to transform companies into engines of learning, innovation and growth."
     document.title = title
     setMeta('description', description)
     setMeta('keywords', 'EI.one business ecosystem, business club, business units, ecosystem growth, innovation')
     setMeta('og:title', title, 'property')
     setMeta('og:description', description, 'property')
-    setMeta('og:url', 'https://ei.one/en/business-club', 'property')
+    setMeta('og:url', 'https://ei.one/en/ecosystem', 'property')
     setMeta('twitter:title', title)
     setMeta('twitter:description', description)
 
@@ -98,20 +98,20 @@ function BusinessClubPage() {
       canonical.setAttribute('rel', 'canonical')
       document.head.appendChild(canonical)
     }
-    canonical.setAttribute('href', 'https://ei.one/en/business-club')
+    canonical.setAttribute('href', 'https://ei.one/en/ecosystem')
   }, [])
 
   return (
     <>
-      <Header loginHref="/login" languagePage="business-club.php" />
+      <Header loginHref="/login" languagePage="ecosystem.php" />
 
       <main className="business-club-page">
         <section className="business-club-hero">
           <div className="wrap business-club-hero-grid">
             <div className="business-club-copy">
-              <h1>Business Ecosystem</h1>
+              <h1>Ecosystem</h1>
               <p>
-                The ecosystem's Business Units work together to transform companies into engines of learning, innovation and growth.
+                The ecosystem's Ecosystem Providers work together to transform companies into engines of learning, innovation and growth.
                 Enter through one module, activate new commercial relationships, attract talent, develop skills, and amplify your visibility.
               </p>
             </div>
@@ -119,7 +119,7 @@ function BusinessClubPage() {
             <div className="business-club-visual" aria-label="Business ecosystem modules">
               <div className="business-club-core">
                 <i className="fa-solid fa-network-wired" aria-hidden="true"></i>
-                <strong>Business Units</strong>
+                <strong>Ecosystem Providers</strong>
               </div>
               <span className="business-club-node sales">Sales</span>
               <span className="business-club-node talent">Talent</span>
@@ -129,10 +129,100 @@ function BusinessClubPage() {
           </div>
         </section>
 
+        <section className="ecosystem-actions">
+          <div className="wrap">
+            <div className="ecosystem-actions-head">
+              <p className="business-club-kicker">The Ecosystem</p>
+              <h2>Buy. Sell. Connect. Earn. Grow.</h2>
+              <p>The Ecosystem is the digital and human place where companies and people can:</p>
+            </div>
+            <div className="ecosystem-actions-grid">
+              <article className="ecosystem-action">
+                <span className="ecosystem-action-icon" aria-hidden="true"><i className="fa-solid fa-bag-shopping"></i></span>
+                <h3>Buy</h3>
+                <p>Purchase products and services.</p>
+              </article>
+              <article className="ecosystem-action">
+                <span className="ecosystem-action-icon" aria-hidden="true"><i className="fa-solid fa-arrow-trend-up"></i></span>
+                <h3>Sell</h3>
+                <p>Sell products, services, and expertise.</p>
+              </article>
+              <article className="ecosystem-action">
+                <span className="ecosystem-action-icon" aria-hidden="true"><i className="fa-solid fa-people-arrows"></i></span>
+                <h3>Connect</h3>
+                <p>Find customers, suppliers, partners, and experts.</p>
+              </article>
+              <article className="ecosystem-action">
+                <span className="ecosystem-action-icon" aria-hidden="true"><i className="fa-solid fa-coins"></i></span>
+                <h3>Earn</h3>
+                <p>Generate new economic opportunities.</p>
+              </article>
+              <article className="ecosystem-action">
+                <span className="ecosystem-action-icon" aria-hidden="true"><i className="fa-solid fa-seedling"></i></span>
+                <h3>Grow</h3>
+                <p>Enter a system that transforms part of economic activity into development.</p>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section className="ecosystem-categories">
+          <div className="wrap">
+            <div className="ecosystem-categories-head">
+              <p className="business-club-kicker">Products &amp; Services</p>
+              <h2>Categories across the Ecosystem.</h2>
+              <p>Within the Ecosystem, you can have categories like:</p>
+            </div>
+            <div className="ecosystem-categories-grid">
+              <div className="ecosystem-category"><i className="fa-solid fa-bullhorn" aria-hidden="true"></i><strong>Sales &amp; Marketing</strong></div>
+              <div className="ecosystem-category"><i className="fa-solid fa-bolt" aria-hidden="true"></i><strong>Energy</strong></div>
+              <div className="ecosystem-category"><i className="fa-solid fa-building" aria-hidden="true"></i><strong>Real Estate</strong></div>
+              <div className="ecosystem-category"><i className="fa-solid fa-user-group" aria-hidden="true"></i><strong>HR &amp; Recruiting</strong></div>
+              <div className="ecosystem-category"><i className="fa-solid fa-microchip" aria-hidden="true"></i><strong>IT &amp; AI</strong></div>
+              <div className="ecosystem-category"><i className="fa-solid fa-chart-pie" aria-hidden="true"></i><strong>Finance</strong></div>
+              <div className="ecosystem-category"><i className="fa-solid fa-briefcase" aria-hidden="true"></i><strong>Business Services</strong></div>
+              <div className="ecosystem-category"><i className="fa-solid fa-lightbulb" aria-hidden="true"></i><strong>Consulting</strong></div>
+            </div>
+          </div>
+        </section>
+
+        <section className="ecosystem-humandigital">
+          <div className="wrap">
+            <div className="ecosystem-categories-head">
+              <p className="business-club-kicker">Digital + Human</p>
+              <h2>Technology creates opportunities.<br />People create relationships.</h2>
+            </div>
+            <div className="hd-grid">
+              <div className="hd-panel digital">
+                <span className="hd-tag"><i className="fa-solid fa-microchip" aria-hidden="true"></i>Digital</span>
+                <ul>
+                  <li><i className="fa-solid fa-check" aria-hidden="true"></i>AI</li>
+                  <li><i className="fa-solid fa-check" aria-hidden="true"></i>Platform</li>
+                  <li><i className="fa-solid fa-check" aria-hidden="true"></i>Data</li>
+                  <li><i className="fa-solid fa-check" aria-hidden="true"></i>Automation</li>
+                  <li><i className="fa-solid fa-check" aria-hidden="true"></i>Online Transactions</li>
+                </ul>
+              </div>
+              <span className="hd-plus" aria-hidden="true">+</span>
+              <div className="hd-panel human">
+                <span className="hd-tag"><i className="fa-solid fa-people-group" aria-hidden="true"></i>Human</span>
+                <ul>
+                  <li><i className="fa-solid fa-check" aria-hidden="true"></i>Ecosystem Partners</li>
+                  <li><i className="fa-solid fa-check" aria-hidden="true"></i>Local Relationships</li>
+                  <li><i className="fa-solid fa-check" aria-hidden="true"></i>Experts</li>
+                  <li><i className="fa-solid fa-check" aria-hidden="true"></i>Companies</li>
+                  <li><i className="fa-solid fa-check" aria-hidden="true"></i>Schools</li>
+                </ul>
+              </div>
+            </div>
+            <p className="hd-note">This makes EI.one a hybrid <strong>Human + AI</strong> ecosystem.</p>
+          </div>
+        </section>
+
         <section className="business-modules" aria-labelledby="business-modules-title">
           <div className="wrap">
             <div className="business-modules-head">
-              <p className="business-club-kicker">Business Units</p>
+              <p className="business-club-kicker">Ecosystem Providers</p>
               <h2 id="business-modules-title">Enter through one module. Activate the whole ecosystem.</h2>
               <p>Each unit has its own focus, but they are designed to work together as one coordinated growth system.</p>
             </div>
@@ -165,7 +255,7 @@ function BusinessClubPage() {
             <div className="modular-model-head">
               <h2 id="modular-model-title">The modular model</h2>
               <p>
-                Business Units cover the strategic areas of a modern enterprise, connected so every module can support the others.
+                Ecosystem Providers cover the strategic areas of a modern enterprise, connected so every module can support the others.
               </p>
             </div>
 
@@ -211,7 +301,7 @@ function BusinessClubPage() {
               <p className="business-club-kicker">Ecosystem advantage</p>
               <h2 id="one-system-title">One system, not separate services</h2>
               <p>
-                At ei.one, Business Units aren't "isolated providers". They're part of a single integrated and coordinated system. That's what makes the ecosystem really work.
+                At ei.one, Ecosystem Providers aren't isolated. They're part of a single integrated and coordinated system. That's what makes the ecosystem really work.
               </p>
             </div>
 
@@ -349,10 +439,62 @@ function BusinessClubPage() {
           </div>
         </section>
 
+        <section className="ecosystem-team" aria-labelledby="ecosystem-team-title">
+          <div className="wrap">
+            <div className="ecosystem-team-head">
+              <p className="business-club-kicker">The Team</p>
+              <h2 id="ecosystem-team-title">The people behind the Ecosystem.</h2>
+              <p>A multidisciplinary team building ei.one across business, education and technology.</p>
+            </div>
+            <div className="ecosystem-team-grid">
+              <article className="ecosystem-member">
+                <div className="ecosystem-member-photo"><img src="/images/team/sven-von-allmen.jpg" alt="Sven Von Allmen" loading="lazy" /></div>
+                <h3>Sven Von Allmen</h3>
+                <p>CFO</p>
+              </article>
+              <article className="ecosystem-member">
+                <div className="ecosystem-member-photo"><img src="/images/team/claudio-di-dio.jpg" alt="Claudio Di Dio" loading="lazy" /></div>
+                <h3>Claudio Di Dio</h3>
+                <p>Project Manager</p>
+              </article>
+              <article className="ecosystem-member">
+                <div className="ecosystem-member-photo"><img src="/images/team/robert-gridjac.jpg" alt="Robert Gridjac" loading="lazy" /></div>
+                <h3>Robert Gridjac</h3>
+                <p>IT Manager</p>
+              </article>
+              <article className="ecosystem-member">
+                <div className="ecosystem-member-photo"><img src="/images/team/memnune-karaguven.jpg" alt="Memnune Karagüven" loading="lazy" /></div>
+                <h3>Memnune Karagüven</h3>
+                <p>Accountant / HR Specialist</p>
+              </article>
+              <article className="ecosystem-member">
+                <div className="ecosystem-member-photo"><img src="/images/team/victor-schiopu.jpg" alt="Victor Schiopu" loading="lazy" /></div>
+                <h3>Victor Schiopu</h3>
+                <p>Executive Director</p>
+              </article>
+              <article className="ecosystem-member">
+                <div className="ecosystem-member-photo"><img src="/images/team/giulia-cacciavillani.jpg" alt="Giulia Cacciavillani" loading="lazy" /></div>
+                <h3>Giulia Cacciavillani</h3>
+                <p>Social Media Marketing</p>
+              </article>
+              <article className="ecosystem-member">
+                <div className="ecosystem-member-photo"><img src="/images/team/andrei-schiopu.jpg" alt="Andrei Schiopu" loading="lazy" /></div>
+                <h3>Andrei Schiopu</h3>
+                <p>Business Development</p>
+              </article>
+              <article className="ecosystem-member">
+                <div className="ecosystem-member-photo"><img src="/images/team/massimiliano-benzoni.jpg" alt="Massimiliano Benzoni" loading="lazy" /></div>
+                <h3>Massimiliano Benzoni</h3>
+                <p>Business Administration</p>
+              </article>
+            </div>
+          </div>
+        </section>
+
         <section className="business-club-cta" aria-labelledby="business-club-cta-title">
           <div className="wrap business-club-cta-inner">
             <h2 id="business-club-cta-title">Want to activate the ecosystem for your business?</h2>
-            <p>Discover how to integrate the Business Units into your growth strategy. Enter through one module, benefit from all.</p>
+            <p>Discover how to integrate the Ecosystem Providers into your growth strategy. Enter through one module, benefit from all.</p>
             <div className="business-club-cta-actions">
               <a className="button secondary" href="/partner">Become a Partner</a>
               <a className="button" href="/contact">Contact Us</a>

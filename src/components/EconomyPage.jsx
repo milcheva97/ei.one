@@ -46,7 +46,7 @@ function EconomyPage() {
               <h2>Turn experience into business growth.</h2>
               <p>Internships, project work and mentoring become a channel of verified talent, trusted partnerships and a qualified commercial network. Your experiences attract the best. The best grow your business.</p>
               <div className="economy-hero-actions">
-                <a className="button" href="/en/business-club.php">Enter Business Ecosystem</a>
+                <a className="button" href="/ecosystem">Enter Business Ecosystem</a>
                 <a className="button secondary" href="/en/partner.php">Become a Partner</a>
               </div>
             </div>

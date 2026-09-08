@@ -68,6 +68,69 @@ function PartnerPage() {
           </div>
         </section>
 
+        <section className="partner-grow">
+          <div className="wrap">
+            <div className="section-head">
+              <p className="eyebrow">Grow the Ecosystem</p>
+              <h2>Grow the Ecosystem.</h2>
+              <p>How EI.one grows and distributes itself across the country — through two main roles.</p>
+            </div>
+            <div className="partner-role-grid">
+              <article className="partner-role-card connector">
+                <span className="partner-role-icon" aria-hidden="true"><i className="fa-solid fa-people-arrows"></i></span>
+                <h3>Ecosystem Connector</h3>
+                <p className="partner-role-sub">Builds relationships.</p>
+                <ul className="partner-role-list">
+                  <li><i className="fa-solid fa-check" aria-hidden="true"></i>Brings businesses</li>
+                  <li><i className="fa-solid fa-check" aria-hidden="true"></i>Creates relationships</li>
+                  <li><i className="fa-solid fa-check" aria-hidden="true"></i>Develops the territory</li>
+                  <li><i className="fa-solid fa-check" aria-hidden="true"></i>Generates opportunities</li>
+                  <li><i className="fa-solid fa-check" aria-hidden="true"></i>Facilitates transactions</li>
+                </ul>
+                <p className="partner-role-asset"><i className="fa-solid fa-diagram-project" aria-hidden="true"></i> Its main asset is the network.</p>
+              </article>
+              <article className="partner-role-card expert">
+                <span className="partner-role-icon" aria-hidden="true"><i className="fa-solid fa-lightbulb"></i></span>
+                <h3>Ecosystem Expert</h3>
+                <p className="partner-role-sub">Brings expertise.</p>
+                <ul className="partner-role-list">
+                  <li><i className="fa-solid fa-check" aria-hidden="true"></i>Brings skills</li>
+                  <li><i className="fa-solid fa-check" aria-hidden="true"></i>Offers services</li>
+                  <li><i className="fa-solid fa-check" aria-hidden="true"></i>Offers products</li>
+                  <li><i className="fa-solid fa-check" aria-hidden="true"></i>Participates in projects</li>
+                  <li><i className="fa-solid fa-check" aria-hidden="true"></i>Can contribute to training</li>
+                </ul>
+                <p className="partner-role-asset"><i className="fa-solid fa-brain" aria-hidden="true"></i> Its main capital is expertise.</p>
+              </article>
+            </div>
+
+            <div className="partner-formula-wrap">
+              <p className="partner-formula-label">Connector + Expert — the formula is very simple</p>
+              <div className="partner-formula">
+                <div className="partner-formula-term">
+                  <span>Connector</span>
+                  <strong>Relationships</strong>
+                </div>
+                <span className="partner-formula-op">+</span>
+                <div className="partner-formula-term">
+                  <span>Expert</span>
+                  <strong>Knowledge</strong>
+                </div>
+                <span className="partner-formula-op">+</span>
+                <div className="partner-formula-term">
+                  <span>EI.one</span>
+                  <strong>Infrastructure</strong>
+                </div>
+                <span className="partner-formula-op">=</span>
+                <div className="partner-formula-result">
+                  <strong>Ecosystem Growth</strong>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </section>
+
         <section className="partner-models" aria-labelledby="partner-models-title">
           <div className="wrap">
             <div className="partner-models-head">

@@ -1,5 +1,7 @@
 ﻿import { WebGLShader } from './components/WebGLShader.jsx'
 import EducationPage from './components/EducationPage.jsx'
+import AcademyPage from './components/AcademyPage.jsx'
+import JoinPage from './components/JoinPage.jsx'
 import ExperiencePassportPage from './components/ExperiencePassportPage.jsx'
 import EconomyPage from './components/EconomyPage.jsx'
 import EnvironmentPage from './components/EnvironmentPage.jsx'
@@ -24,6 +26,14 @@ function App() {
 
   if (path.includes('/education')) {
     return <EducationPage />
+  }
+
+  if (path.includes('/academy')) {
+    return <AcademyPage />
+  }
+
+  if (path.includes('/join')) {
+    return <JoinPage />
   }
 
   if (path.includes('/experience-passport')) {
@@ -74,7 +84,7 @@ function App() {
     return <TalentPage />
   }
 
-  if (path.includes('/business-club')) {
+  if (path.includes('/ecosystem') || path.includes('/business-club')) {
     return <BusinessClubPage />
   }
 
@@ -98,16 +108,15 @@ function App() {
     <section className="hero home-ecosystem-hero" aria-labelledby="home-ecosystem-title">
       <div className="home-hero-shell">
         <div className="home-hero-head">
-          <h1 id="home-ecosystem-title">The Human Growth Ecosystem</h1>
-          <p className="home-hero-subtitle">Connecting people, businesses and education to create real value. <span>Together.</span></p>
-          <p className="home-hero-intelligence"><span></span><strong>Ecosystem Intelligence.</strong> At the heart of every connection.<span></span></p>
+          <h1 id="home-ecosystem-title">The Ecosystem Where Every Transaction Creates Growth.<br />Buy. Sell. Learn. Grow.</h1>
+          <p className="home-hero-subtitle">EI.one connects companies, people, and education in one ecosystem where economic activity creates opportunities for business and fuels human development.</p>
         </div>
 
         <div className="home-hero-primary-grid">
           <a className="home-hero-card home-enterprise-card" href="/economy">
             <div className="home-card-copy">
               <span className="home-card-icon" aria-hidden="true"><i className="fa-solid fa-city"></i></span>
-              <h2>Enterprise</h2>
+              <h2>Ecosystem</h2>
               <h3>Grow your business.</h3>
               <span className="home-card-rule"></span>
               <p>Find opportunities, access services and collaborate to grow your company.</p>
@@ -132,7 +141,7 @@ function App() {
             <span className="home-linkbar-icon"><i className="fa-regular fa-user" aria-hidden="true"></i></span>
             <span><strong>Experience Passport</strong><small>Your profile. Your experiences. Your opportunities.</small></span>
           </a>
-          <a href="/business-club">
+          <a href="/ecosystem">
             <span className="home-linkbar-icon blue"><i className="fa-solid fa-bag-shopping" aria-hidden="true"></i></span>
             <span><strong>Marketplace</strong><small>Discover and offer services, products and experiences.</small></span>
           </a>
@@ -151,6 +160,143 @@ function App() {
           <img src="/images/sva-zuerich.png" alt="SVA Zürich" />
           <img src="/images/innovation-zuerich.webp" alt="Innovation Zürich" />
         </div>
+      </div>
+    </section>
+    <section className="what-is-ei" aria-labelledby="what-is-ei-title">
+      <div className="wrap">
+        <div className="what-is-ei-head">
+          <span className="what-is-ei-eyebrow">What is EI.one?</span>
+          <h2 id="what-is-ei-title">One Ecosystem for Business and Human Growth.</h2>
+          <p>EI.one helps companies:</p>
+        </div>
+        <div className="what-is-ei-grid">
+          <article className="what-is-ei-card">
+            <span className="what-is-ei-icon" aria-hidden="true"><i className="fa-solid fa-arrow-trend-up"></i></span>
+            <h3>Sell</h3>
+            <p>Generate new sales.</p>
+          </article>
+          <article className="what-is-ei-card">
+            <span className="what-is-ei-icon" aria-hidden="true"><i className="fa-solid fa-bag-shopping"></i></span>
+            <h3>Buy</h3>
+            <p>Access products, services, and expertise.</p>
+          </article>
+          <article className="what-is-ei-card">
+            <span className="what-is-ei-icon" aria-hidden="true"><i className="fa-solid fa-handshake"></i></span>
+            <h3>Connect</h3>
+            <p>Build relationships with companies, professionals, and partners.</p>
+          </article>
+          <article className="what-is-ei-card">
+            <span className="what-is-ei-icon" aria-hidden="true"><i className="fa-solid fa-graduation-cap"></i></span>
+            <h3>Learn</h3>
+            <p>Train and develop your people.</p>
+          </article>
+          <article className="what-is-ei-card">
+            <span className="what-is-ei-icon" aria-hidden="true"><i className="fa-solid fa-seedling"></i></span>
+            <h3>Grow</h3>
+            <p>Grow your business and expertise simultaneously.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+    <section className="how-it-works" aria-labelledby="how-it-works-title">
+      <div className="wrap">
+        <div className="how-head">
+          <span className="how-eyebrow">How it works</span>
+          <h2 id="how-it-works-title">The visual heart of the Ecosystem.</h2>
+          <figure className="how-heart" role="img" aria-label="Growth cycle: Buy, Sell, Earn, Learn, Grow — repeating in a loop.">
+            <svg viewBox="0 0 560 440" xmlns="http://www.w3.org/2000/svg">
+              <defs>
+                <linearGradient id="heartStroke" x1="0" y1="0" x2="1" y2="1">
+                  <stop offset="0" stopColor="#58C913" />
+                  <stop offset="1" stopColor="#2EADD6" />
+                </linearGradient>
+              </defs>
+              {/* heart outline — the closed loop */}
+              <path
+                d="M180,60 C240,60 280,100 280,140 C280,100 320,60 380,60 C440,60 480,108 480,160 C480,240 380,300 280,380 C180,300 80,240 80,160 C80,108 120,60 180,60 Z"
+                fill="url(#heartStroke)"
+                fillOpacity="0.06"
+                stroke="url(#heartStroke)"
+                strokeWidth="3"
+                strokeLinejoin="round"
+              />
+              {/* flow arrows (clockwise) */}
+              <g fill="#58C913">
+                <path d="M-7,-5 L6,0 L-7,5 Z" transform="translate(280,150) rotate(0)" />
+                <path d="M-7,-5 L6,0 L-7,5 Z" transform="translate(452,103) rotate(60)" />
+                <path d="M-7,-5 L6,0 L-7,5 Z" transform="translate(408,282) rotate(130)" />
+                <path d="M-7,-5 L6,0 L-7,5 Z" transform="translate(152,282) rotate(215)" />
+                <path d="M-7,-5 L6,0 L-7,5 Z" transform="translate(106,105) rotate(305)" />
+              </g>
+              {/* stage nodes */}
+              <g className="how-heart-node">
+                <circle cx="180" cy="60" r="8" fill="#ffffff" stroke="#58C913" strokeWidth="3.5" />
+                <circle cx="380" cy="60" r="8" fill="#ffffff" stroke="#2EADD6" strokeWidth="3.5" />
+                <circle cx="480" cy="160" r="8" fill="#ffffff" stroke="#F59E0B" strokeWidth="3.5" />
+                <circle cx="280" cy="380" r="8" fill="#ffffff" stroke="#3949AB" strokeWidth="3.5" />
+                <circle cx="80" cy="160" r="8" fill="#ffffff" stroke="#58C913" strokeWidth="3.5" />
+              </g>
+              {/* stage labels */}
+              <g className="how-heart-label" fill="#10222E">
+                <text x="180" y="40" textAnchor="middle">BUY</text>
+                <text x="380" y="40" textAnchor="middle">SELL</text>
+                <text x="502" y="166" textAnchor="start">EARN</text>
+                <text x="280" y="410" textAnchor="middle">LEARN</text>
+                <text x="58" y="166" textAnchor="end">GROW</text>
+              </g>
+              {/* center loop caption */}
+              <g className="how-heart-center" textAnchor="middle">
+                <text x="280" y="196" fill="#58C913" fontSize="26">&#8635;</text>
+                <text x="280" y="226" fill="#10222E" fontSize="16">Every Transaction</text>
+                <text x="280" y="248" fill="#10222E" fontSize="16">Creates Growth</text>
+              </g>
+            </svg>
+          </figure>
+        </div>
+        <ol className="how-timeline">
+          <li className="how-step">
+            <span className="how-step-marker" aria-hidden="true"><i className="fa-solid fa-right-left"></i></span>
+            <div className="how-step-body">
+              <h3>Buy &amp; Sell</h3>
+              <p>Companies and people transact in the Ecosystem.</p>
+            </div>
+          </li>
+          <li className="how-step">
+            <span className="how-step-marker" aria-hidden="true"><i className="fa-solid fa-coins"></i></span>
+            <div className="how-step-body">
+              <h3>Earn</h3>
+              <p>Companies, Partners, and EI.one generate economic value.</p>
+            </div>
+          </li>
+          <li className="how-step">
+            <span className="how-step-marker" aria-hidden="true"><i className="fa-solid fa-arrows-rotate"></i></span>
+            <div className="how-step-body">
+              <h3>Reinvest</h3>
+              <p>A portion of the value generated by the Ecosystem is reinvested in training and development.</p>
+            </div>
+          </li>
+          <li className="how-step">
+            <span className="how-step-marker" aria-hidden="true"><i className="fa-solid fa-graduation-cap"></i></span>
+            <div className="how-step-body">
+              <h3>Learn</h3>
+              <p>Academies, schools, universities, and experts develop skills.</p>
+            </div>
+          </li>
+          <li className="how-step">
+            <span className="how-step-marker" aria-hidden="true"><i className="fa-solid fa-chart-line"></i></span>
+            <div className="how-step-body">
+              <h3>Grow</h3>
+              <p>People and companies grow.</p>
+            </div>
+          </li>
+          <li className="how-step">
+            <span className="how-step-marker" aria-hidden="true"><i className="fa-solid fa-repeat"></i></span>
+            <div className="how-step-body">
+              <h3>Repeat</h3>
+              <p>Growth generates new opportunities and new transactions.</p>
+            </div>
+          </li>
+        </ol>
       </div>
     </section>
     <section className="protagonists" aria-labelledby="protagonists-title">
@@ -280,7 +426,7 @@ function App() {
               <li><i className="fa-solid fa-handshake entry-check" aria-hidden="true"></i><span><strong>Become a Partner</strong><small>Franchise, license, white label</small></span></li>
               <li><i className="fa-solid fa-chart-line entry-check" aria-hidden="true"></i><span><strong>Sponsor &amp; Investor</strong><small>Presence and growth</small></span></li>
             </ul>
-            <a className="entry-link" href="/business-club">Enter Companies &rarr;</a>
+            <a className="entry-link" href="/ecosystem">Enter Companies &rarr;</a>
           </article>
           <article className="entry-card talents">
             <div className="entry-kicker">For talents</div>
@@ -420,7 +566,7 @@ function App() {
           <h2>Let's build it together.</h2>
           <p>Activate the ecosystem for your company, or start building your Experience Identity.</p>
           <div className="actions cta-actions">
-            <a className="button" href="/business-club">For Companies</a>
+            <a className="button" href="/ecosystem">For Companies</a>
             <a className="button secondary" href="/talent">For Talents</a>
             <a className="button secondary" href="/contact">Contact us</a>
           </div>

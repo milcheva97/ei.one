@@ -2,12 +2,12 @@ import { useState } from 'react'
 import { useLanguage } from '../i18n.jsx'
 
 const navItems = [
-  ['Enterprise', '/economy'],
+  ['Home', '/en/index.php'],
+  ['Ecosystem', '/ecosystem'],
   ['Education', '/education'],
-  ['Marketplace', '/business-club'],
-  ['Environment', '/environment'],
-  ['Become a Partner', '/partner'],
+  ['Partners', '/partner'],
   ['About', '/about'],
+  ['Join EI.one', '/join'],
 ]
 
 function Header({ loginHref = '/login', registerHref = '/register', languagePage = 'index.php' }) {
