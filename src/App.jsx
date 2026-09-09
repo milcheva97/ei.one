@@ -116,7 +116,7 @@ function App() {
           <a className="home-hero-card home-enterprise-card" href="/ecosystem">
             <div className="home-card-copy">
               <span className="home-card-icon" aria-hidden="true"><i className="fa-solid fa-city"></i></span>
-              <h2>Ecosystem</h2>
+              <h2>Business</h2>
               <h3>Grow your business.</h3>
               <span className="home-card-rule"></span>
               <p>Find opportunities, access services and collaborate to grow your company.</p>
@@ -127,7 +127,7 @@ function App() {
           <a className="home-hero-card home-education-card" href="/education">
             <div className="home-card-copy">
               <span className="home-card-icon" aria-hidden="true"><i className="fa-solid fa-graduation-cap"></i></span>
-              <h2>Education</h2>
+              <h2>People</h2>
               <h3>Learn. Grow. Achieve.</h3>
               <span className="home-card-rule"></span>
               <p>Access courses, real experiences and learning paths with companies and schools.</p>
