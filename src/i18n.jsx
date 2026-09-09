@@ -767,6 +767,11 @@ Object.assign(de, {
   // Header
   'Partners': 'Partner',
   'Join EI.one': 'EI.one beitreten',
+  'Solar & Energy Consulting': 'Solar & Energieberatung',
+  'Authenticated Luxury Goods': 'Authentifizierte Luxusgüter',
+  'Fiduciary & Consulting': 'Treuhand & Consulting',
+  'Interim Sales Leadership': 'Interim-Vertriebsleitung',
+  'Health & Nutrition': 'Gesundheit & Ernährung',
   // Home hero
   'The Ecosystem Where Every Transaction Creates Growth.': 'Das Ökosystem, in dem jede Transaktion Wachstum schafft.',
   'Buy. Sell. Learn. Grow.': 'Kaufen. Verkaufen. Lernen. Wachsen.',
@@ -2906,6 +2911,11 @@ Object.assign(fr, {
 Object.assign(it, {
   'Partners': 'Partner',
   'Join EI.one': 'Entra in EI.one',
+  'Solar & Energy Consulting': 'Solare & Consulenza Energetica',
+  'Authenticated Luxury Goods': 'Beni di lusso autenticati',
+  'Fiduciary & Consulting': 'Fiduciaria & Consulenza',
+  'Interim Sales Leadership': 'Direzione vendite ad interim',
+  'Health & Nutrition': 'Salute & Nutrizione',
   'The Ecosystem Where Every Transaction Creates Growth.': 'L\'Ecosistema dove ogni transazione genera crescita.',
   'Buy. Sell. Learn. Grow.': 'Compra. Vendi. Impara. Cresci.',
   'EI.one connects companies, people, and education in one ecosystem where economic activity creates opportunities for business and fuels human development.': 'EI.one collega aziende, persone e istruzione in un unico ecosistema in cui l\'attività economica crea opportunità per le imprese e alimenta lo sviluppo umano.',
@@ -3137,6 +3147,11 @@ Object.assign(it, {
 Object.assign(fr, {
   'Partners': 'Partenaires',
   'Join EI.one': 'Rejoindre EI.one',
+  'Solar & Energy Consulting': 'Solaire & Conseil en énergie',
+  'Authenticated Luxury Goods': 'Produits de luxe authentifiés',
+  'Fiduciary & Consulting': 'Fiduciaire & Conseil',
+  'Interim Sales Leadership': 'Direction commerciale intérimaire',
+  'Health & Nutrition': 'Santé & Nutrition',
   'The Ecosystem Where Every Transaction Creates Growth.': 'L\'écosystème où chaque transaction crée de la croissance.',
   'Buy. Sell. Learn. Grow.': 'Acheter. Vendre. Apprendre. Grandir.',
   'EI.one connects companies, people, and education in one ecosystem where economic activity creates opportunities for business and fuels human development.': 'EI.one relie les entreprises, les personnes et l\'éducation dans un écosystème où l\'activité économique crée des opportunités pour les entreprises et alimente le développement humain.',

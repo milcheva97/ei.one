@@ -77,6 +77,41 @@ function BusinessClubPage() {
       accent: '#5a2600',
       description: 'PropertyMaster is the module dedicated to sustainable real estate and infrastructure. We offer real estate consulting, valuations, asset management, project development, and energy requalification of buildings. Future-oriented real estate: we integrate sustainability, technology, and long-term value.',
     },
+    {
+      name: 'SolisCon',
+      category: 'Solar & Energy Consulting',
+      logo: '/images/partners/soliscon.png',
+      accent: '#f5a623',
+      description: 'SolisCon delivers photovoltaics, battery storage and energy consulting in the Munich region. Individually planned by an electrical engineer, professionally installed and personally supported — making clean, self-generated energy simple and reliable for homes and businesses.',
+    },
+    {
+      name: 'Rësór',
+      category: 'Authenticated Luxury Goods',
+      logo: '/images/partners/resor.webp',
+      accent: '#b8860b',
+      description: 'Rësór offers authenticated luxury handbags from the great houses without the boutique mark-up. Every piece is Swiss-checked for authenticity and condition, then made ready to ship — bringing trusted, transparent access to pre-owned luxury.',
+    },
+    {
+      name: 'GOMA Treuhand',
+      category: 'Fiduciary & Consulting',
+      logo: '/images/partners/goma.jpg',
+      accent: '#1c3f6e',
+      description: 'GOMA Treuhand & Consulting AG in Zürich provides fiduciary, accounting, payroll, tax and business consulting services. Backed by an extensive network of external tax advisors and lawyers, GOMA supports companies and entrepreneurs across their financial and administrative needs.',
+    },
+    {
+      name: 'Selexe',
+      category: 'Interim Sales Leadership',
+      logo: '/images/partners/selexe.png',
+      accent: '#0f6f7a',
+      description: 'Selexe provides interim sales management and Fractional CCO services in Switzerland. Hands-on commercial leadership that builds sales structures, coaches teams and drives revenue — bringing senior go-to-market expertise exactly when and where a company needs it.',
+    },
+    {
+      name: 'Isagenix',
+      category: 'Health & Nutrition',
+      logo: '/images/partners/isagenix.svg',
+      accent: '#6cb33f',
+      description: 'Isagenix offers health, nutrition and wellness products — from nutritional systems and supplements to energy and weight-wellness solutions, supported by a global community focused on healthy, active lifestyles.',
+    },
   ]
   const [activeModule, setActiveModule] = useState(null)
 
