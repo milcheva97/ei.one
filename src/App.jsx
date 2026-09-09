@@ -108,7 +108,7 @@ function App() {
     <section className="hero home-ecosystem-hero" aria-labelledby="home-ecosystem-title">
       <div className="home-hero-shell">
         <div className="home-hero-head">
-          <h1 id="home-ecosystem-title">The Ecosystem Where Every Transaction Creates Growth.<br />Buy. Sell. Learn. Grow.</h1>
+          <h1 id="home-ecosystem-title">The opportunity Ecosystem for everyone</h1>
           <p className="home-hero-subtitle">EI.one connects companies, people, and education in one ecosystem where economic activity creates opportunities for business and fuels human development.</p>
         </div>
 

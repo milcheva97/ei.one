@@ -774,6 +774,7 @@ Object.assign(de, {
   'Health & Nutrition': 'Gesundheit & Ernährung',
   // Home hero
   'The Ecosystem Where Every Transaction Creates Growth.': 'Das Ökosystem, in dem jede Transaktion Wachstum schafft.',
+  'The opportunity Ecosystem for everyone': 'Das Chancen-Ökosystem für alle',
   'Buy. Sell. Learn. Grow.': 'Kaufen. Verkaufen. Lernen. Wachsen.',
   'EI.one connects companies, people, and education in one ecosystem where economic activity creates opportunities for business and fuels human development.': 'EI.one verbindet Unternehmen, Menschen und Bildung in einem Ökosystem, in dem wirtschaftliche Aktivität Chancen für Unternehmen schafft und die menschliche Entwicklung fördert.',
   // Home – What is EI.one
@@ -2917,6 +2918,7 @@ Object.assign(it, {
   'Interim Sales Leadership': 'Direzione vendite ad interim',
   'Health & Nutrition': 'Salute & Nutrizione',
   'The Ecosystem Where Every Transaction Creates Growth.': 'L\'Ecosistema dove ogni transazione genera crescita.',
+  'The opportunity Ecosystem for everyone': 'L\'ecosistema di opportunità per tutti',
   'Buy. Sell. Learn. Grow.': 'Compra. Vendi. Impara. Cresci.',
   'EI.one connects companies, people, and education in one ecosystem where economic activity creates opportunities for business and fuels human development.': 'EI.one collega aziende, persone e istruzione in un unico ecosistema in cui l\'attività economica crea opportunità per le imprese e alimenta lo sviluppo umano.',
   'What is EI.one?': 'Cos\'è EI.one?',
@@ -3153,6 +3155,7 @@ Object.assign(fr, {
   'Interim Sales Leadership': 'Direction commerciale intérimaire',
   'Health & Nutrition': 'Santé & Nutrition',
   'The Ecosystem Where Every Transaction Creates Growth.': 'L\'écosystème où chaque transaction crée de la croissance.',
+  'The opportunity Ecosystem for everyone': 'L\'écosystème d\'opportunités pour tous',
   'Buy. Sell. Learn. Grow.': 'Acheter. Vendre. Apprendre. Grandir.',
   'EI.one connects companies, people, and education in one ecosystem where economic activity creates opportunities for business and fuels human development.': 'EI.one relie les entreprises, les personnes et l\'éducation dans un écosystème où l\'activité économique crée des opportunités pour les entreprises et alimente le développement humain.',
   'What is EI.one?': 'Qu\'est-ce qu\'EI.one ?',
