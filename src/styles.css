@@ -46,6 +46,26 @@
   text-align: center;
 }
 
+.home-hero-title-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: clamp(14px, 2.2vw, 30px);
+  margin: 0 0 16px;
+}
+
+.home-hero-line {
+  flex: 0 0 auto;
+  width: clamp(28px, 6vw, 80px);
+  height: 4px;
+  border-radius: 2px;
+  background: var(--hero-green);
+}
+
+.home-hero-title-row h1 {
+  margin: 0 !important;
+}
+
 .home-ecosystem-hero h1 {
   max-width: none;
   margin: 0 0 16px;
