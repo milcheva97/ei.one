@@ -1,10 +1,14 @@
+import { useLanguage } from '../i18n.jsx'
+
 function Footer() {
+  const { language } = useLanguage()
+  const homeHref = `/${language}/index.php`
   return (
     <footer className="site-footer">
       <div className="wrap">
         <div className="footer-grid">
           <div className="footer-about">
-            <a className="footer-logo" href="/en/index.php" aria-label="ei.one">
+            <a className="footer-logo" href={homeHref} aria-label="ei.one">
               <img src="/images/logo.png" alt="ei.one" />
             </a>
             <p>ei.one - The ecosystem where people build real experience and become entrepreneurs.</p>
@@ -12,7 +16,7 @@ function Footer() {
           <div>
             <h3>Menu</h3>
             <ul>
-              <li><a href="/en/index.php">Home</a></li>
+              <li><a href={homeHref}>Home</a></li>
               <li><a href="/education">Education</a></li>
               <li><a href="/experience-passport">Experience</a></li>
               <li><a href="/entrepreneur">Entrepreneur</a></li>

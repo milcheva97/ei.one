@@ -13,6 +13,7 @@ const navItems = [
 function Header({ loginHref = '/login', registerHref = '/register', languagePage = 'index.php' }) {
   const { language, setLanguage } = useLanguage()
   const [menuOpen, setMenuOpen] = useState(false)
+  const homeHref = `/${language}/index.php`
 
   const handleLanguage = (event, nextLanguage) => {
     event.preventDefault()
@@ -29,7 +30,7 @@ function Header({ loginHref = '/login', registerHref = '/register', languagePage
   return (
     <header className="site-header">
       <nav className={`nav${menuOpen ? ' is-open' : ''}`} aria-label="Primary navigation">
-        <a className="brand" href="/en/index.php" onClick={closeMenu}>
+        <a className="brand" href={homeHref} onClick={closeMenu}>
           <img className="header-logo" src="/images/logo.png" alt="EI.one" />
         </a>
         <button
@@ -46,7 +47,7 @@ function Header({ loginHref = '/login', registerHref = '/register', languagePage
         <div className="nav-menu">
           <div className="nav-links">
             {navItems.map(([label, href]) => (
-              <a href={href} key={label} onClick={closeMenu}>{label}</a>
+              <a href={label === 'Home' ? homeHref : href} key={label} onClick={closeMenu}>{label}</a>
             ))}
           </div>
           <a className="nav-login" href={loginHref} onClick={closeMenu}>Log in</a>
