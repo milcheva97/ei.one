@@ -58,10 +58,22 @@
 
 .home-hero-subtitle {
   margin: 0;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
   color: #03080d;
-  font-size: clamp(22px, 1.8vw, 30px);
-  line-height: 1.28;
+  font-size: clamp(17px, 1.5vw, 24px);
+  line-height: 1.3;
   font-weight: 500;
+}
+
+/* Localized subtitles run longer — keep them within two lines */
+@media (min-width: 721px) {
+  :lang(de) .home-hero-subtitle,
+  :lang(fr) .home-hero-subtitle,
+  :lang(it) .home-hero-subtitle {
+    font-size: clamp(16px, 1.3vw, 20px);
+  }
 }
 
 .home-hero-subtitle span,
@@ -1066,15 +1078,15 @@ h1 {
    it outranks the rule above regardless of source order. */
 @media (min-width: 721px) {
   :lang(de) .hero.home-ecosystem-hero h1 {
-    font-size: clamp(32px, 3.15vw, 49px);
+    font-size: clamp(26px, 2.7vw, 35px);
   }
 
   :lang(fr) .hero.home-ecosystem-hero h1 {
-    font-size: clamp(32px, 3.5vw, 54px);
+    font-size: clamp(26px, 2.7vw, 35px);
   }
 
   :lang(it) .hero.home-ecosystem-hero h1 {
-    font-size: clamp(32px, 4vw, 62px);
+    font-size: clamp(26px, 2.9vw, 38px);
   }
 }
 
