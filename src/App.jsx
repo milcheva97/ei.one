@@ -113,7 +113,7 @@ function App() {
         </div>
 
         <div className="home-hero-primary-grid">
-          <a className="home-hero-card home-enterprise-card" href="/economy">
+          <a className="home-hero-card home-enterprise-card" href="/ecosystem">
             <div className="home-card-copy">
               <span className="home-card-icon" aria-hidden="true"><i className="fa-solid fa-city"></i></span>
               <h2>Ecosystem</h2>
