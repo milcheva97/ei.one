@@ -80,15 +80,15 @@ function BusinessClubPage() {
     {
       name: 'SolisCon',
       category: 'Solar & Energy Consulting',
-      logo: '/images/partners/soliscon.png',
-      accent: '#f5a623',
+      logo: '/images/partners/soliscon.svg',
+      accent: '#d4a853',
       description: 'SolisCon delivers photovoltaics, battery storage and energy consulting in the Munich region. Individually planned by an electrical engineer, professionally installed and personally supported — making clean, self-generated energy simple and reliable for homes and businesses.',
     },
     {
       name: 'Rësór',
       category: 'Authenticated Luxury Goods',
-      logo: '/images/partners/resor.webp',
-      accent: '#b8860b',
+      logo: '/images/partners/resor.svg',
+      accent: '#e87722',
       description: 'Rësór offers authenticated luxury handbags from the great houses without the boutique mark-up. Every piece is Swiss-checked for authenticity and condition, then made ready to ship — bringing trusted, transparent access to pre-owned luxury.',
     },
     {
