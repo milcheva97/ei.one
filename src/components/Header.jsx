@@ -3,10 +3,25 @@ import { useLanguage } from '../i18n.jsx'
 
 const navItems = [
   ['Home', '/en/index.php'],
-  ['Ecosystem', '/ecosystem'],
+  ['Business', '/ecosystem'],
+  ['People', '/people'],
   ['Education', '/education'],
+]
+
+const aboutLinks = [
+  ['About Us', '/about'],
+  ['Enterprise', '/economy'],
   ['Partners', '/partner'],
-  ['About', '/about'],
+  ['Academy', '/academy'],
+  ['Experience Passport', '/experience-passport'],
+  ['Talent', '/talent'],
+  ['Entrepreneur', '/entrepreneur'],
+  ['Environment', '/environment'],
+  ['Projects', '/projects'],
+  ['Our Commitments', '/engagements'],
+  ['Sponsor', '/sponsor'],
+  ['Investor', '/investor'],
+  ['Contact', '/contact'],
   ['Join EI.one', '/join'],
 ]
 
@@ -49,6 +64,14 @@ function Header({ loginHref = '/login', registerHref = '/register', languagePage
             {navItems.map(([label, href]) => (
               <a href={label === 'Home' ? homeHref : href} key={label} onClick={closeMenu}>{label}</a>
             ))}
+            <div className="nav-item has-submenu about-menu">
+              <a href="/about" onClick={closeMenu}>About <i className="fa-solid fa-chevron-down" aria-hidden="true"></i></a>
+              <div className="submenu about-submenu">
+                {aboutLinks.map(([label, href]) => (
+                  <a href={href} key={label} onClick={closeMenu}>{label}</a>
+                ))}
+              </div>
+            </div>
           </div>
           <a className="nav-login" href={loginHref} onClick={closeMenu}>Log in</a>
           <a className="button nav-signup" href={registerHref} onClick={closeMenu}>Sign up</a>

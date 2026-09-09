@@ -13844,6 +13844,22 @@ section {
     display: none;
   }
 
+  .nav-links .about-submenu {
+    display: block;
+    position: static;
+    opacity: 1;
+    visibility: visible;
+    transform: none;
+    min-width: 0;
+    margin: 4px 0 6px;
+    padding: 0 0 0 14px;
+    border: none;
+    border-left: 2px solid rgba(16, 34, 46, .1);
+    border-radius: 0;
+    background: transparent;
+    box-shadow: none;
+  }
+
   .nav-menu > .button.secondary {
     display: flex;
     width: 100%;
@@ -16163,3 +16179,27 @@ section {
   }
 }
 
+
+/* About dropdown menu (desktop) */
+.about-menu {
+  position: relative;
+}
+
+.about-menu > a {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.about-submenu {
+  left: auto;
+  right: 0;
+  transform: translate(0, 8px);
+  max-height: 70vh;
+  overflow-y: auto;
+}
+
+.has-submenu:hover .about-submenu,
+.has-submenu:focus-within .about-submenu {
+  transform: translate(0, 0);
+}

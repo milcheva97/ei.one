@@ -2,6 +2,7 @@
 import EducationPage from './components/EducationPage.jsx'
 import AcademyPage from './components/AcademyPage.jsx'
 import JoinPage from './components/JoinPage.jsx'
+import PeoplePage from './components/PeoplePage.jsx'
 import ExperiencePassportPage from './components/ExperiencePassportPage.jsx'
 import EconomyPage from './components/EconomyPage.jsx'
 import EnvironmentPage from './components/EnvironmentPage.jsx'
@@ -34,6 +35,10 @@ function App() {
 
   if (path.includes('/join')) {
     return <JoinPage />
+  }
+
+  if (path.includes('/people')) {
+    return <PeoplePage />
   }
 
   if (path.includes('/experience-passport')) {
