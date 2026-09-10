@@ -120,24 +120,6 @@ function PeoplePage() {
           </div>
         </section>
 
-        <section className="people-steps-sec">
-          <div className="wrap">
-            <div className="section-head">
-              <p className="eyebrow">Step by step</p>
-              <h2>How it works for you.</h2>
-              <p>Six simple steps take you from your first opportunity to real income and verified experience.</p>
-            </div>
-            <div className="people-steps">
-              <div className="people-step"><span className="people-step-num">1</span><strong>Discover</strong><span>Find opportunities that match you.</span></div>
-              <div className="people-step"><span className="people-step-num">2</span><strong>Learn</strong><span>Take trainings and get certified.</span></div>
-              <div className="people-step"><span className="people-step-num">3</span><strong>Qualify</strong><span>Become a verified partner.</span></div>
-              <div className="people-step"><span className="people-step-num">4</span><strong>Sell</strong><span>Represent solutions and generate business.</span></div>
-              <div className="people-step"><span className="people-step-num">5</span><strong>Earn</strong><span>Get commissions on every sale.</span></div>
-              <div className="people-step"><span className="people-step-num">6</span><strong>Build</strong><span>Grow your verified experience.</span></div>
-            </div>
-          </div>
-        </section>
-
         <section className="home-ai">
           <div className="wrap">
             <div className="section-head">
