@@ -16667,17 +16667,35 @@ section {
 
 /* Traction strip */
 .home-traction {
-  padding: clamp(30px, 4vw, 46px) 0;
+  padding: clamp(48px, 6vw, 84px) 0;
   background: linear-gradient(120deg, #0d1d2f, #142b4a);
 }
+.home-why { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; max-width: 1080px; margin: 0 auto 44px; }
+.home-why-col { display: flex; flex-direction: column; gap: 18px; }
+.home-why-head { margin: 0 0 6px; color: #ffffff; font-size: 14px; font-weight: 700; letter-spacing: .18em; text-transform: uppercase; }
+.why-item { display: flex; align-items: flex-start; gap: 16px; }
+.why-icon {
+  flex: none; display: inline-flex; align-items: center; justify-content: center;
+  width: 48px; height: 48px; border-radius: 14px; font-size: 20px;
+  background: rgba(255, 255, 255, .08); border: 1px solid rgba(255, 255, 255, .14); color: #7fe0c0;
+}
+.home-why-col:first-child .why-icon { color: #8fe36a; }
+.home-why-col:last-child .why-icon { color: #6fd0ec; }
+.why-item strong { display: block; color: #ffffff; font-size: 17px; font-weight: 700; margin-bottom: 4px; }
+.why-item p { margin: 0; color: rgba(255, 255, 255, .72); font-size: 14px; line-height: 1.5; }
 .home-traction-inner {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 20px;
   text-align: center;
+  padding-top: 36px;
+  border-top: 1px solid rgba(255, 255, 255, .12);
 }
 .home-traction-stat strong { display: block; color: #ffffff; font-size: clamp(26px, 3.4vw, 40px); font-weight: 800; line-height: 1; }
 .home-traction-stat span { display: block; margin-top: 8px; color: #c8d1dc; font-size: 14px; }
+@media (max-width: 760px) {
+  .home-why { grid-template-columns: 1fr; gap: 30px; }
+}
 
 @media (max-width: 900px) {
   .home-problem-grid { grid-template-columns: 1fr; max-width: 460px; }

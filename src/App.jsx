@@ -801,6 +801,47 @@ function App() {
 
     <section className="home-traction">
       <div className="wrap">
+        <div className="home-why">
+          <div className="home-why-col">
+            <h3 className="home-why-head">Why us</h3>
+            <article className="why-item">
+              <span className="why-icon" aria-hidden="true"><i className="fa-solid fa-heart"></i></span>
+              <div><strong>Unique integration</strong><p>The only platform connecting business, education, people and environment.</p></div>
+            </article>
+            <article className="why-item">
+              <span className="why-icon" aria-hidden="true"><i className="fa-solid fa-microchip"></i></span>
+              <div><strong>Human + AI</strong><p>Technology that empowers people, not replaces them.</p></div>
+            </article>
+            <article className="why-item">
+              <span className="why-icon" aria-hidden="true"><i className="fa-solid fa-people-group"></i></span>
+              <div><strong>Real ecosystem</strong><p>Not just a marketplace, but a community that learns, earns and grows together.</p></div>
+            </article>
+            <article className="why-item">
+              <span className="why-icon" aria-hidden="true"><i className="fa-solid fa-gem"></i></span>
+              <div><strong>Execution capability</strong><p>Proven team, real partners and first revenues.</p></div>
+            </article>
+          </div>
+          <div className="home-why-col">
+            <h3 className="home-why-head">Why now</h3>
+            <article className="why-item">
+              <span className="why-icon" aria-hidden="true"><i className="fa-solid fa-chart-line"></i></span>
+              <div><strong>Massive market shift</strong><p>AI is transforming work, creating demand for reskilling, new jobs and trusted solutions.</p></div>
+            </article>
+            <article className="why-item">
+              <span className="why-icon" aria-hidden="true"><i className="fa-solid fa-seedling"></i></span>
+              <div><strong>Growing demand for impact</strong><p>Companies and individuals seek sustainable, purpose-driven opportunities.</p></div>
+            </article>
+            <article className="why-item">
+              <span className="why-icon" aria-hidden="true"><i className="fa-solid fa-graduation-cap"></i></span>
+              <div><strong>Education needs real-world connection</strong><p>Schools and universities need stronger links to business.</p></div>
+            </article>
+            <article className="why-item">
+              <span className="why-icon" aria-hidden="true"><i className="fa-solid fa-globe"></i></span>
+              <div><strong>Global scalability</strong><p>Digital infrastructure allows us to scale fast and reach new markets worldwide.</p></div>
+            </article>
+          </div>
+        </div>
+
         <div className="home-traction-inner">
           <div className="home-traction-stat"><strong>3,500+</strong><span>Registered users</span></div>
           <div className="home-traction-stat"><strong>120+</strong><span>Companies onboarded</span></div>
