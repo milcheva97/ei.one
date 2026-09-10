@@ -16587,15 +16587,15 @@ section {
 .home-market .section-head > p { color: var(--muted); font-size: 18px; line-height: 1.55; }
 .home-market-subhead { margin: 6px 0 18px; color: var(--muted); font-size: 13px; font-weight: 700; letter-spacing: .16em; text-transform: uppercase; text-align: center; }
 
-.home-market-stats { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; max-width: 1080px; margin: 0 auto 44px; }
-.market-stat { padding: 24px 22px; background: var(--paper); border: 1px solid var(--line); border-radius: 16px; text-align: center; }
-.market-stat-icon { display: inline-flex; align-items: center; justify-content: center; width: 50px; height: 50px; border-radius: 14px; font-size: 22px; margin-bottom: 12px; }
+.home-market-stats { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; max-width: 900px; margin: 0 auto 40px; }
+.market-stat { padding: 16px 16px; background: var(--paper); border: 1px solid var(--line); border-radius: 14px; text-align: center; }
+.market-stat-icon { display: inline-flex; align-items: center; justify-content: center; width: 40px; height: 40px; border-radius: 11px; font-size: 17px; margin-bottom: 10px; }
 .market-stat-icon.green { background: rgba(88,201,19,.12); color: #58C913; }
 .market-stat-icon.blue { background: rgba(46,173,214,.12); color: #2EADD6; }
 .market-stat-icon.indigo { background: rgba(57,73,171,.12); color: #3949AB; }
-.market-stat strong { display: block; color: var(--ink); font-size: clamp(26px, 3vw, 34px); font-weight: 800; line-height: 1; }
-.market-stat p { margin: 8px 0 6px; color: var(--ink); font-size: 14.5px; line-height: 1.4; }
-.market-stat-src { color: var(--muted); font-size: 12px; }
+.market-stat strong { display: block; color: var(--ink); font-size: clamp(21px, 2.3vw, 26px); font-weight: 800; line-height: 1; }
+.market-stat p { margin: 7px 0 5px; color: var(--ink); font-size: 13px; line-height: 1.35; }
+.market-stat-src { color: var(--muted); font-size: 11.5px; }
 
 .home-market-mid { display: grid; grid-template-columns: 1.25fr 1fr; gap: 30px; max-width: 1080px; margin: 0 auto 44px; align-items: center; }
 .home-quadrant {
