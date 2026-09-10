@@ -250,7 +250,7 @@ function App() {
           </div>
           <article className="home-insight-card earn">
             <span className="home-insight-icon" aria-hidden="true"><i className="fa-solid fa-graduation-cap"></i></span>
-            <h3>Learn · Sell · Earn</h3>
+            <h3>Learn · Sell · <span className="hl-accent">Earn</span></h3>
             <p className="home-insight-role">For partners</p>
             <p>Learn it, represent it, and earn commissions on every sale.</p>
           </article>

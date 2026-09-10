@@ -16416,6 +16416,8 @@ section {
 .home-insight-card.buy .home-insight-icon { background: rgba(88, 201, 19, .12); color: #58C913; }
 .home-insight-card.earn .home-insight-icon { background: rgba(46, 173, 214, .12); color: #2EADD6; }
 .home-insight-card h3 { margin: 0 0 4px; color: var(--ink); font-size: 20px; font-weight: 700; }
+.home-insight-card.earn h3 .hl-accent { color: #2EADD6; }
+.home-insight-card.buy h3 .hl-accent { color: #58C913; }
 .home-insight-role { margin: 0 0 10px; color: var(--muted); font-weight: 700; font-size: 13px; letter-spacing: .06em; text-transform: uppercase; }
 .home-insight-card > p:last-child { margin: 0; color: var(--muted); font-size: 15.5px; line-height: 1.5; }
 .home-insight-vs {
