@@ -297,6 +297,7 @@ function App() {
           <p>EI.one connects companies, people and knowledge in a single marketplace where every transaction creates opportunities, competence and growth.</p>
         </div>
 
+        <div className="home-solution-split">
         <div className="home-cycle" role="img" aria-label="The EI.one loop: buy, learn, sell, earn and grow — a continuous cycle of opportunity">
           <svg className="cycle-svg" viewBox="0 0 560 560" aria-hidden="true">
             <defs>
@@ -364,6 +365,7 @@ function App() {
             <div><h3>For society</h3><p>A more skilled, inclusive and sustainable economy.</p></div>
           </article>
         </div>
+        </div>
         <div className="home-solution-pillars">
           <span><i className="fa-solid fa-wand-magic-sparkles" aria-hidden="true"></i>AI matching</span>
           <span><i className="fa-solid fa-certificate" aria-hidden="true"></i>Verified experience</span>
@@ -376,7 +378,7 @@ function App() {
     <section className="home-twosides">
       <div className="wrap">
         <div className="section-head">
-          <p className="eyebrow">Two sides</p>
+          <p className="eyebrow">How it works</p>
           <h2>Two sides. One ecosystem.</h2>
           <p>Companies bring solutions. People discover, learn, sell and earn. EI.one connects both sides and makes growth possible.</p>
         </div>

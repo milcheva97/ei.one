@@ -16694,6 +16694,33 @@ section {
   .cycle-desc { font-size: 13px; max-width: none; }
 }
 
+/* Solution — circle left, cards right */
+.home-solution-split {
+  display: flex;
+  align-items: center;
+  gap: clamp(24px, 4vw, 56px);
+  max-width: 1060px;
+  margin: 0 auto 30px;
+}
+.home-solution-split .home-cycle {
+  flex: 0 0 47%;
+  width: auto;
+  max-width: 500px;
+  margin: 0;
+}
+.home-solution-split .home-solution-grid {
+  flex: 1 1 0;
+  grid-template-columns: 1fr;
+  gap: 14px;
+  max-width: none;
+  margin: 0;
+}
+@media (max-width: 900px) {
+  .home-solution-split { flex-direction: column; }
+  .home-solution-split .home-cycle { flex: none; width: min(560px, 94%); max-width: 560px; }
+  .home-solution-split .home-solution-grid { width: 100%; max-width: 560px; }
+}
+
 /* Solution */
 .home-solution-grid {
   display: grid;
