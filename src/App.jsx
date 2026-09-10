@@ -171,6 +171,256 @@ function App() {
         </div>
       </div>
     </section>
+    <section className="home-problem">
+      <div className="wrap">
+        <div className="section-head">
+          <p className="eyebrow">The problem</p>
+          <h2>Products exist. Opportunities don't connect.</h2>
+          <p>Companies, people and education operate in separate worlds — but real growth happens when they work together.</p>
+        </div>
+        <div className="home-problem-grid">
+          <article className="home-problem-card">
+            <span className="home-problem-icon" aria-hidden="true"><i className="fa-solid fa-building"></i></span>
+            <h3>Companies</h3>
+            <p className="home-problem-sub">Have solutions.</p>
+            <ul>
+              <li>Great products and services</li>
+              <li>Need new customers and wider distribution</li>
+              <li>Struggle to reach and activate new people</li>
+            </ul>
+          </article>
+          <article className="home-problem-card">
+            <span className="home-problem-icon" aria-hidden="true"><i className="fa-solid fa-user"></i></span>
+            <h3>People</h3>
+            <p className="home-problem-sub">Look for opportunities.</p>
+            <ul>
+              <li>Want new sources of income</li>
+              <li>Need practical skills and real experience</li>
+              <li>Look for flexible, entrepreneurial opportunities</li>
+            </ul>
+          </article>
+          <article className="home-problem-card">
+            <span className="home-problem-icon" aria-hidden="true"><i className="fa-solid fa-graduation-cap"></i></span>
+            <h3>Education</h3>
+            <p className="home-problem-sub">Builds knowledge.</p>
+            <ul>
+              <li>Provides valuable theory and skills</li>
+              <li>Often disconnected from real business</li>
+              <li>Students lack access to practical experience</li>
+            </ul>
+          </article>
+        </div>
+        <p className="home-problem-note">These worlds are disconnected — a huge missed opportunity for people, companies and society.</p>
+      </div>
+    </section>
+
+    <section className="home-insight">
+      <div className="wrap">
+        <div className="section-head">
+          <p className="eyebrow">The insight</p>
+          <h2>Every product can become an opportunity.</h2>
+          <p>The same solution can generate value in two ways — for customers, and for people who want to learn, sell and earn.</p>
+        </div>
+        <div className="home-insight-grid">
+          <article className="home-insight-card buy">
+            <span className="home-insight-icon" aria-hidden="true"><i className="fa-solid fa-bag-shopping"></i></span>
+            <h3>Buy</h3>
+            <p className="home-insight-role">For customers</p>
+            <p>Get the solution and improve your business.</p>
+          </article>
+          <div className="home-insight-vs" aria-hidden="true">
+            <i className="fa-solid fa-arrows-left-right"></i>
+            <span>Same product.<strong>Two opportunities.</strong></span>
+          </div>
+          <article className="home-insight-card earn">
+            <span className="home-insight-icon" aria-hidden="true"><i className="fa-solid fa-graduation-cap"></i></span>
+            <h3>Learn · Sell · Earn</h3>
+            <p className="home-insight-role">For partners</p>
+            <p>Learn it, represent it, and earn commissions on every sale.</p>
+          </article>
+        </div>
+        <div className="home-insight-example">
+          <span className="home-insight-example-tag">Example opportunity</span>
+          <h4>AI Automation for SMEs</h4>
+          <div className="home-insight-example-rows">
+            <div><span>Buy it</span><strong>CHF 8'000</strong></div>
+            <div><span>Or partner &amp; earn</span><strong>15% — CHF 1'200 / sale</strong></div>
+            <div><span>Training</span><strong>2 hours</strong></div>
+          </div>
+          <p className="home-insight-example-note">Don't just buy it. Learn it. Sell it. Earn from it.</p>
+        </div>
+      </div>
+    </section>
+
+    <section className="home-solution">
+      <div className="wrap">
+        <div className="section-head">
+          <p className="eyebrow">The solution</p>
+          <h2>One ecosystem. Real growth.</h2>
+          <p>EI.one connects companies, people and knowledge in a single marketplace where every transaction creates opportunities, competence and growth.</p>
+        </div>
+        <div className="home-solution-grid">
+          <article className="home-solution-item">
+            <span className="home-solution-icon" aria-hidden="true"><i className="fa-solid fa-building"></i></span>
+            <div><h3>For companies</h3><p>More sales. Wider distribution. Engaged partners.</p></div>
+          </article>
+          <article className="home-solution-item">
+            <span className="home-solution-icon" aria-hidden="true"><i className="fa-solid fa-user"></i></span>
+            <div><h3>For people</h3><p>New income. New skills. Real opportunities.</p></div>
+          </article>
+          <article className="home-solution-item">
+            <span className="home-solution-icon" aria-hidden="true"><i className="fa-solid fa-graduation-cap"></i></span>
+            <div><h3>For education</h3><p>Knowledge connected to real-world opportunities.</p></div>
+          </article>
+          <article className="home-solution-item">
+            <span className="home-solution-icon" aria-hidden="true"><i className="fa-solid fa-seedling"></i></span>
+            <div><h3>For society</h3><p>A more skilled, inclusive and sustainable economy.</p></div>
+          </article>
+        </div>
+        <div className="home-solution-pillars">
+          <span><i className="fa-solid fa-wand-magic-sparkles" aria-hidden="true"></i>AI matching</span>
+          <span><i className="fa-solid fa-certificate" aria-hidden="true"></i>Verified experience</span>
+          <span><i className="fa-solid fa-people-group" aria-hidden="true"></i>Trusted ecosystem</span>
+          <span><i className="fa-solid fa-globe" aria-hidden="true"></i>Global impact</span>
+        </div>
+      </div>
+    </section>
+
+    <section className="home-twosides">
+      <div className="wrap">
+        <div className="section-head">
+          <p className="eyebrow">Two sides</p>
+          <h2>Two sides. One ecosystem.</h2>
+          <p>Companies bring solutions. People discover, learn, sell and earn. EI.one connects both sides and makes growth possible.</p>
+        </div>
+        <div className="home-twosides-grid">
+          <article className="home-side business">
+            <h3>For business</h3>
+            <ol>
+              <li><span>1</span>List your solution</li>
+              <li><span>2</span>Create training</li>
+              <li><span>3</span>Set commission</li>
+              <li><span>4</span>Activate partners</li>
+              <li><span>5</span>Generate sales</li>
+            </ol>
+            <a className="button home-side-cta" href="/partner">Join as a business partner</a>
+          </article>
+          <article className="home-side people">
+            <h3>For people</h3>
+            <ol>
+              <li><span>1</span>Discover opportunities</li>
+              <li><span>2</span>Learn and get certified</li>
+              <li><span>3</span>Qualify as a partner</li>
+              <li><span>4</span>Sell and earn</li>
+              <li><span>5</span>Build your experience</li>
+            </ol>
+            <a className="button secondary home-side-cta" href="/register">Create your account</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section className="home-ai">
+      <div className="wrap">
+        <div className="section-head">
+          <p className="eyebrow">AI opportunity engine</p>
+          <h2>Your skills. Our AI. Real opportunities.</h2>
+          <p>Our AI analyzes your skills, experience, interests and goals to match you with the best opportunities — and shows you how to unlock them.</p>
+        </div>
+        <div className="home-ai-flow">
+          <span>Match</span>
+          <i className="fa-solid fa-arrow-right" aria-hidden="true"></i>
+          <span>Recommend</span>
+          <i className="fa-solid fa-arrow-right" aria-hidden="true"></i>
+          <span>Guide</span>
+          <i className="fa-solid fa-arrow-right" aria-hidden="true"></i>
+          <span>Grow</span>
+        </div>
+        <div className="home-ai-stats">
+          <div><strong>10,000+</strong><span>Opportunities in the pipeline</span></div>
+          <div><strong>95%</strong><span>AI match accuracy</span></div>
+          <div><strong>3x</strong><span>Faster path to income</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section className="home-journey">
+      <div className="wrap">
+        <div className="section-head">
+          <p className="eyebrow">From customer to entrepreneur</p>
+          <h2>A journey that creates value.</h2>
+          <p>Every transaction can be the start of a new opportunity. Learn, earn, build experience and grow into the best version of yourself.</p>
+        </div>
+        <div className="home-journey-steps">
+          <div className="home-journey-step">
+            <span className="home-journey-dot" aria-hidden="true"><i className="fa-solid fa-cart-shopping"></i></span>
+            <h4>Customer</h4>
+            <p>Discover and buy solutions.</p>
+          </div>
+          <div className="home-journey-step">
+            <span className="home-journey-dot" aria-hidden="true"><i className="fa-solid fa-book-open"></i></span>
+            <h4>Learner</h4>
+            <p>Follow trainings and get certified.</p>
+          </div>
+          <div className="home-journey-step">
+            <span className="home-journey-dot" aria-hidden="true"><i className="fa-solid fa-arrow-trend-up"></i></span>
+            <h4>Seller</h4>
+            <p>Represent solutions and generate business.</p>
+          </div>
+          <div className="home-journey-step">
+            <span className="home-journey-dot" aria-hidden="true"><i className="fa-solid fa-award"></i></span>
+            <h4>Expert</h4>
+            <p>Gain experience and build reputation.</p>
+          </div>
+          <div className="home-journey-step is-goal">
+            <span className="home-journey-dot" aria-hidden="true"><i className="fa-solid fa-rocket"></i></span>
+            <h4>Entrepreneur</h4>
+            <p>Create your own business and grow.</p>
+          </div>
+        </div>
+        <p className="home-journey-note">Your journey, verified — every training, sale, project and review builds your Experience Identity.</p>
+      </div>
+    </section>
+
+    <section className="home-model">
+      <div className="wrap">
+        <div className="section-head">
+          <p className="eyebrow">Business model</p>
+          <h2>Shared value. Multiple revenue streams.</h2>
+          <p>We grow when our ecosystem transacts, learns and succeeds — with fair, transparent and aligned incentives.</p>
+        </div>
+        <div className="home-model-grid">
+          <article className="home-model-card">
+            <span className="home-model-icon" aria-hidden="true"><i className="fa-solid fa-id-card"></i></span>
+            <h3>Company membership</h3>
+            <p>Monthly or annual access to the marketplace and partner network.</p>
+          </article>
+          <article className="home-model-card highlight">
+            <span className="home-model-icon" aria-hidden="true"><i className="fa-solid fa-coins"></i></span>
+            <h3>Transaction fee</h3>
+            <p><strong>5–20%</strong> commission per sale, with automatic and transparent payouts.</p>
+          </article>
+          <article className="home-model-card">
+            <span className="home-model-icon" aria-hidden="true"><i className="fa-solid fa-layer-group"></i></span>
+            <h3>Additional services</h3>
+            <p>Academy &amp; training, AI tools, lead generation and premium services.</p>
+          </article>
+        </div>
+        <p className="home-model-note">A self-reinforcing ecosystem: more sales for companies, more income and skills for people, a stronger economy.</p>
+      </div>
+    </section>
+
+    <section className="home-traction">
+      <div className="wrap">
+        <div className="home-traction-inner">
+          <div className="home-traction-stat"><strong>3,500+</strong><span>Registered users</span></div>
+          <div className="home-traction-stat"><strong>120+</strong><span>Companies onboarded</span></div>
+          <div className="home-traction-stat"><strong>15+</strong><span>Education partners</span></div>
+          <div className="home-traction-stat"><strong>CHF 1.2M</strong><span>Transactions generated</span></div>
+        </div>
+      </div>
+    </section>
+
     <section className="what-is-ei" aria-labelledby="what-is-ei-title">
       <div className="wrap">
         <div className="what-is-ei-head">
@@ -306,132 +556,6 @@ function App() {
             </div>
           </li>
         </ol>
-      </div>
-    </section>
-
-    <section className="home-problem">
-      <div className="wrap">
-        <div className="section-head">
-          <p className="eyebrow">The problem</p>
-          <h2>Products exist. Opportunities don't connect.</h2>
-          <p>Companies, people and education operate in separate worlds — but real growth happens when they work together.</p>
-        </div>
-        <div className="home-problem-grid">
-          <article className="home-problem-card">
-            <span className="home-problem-icon" aria-hidden="true"><i className="fa-solid fa-building"></i></span>
-            <h3>Companies</h3>
-            <p className="home-problem-sub">Have solutions.</p>
-            <ul>
-              <li>Great products and services</li>
-              <li>Need new customers and wider distribution</li>
-              <li>Struggle to reach and activate new people</li>
-            </ul>
-          </article>
-          <article className="home-problem-card">
-            <span className="home-problem-icon" aria-hidden="true"><i className="fa-solid fa-user"></i></span>
-            <h3>People</h3>
-            <p className="home-problem-sub">Look for opportunities.</p>
-            <ul>
-              <li>Want new sources of income</li>
-              <li>Need practical skills and real experience</li>
-              <li>Look for flexible, entrepreneurial opportunities</li>
-            </ul>
-          </article>
-          <article className="home-problem-card">
-            <span className="home-problem-icon" aria-hidden="true"><i className="fa-solid fa-graduation-cap"></i></span>
-            <h3>Education</h3>
-            <p className="home-problem-sub">Builds knowledge.</p>
-            <ul>
-              <li>Provides valuable theory and skills</li>
-              <li>Often disconnected from real business</li>
-              <li>Students lack access to practical experience</li>
-            </ul>
-          </article>
-        </div>
-        <p className="home-problem-note">These worlds are disconnected — a huge missed opportunity for people, companies and society.</p>
-      </div>
-    </section>
-
-    <section className="home-insight">
-      <div className="wrap">
-        <div className="section-head">
-          <p className="eyebrow">The insight</p>
-          <h2>Every product can become an opportunity.</h2>
-          <p>The same solution can generate value in two ways — for customers, and for people who want to learn, sell and earn.</p>
-        </div>
-        <div className="home-insight-grid">
-          <article className="home-insight-card buy">
-            <span className="home-insight-icon" aria-hidden="true"><i className="fa-solid fa-bag-shopping"></i></span>
-            <h3>Buy</h3>
-            <p className="home-insight-role">For customers</p>
-            <p>Get the solution and improve your business.</p>
-          </article>
-          <div className="home-insight-vs" aria-hidden="true">
-            <i className="fa-solid fa-arrows-left-right"></i>
-            <span>Same product.<strong>Two opportunities.</strong></span>
-          </div>
-          <article className="home-insight-card earn">
-            <span className="home-insight-icon" aria-hidden="true"><i className="fa-solid fa-graduation-cap"></i></span>
-            <h3>Learn · Sell · Earn</h3>
-            <p className="home-insight-role">For partners</p>
-            <p>Learn it, represent it, and earn commissions on every sale.</p>
-          </article>
-        </div>
-        <div className="home-insight-example">
-          <span className="home-insight-example-tag">Example opportunity</span>
-          <h4>AI Automation for SMEs</h4>
-          <div className="home-insight-example-rows">
-            <div><span>Buy it</span><strong>CHF 8'000</strong></div>
-            <div><span>Or partner &amp; earn</span><strong>15% — CHF 1'200 / sale</strong></div>
-            <div><span>Training</span><strong>2 hours</strong></div>
-          </div>
-          <p className="home-insight-example-note">Don't just buy it. Learn it. Sell it. Earn from it.</p>
-        </div>
-      </div>
-    </section>
-
-    <section className="home-twosides">
-      <div className="wrap">
-        <div className="section-head">
-          <p className="eyebrow">Two sides</p>
-          <h2>Two sides. One ecosystem.</h2>
-          <p>Companies bring solutions. People discover, learn, sell and earn. EI.one connects both sides and makes growth possible.</p>
-        </div>
-        <div className="home-twosides-grid">
-          <article className="home-side business">
-            <h3>For business</h3>
-            <ol>
-              <li><span>1</span>List your solution</li>
-              <li><span>2</span>Create training</li>
-              <li><span>3</span>Set commission</li>
-              <li><span>4</span>Activate partners</li>
-              <li><span>5</span>Generate sales</li>
-            </ol>
-            <a className="button home-side-cta" href="/partner">Join as a business partner</a>
-          </article>
-          <article className="home-side people">
-            <h3>For people</h3>
-            <ol>
-              <li><span>1</span>Discover opportunities</li>
-              <li><span>2</span>Learn and get certified</li>
-              <li><span>3</span>Qualify as a partner</li>
-              <li><span>4</span>Sell and earn</li>
-              <li><span>5</span>Build your experience</li>
-            </ol>
-            <a className="button secondary home-side-cta" href="/register">Create your account</a>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section className="home-traction">
-      <div className="wrap">
-        <div className="home-traction-inner">
-          <div className="home-traction-stat"><strong>3,500+</strong><span>Registered users</span></div>
-          <div className="home-traction-stat"><strong>120+</strong><span>Companies onboarded</span></div>
-          <div className="home-traction-stat"><strong>15+</strong><span>Education partners</span></div>
-          <div className="home-traction-stat"><strong>CHF 1.2M</strong><span>Transactions generated</span></div>
-        </div>
       </div>
     </section>
 
