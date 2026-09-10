@@ -296,6 +296,56 @@ function App() {
           <h2>One ecosystem. Real growth.</h2>
           <p>EI.one connects companies, people and knowledge in a single marketplace where every transaction creates opportunities, competence and growth.</p>
         </div>
+
+        <div className="home-cycle" role="img" aria-label="The EI.one loop: buy, learn, sell, earn and grow — a continuous cycle of opportunity">
+          <svg className="cycle-svg" viewBox="0 0 560 560" aria-hidden="true">
+            <defs>
+              <marker id="cyc-green" markerWidth="12" markerHeight="12" refX="9" refY="6" orient="auto" markerUnits="userSpaceOnUse">
+                <path d="M0,0 L12,6 L0,12 Z" fill="#58C913" />
+              </marker>
+              <marker id="cyc-blue" markerWidth="12" markerHeight="12" refX="9" refY="6" orient="auto" markerUnits="userSpaceOnUse">
+                <path d="M0,0 L12,6 L0,12 Z" fill="#2EADD6" />
+              </marker>
+            </defs>
+            <circle cx="280" cy="280" r="180" fill="none" stroke="#e6efe9" strokeWidth="1.5" />
+            <path className="cyc-arrow" d="M370,124.1 A180,180 0 0 1 400.4,146.2" stroke="#58C913" markerEnd="url(#cyc-green)" />
+            <path className="cyc-arrow" d="M456.1,317.4 A180,180 0 0 1 444.4,353.2" stroke="#2EADD6" markerEnd="url(#cyc-blue)" />
+            <path className="cyc-arrow" d="M298.8,459 A180,180 0 0 1 261.2,459" stroke="#58C913" markerEnd="url(#cyc-green)" />
+            <path className="cyc-arrow" d="M115.6,353.2 A180,180 0 0 1 103.9,317.4" stroke="#2EADD6" markerEnd="url(#cyc-blue)" />
+            <path className="cyc-arrow" d="M159.6,146.2 A180,180 0 0 1 190,124.1" stroke="#58C913" markerEnd="url(#cyc-green)" />
+          </svg>
+
+          <div className="cycle-hub">
+            <img src="/images/logo.png" alt="EI.one" />
+          </div>
+
+          <div className="cycle-node n1 green">
+            <span className="cycle-num">01</span>
+            <span className="cycle-ic" aria-hidden="true"><i className="fa-solid fa-cart-shopping"></i></span>
+            <span className="cycle-text"><span className="cycle-name">Buy</span><span className="cycle-desc">Discover and purchase solutions</span></span>
+          </div>
+          <div className="cycle-node n2 blue">
+            <span className="cycle-num">02</span>
+            <span className="cycle-ic" aria-hidden="true"><i className="fa-solid fa-book-open"></i></span>
+            <span className="cycle-text"><span className="cycle-name">Learn</span><span className="cycle-desc">Access academies and get certified</span></span>
+          </div>
+          <div className="cycle-node n3 green">
+            <span className="cycle-num">03</span>
+            <span className="cycle-ic" aria-hidden="true"><i className="fa-solid fa-chart-column"></i></span>
+            <span className="cycle-text"><span className="cycle-name">Sell</span><span className="cycle-desc">Represent solutions and generate business</span></span>
+          </div>
+          <div className="cycle-node n4 blue">
+            <span className="cycle-num">04</span>
+            <span className="cycle-ic" aria-hidden="true"><i className="fa-solid fa-coins"></i></span>
+            <span className="cycle-text"><span className="cycle-name">Earn</span><span className="cycle-desc">Receive commissions and incentives</span></span>
+          </div>
+          <div className="cycle-node n5 green">
+            <span className="cycle-num">05</span>
+            <span className="cycle-ic" aria-hidden="true"><i className="fa-solid fa-seedling"></i></span>
+            <span className="cycle-text"><span className="cycle-name">Grow</span><span className="cycle-desc">Build experience and unlock new opportunities</span></span>
+          </div>
+        </div>
+
         <div className="home-solution-grid">
           <article className="home-solution-item">
             <span className="home-solution-icon" aria-hidden="true"><i className="fa-solid fa-building"></i></span>

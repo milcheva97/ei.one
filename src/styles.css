@@ -16599,6 +16599,101 @@ section {
   line-height: 1.55;
 }
 
+/* Solution — opportunity cycle */
+.home-cycle {
+  position: relative;
+  width: min(560px, 94%);
+  margin: 6px auto 40px;
+  aspect-ratio: 1;
+  container-type: inline-size;
+}
+.cycle-svg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+}
+.cycle-svg .cyc-arrow {
+  fill: none;
+  stroke-width: 3.4;
+  stroke-linecap: round;
+}
+.cycle-hub {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.cycle-hub img { width: clamp(88px, 27cqw, 156px); height: auto; }
+.cycle-node {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  width: 26%;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1cqw;
+  padding: 3%;
+  text-align: center;
+  border: 1px solid transparent;
+  z-index: 3;
+}
+.cycle-node.green { background: rgba(88, 201, 19, .10); border-color: rgba(88, 201, 19, .30); }
+.cycle-node.blue { background: rgba(46, 173, 214, .10); border-color: rgba(46, 173, 214, .30); }
+.cycle-num { font-weight: 800; letter-spacing: .04em; font-size: clamp(11px, 2.3cqw, 14px); }
+.cycle-node.green .cycle-num { color: #46a30c; }
+.cycle-node.blue .cycle-num { color: #1f8fb5; }
+.cycle-ic { font-size: clamp(17px, 4.4cqw, 26px); line-height: 1; }
+.cycle-node.green .cycle-ic { color: #58C913; }
+.cycle-node.blue .cycle-ic { color: #2EADD6; }
+.cycle-text { display: flex; flex-direction: column; align-items: inherit; gap: 1cqw; }
+.cycle-name { color: var(--ink); font-weight: 800; text-transform: uppercase; letter-spacing: .05em; font-size: clamp(12px, 3cqw, 18px); }
+.cycle-desc { color: var(--muted); font-size: clamp(9px, 2cqw, 12px); line-height: 1.25; max-width: 92%; }
+.n1 { left: 50%; top: 17.86%; }
+.n2 { left: 80.54%; top: 40%; }
+.n3 { left: 68.93%; top: 76.07%; }
+.n4 { left: 31.07%; top: 76.07%; }
+.n5 { left: 19.46%; top: 40%; }
+
+@media (max-width: 640px) {
+  .home-cycle {
+    width: 100%;
+    max-width: 400px;
+    aspect-ratio: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    container-type: normal;
+  }
+  .cycle-svg, .cycle-hub { display: none; }
+  .cycle-node {
+    position: static;
+    transform: none;
+    width: 100%;
+    aspect-ratio: auto;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 14px;
+    border-radius: 16px;
+    padding: 16px 18px;
+    text-align: left;
+  }
+  .cycle-node .cycle-num { order: -1; }
+  .cycle-text { gap: 3px; }
+  .cycle-num { font-size: 13px; }
+  .cycle-ic { font-size: 22px; width: 26px; }
+  .cycle-name { font-size: 15px; }
+  .cycle-desc { font-size: 13px; max-width: none; }
+}
+
 /* Solution */
 .home-solution-grid {
   display: grid;
