@@ -17009,7 +17009,7 @@ section {
 .model-fee-highlight small { color: var(--muted); font-weight: 500; font-size: 14px; }
 .model-streams { display: grid; grid-template-columns: repeat(2, 1fr); gap: 26px 18px; margin-top: auto; margin-bottom: auto; }
 .model-stream { display: flex; flex-direction: column; gap: 5px; }
-.model-stream-icon { font-size: 28px; margin-bottom: 4px; }
+.model-stream .model-stream-icon { font-size: 36px; margin-bottom: 6px; }
 .model-stream:nth-child(1) .model-stream-icon { color: #58C913; }
 .model-stream:nth-child(2) .model-stream-icon { color: #2EADD6; }
 .model-stream:nth-child(3) .model-stream-icon { color: #F59E0B; }
@@ -17031,7 +17031,7 @@ section {
 }
 .eco-node.companies { background: radial-gradient(circle, rgba(88,201,19,.16), rgba(88,201,19,.03) 70%); }
 .eco-node.people { background: radial-gradient(circle, rgba(46,173,214,.16), rgba(46,173,214,.03) 70%); }
-.eco-icon { font-size: clamp(18px, 2.6vw, 24px); line-height: 1; }
+.eco-node .eco-icon { font-size: clamp(24px, 3.2vw, 32px); line-height: 1; }
 .eco-node.companies .eco-icon { color: #58C913; }
 .eco-node.people .eco-icon { color: #2EADD6; }
 .eco-node strong { color: var(--ink); font-size: 12px; font-weight: 800; letter-spacing: .04em; text-transform: uppercase; }
