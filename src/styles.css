@@ -16940,13 +16940,14 @@ section {
 .hv-right { display: flex; align-items: center; gap: clamp(16px, 1.8vw, 28px); flex-wrap: wrap; }
 .hv-links { display: flex; gap: clamp(14px, 1.5vw, 26px); flex-wrap: wrap; }
 .hv-item { display: flex; flex-direction: column; align-items: center; gap: 5px; text-align: center; }
-.hv-icon { font-size: 22px; line-height: 1; color: #2EADD6; }
+.hv-item .hv-icon { font-size: 34px; line-height: 1; color: #2EADD6; }
 .hv-item:nth-child(1) .hv-icon { color: #58C913; }
 .hv-item:nth-child(2) .hv-icon { color: #2EADD6; }
 .hv-item:nth-child(3) .hv-icon { color: #F59E0B; }
 .hv-item:nth-child(4) .hv-icon { color: #3949AB; }
-.hv-item strong { color: var(--ink); font-size: 13.5px; font-weight: 700; white-space: nowrap; }
-.hv-item span { color: var(--muted); font-size: 12px; white-space: nowrap; }
+.hv-item { gap: 8px; }
+.hv-item strong { color: var(--ink); font-size: 16px; font-weight: 700; white-space: nowrap; }
+.hv-item span { color: var(--muted); font-size: 13.5px; white-space: nowrap; }
 .home-gradient-btn {
   display: inline-flex; align-items: center; gap: 10px; flex: none;
   padding: 14px 26px; border-radius: 999px; white-space: nowrap;
