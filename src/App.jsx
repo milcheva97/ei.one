@@ -854,42 +854,6 @@ function App() {
       </div>
     </section>
 
-    <section className="what-is-ei" aria-labelledby="what-is-ei-title">
-      <div className="wrap">
-        <div className="what-is-ei-head">
-          <span className="what-is-ei-eyebrow">What is EI.one?</span>
-          <h2 id="what-is-ei-title">One Ecosystem for Business and Human Growth.</h2>
-          <p>EI.one helps companies:</p>
-        </div>
-        <div className="what-is-ei-grid">
-          <article className="what-is-ei-card">
-            <span className="what-is-ei-icon" aria-hidden="true"><i className="fa-solid fa-arrow-trend-up"></i></span>
-            <h3>Sell</h3>
-            <p>Generate new sales.</p>
-          </article>
-          <article className="what-is-ei-card">
-            <span className="what-is-ei-icon" aria-hidden="true"><i className="fa-solid fa-bag-shopping"></i></span>
-            <h3>Buy</h3>
-            <p>Access products, services, and expertise.</p>
-          </article>
-          <article className="what-is-ei-card">
-            <span className="what-is-ei-icon" aria-hidden="true"><i className="fa-solid fa-handshake"></i></span>
-            <h3>Connect</h3>
-            <p>Build relationships with companies, professionals, and partners.</p>
-          </article>
-          <article className="what-is-ei-card">
-            <span className="what-is-ei-icon" aria-hidden="true"><i className="fa-solid fa-graduation-cap"></i></span>
-            <h3>Learn</h3>
-            <p>Train and develop your people.</p>
-          </article>
-          <article className="what-is-ei-card">
-            <span className="what-is-ei-icon" aria-hidden="true"><i className="fa-solid fa-seedling"></i></span>
-            <h3>Grow</h3>
-            <p>Grow your business and expertise simultaneously.</p>
-          </article>
-        </div>
-      </div>
-    </section>
     <section className="how-it-works" aria-labelledby="how-it-works-title">
       <div className="wrap">
         <div className="how-head">
