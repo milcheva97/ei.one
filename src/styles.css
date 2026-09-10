@@ -17008,7 +17008,11 @@ section {
 .model-fee-highlight small { color: var(--muted); font-weight: 500; }
 .model-streams { display: grid; grid-template-columns: repeat(2, 1fr); gap: 18px 14px; }
 .model-stream { display: flex; flex-direction: column; gap: 4px; }
-.model-stream-icon { font-size: 22px; color: #3949AB; margin-bottom: 2px; }
+.model-stream-icon { font-size: 22px; margin-bottom: 2px; }
+.model-stream:nth-child(1) .model-stream-icon { color: #58C913; }
+.model-stream:nth-child(2) .model-stream-icon { color: #2EADD6; }
+.model-stream:nth-child(3) .model-stream-icon { color: #F59E0B; }
+.model-stream:nth-child(4) .model-stream-icon { color: #3949AB; }
 .model-stream strong { color: var(--ink); font-size: 14px; font-weight: 700; }
 .model-stream span { color: var(--muted); font-size: 12.5px; line-height: 1.35; }
 .home-model-note { max-width: 720px; margin: 30px auto 0; text-align: center; color: var(--muted); font-size: 16px; line-height: 1.6; }
