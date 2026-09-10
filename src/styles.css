@@ -14798,6 +14798,37 @@ section {
   .people-hero-grid { grid-template-columns: 1fr; gap: 40px; }
 }
 
+/* People — how it works steps */
+.people-steps-sec { padding: clamp(54px, 7vw, 92px) 0; background: var(--paper); border-bottom: 1px solid var(--line); }
+.people-steps-sec .section-head { max-width: 780px; margin: 0 auto 36px; text-align: center; }
+.people-steps-sec .section-head h2 { margin: 8px 0 12px; color: var(--ink); font-size: clamp(28px, 3.6vw, 44px); line-height: 1.1; }
+.people-steps-sec .section-head > p { color: var(--muted); font-size: 18px; line-height: 1.55; }
+.people-steps { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; max-width: 1000px; margin: 0 auto; }
+.people-step {
+  display: flex; flex-direction: column; gap: 6px;
+  padding: 22px 22px 22px 24px; position: relative;
+  background: #ffffff; border: 1px solid var(--line); border-radius: 16px;
+  border-left: 4px solid #2EADD6;
+}
+.people-step-num {
+  display: inline-flex; align-items: center; justify-content: center;
+  width: 34px; height: 34px; margin-bottom: 4px; border-radius: 50%;
+  background: linear-gradient(120deg, #58C913, #2EADD6); color: #fff; font-weight: 800; font-size: 15px;
+}
+.people-step strong { color: var(--ink); font-size: 18px; font-weight: 700; }
+.people-step > span:last-child { color: var(--muted); font-size: 14px; line-height: 1.45; }
+
+/* People — why now */
+.people-whynow-sec { padding: clamp(54px, 7vw, 92px) 0; background: #ffffff; border-bottom: 1px solid var(--line); }
+.people-whynow-sec .section-head { max-width: 780px; margin: 0 auto 36px; text-align: center; }
+.people-whynow-sec .section-head h2 { margin: 8px 0 12px; color: var(--ink); font-size: clamp(28px, 3.6vw, 44px); line-height: 1.1; }
+.people-whynow-sec .section-head > p { color: var(--muted); font-size: 18px; line-height: 1.55; }
+.people-whynow-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 18px; max-width: 900px; margin: 0 auto; }
+@media (max-width: 760px) {
+  .people-steps { grid-template-columns: 1fr; max-width: 440px; }
+  .people-whynow-grid { grid-template-columns: 1fr; max-width: 460px; }
+}
+
 .academy-hero-steps {
   display: grid;
   grid-template-columns: repeat(3, 1fr);

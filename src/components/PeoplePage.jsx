@@ -120,6 +120,24 @@ function PeoplePage() {
           </div>
         </section>
 
+        <section className="people-steps-sec">
+          <div className="wrap">
+            <div className="section-head">
+              <p className="eyebrow">Step by step</p>
+              <h2>How it works for you.</h2>
+              <p>Six simple steps take you from your first opportunity to real income and verified experience.</p>
+            </div>
+            <div className="people-steps">
+              <div className="people-step"><span className="people-step-num">1</span><strong>Discover</strong><span>Find opportunities that match you.</span></div>
+              <div className="people-step"><span className="people-step-num">2</span><strong>Learn</strong><span>Take trainings and get certified.</span></div>
+              <div className="people-step"><span className="people-step-num">3</span><strong>Qualify</strong><span>Become a verified partner.</span></div>
+              <div className="people-step"><span className="people-step-num">4</span><strong>Sell</strong><span>Represent solutions and generate business.</span></div>
+              <div className="people-step"><span className="people-step-num">5</span><strong>Earn</strong><span>Get commissions on every sale.</span></div>
+              <div className="people-step"><span className="people-step-num">6</span><strong>Build</strong><span>Grow your verified experience.</span></div>
+            </div>
+          </div>
+        </section>
+
         <section className="home-ai">
           <div className="wrap">
             <div className="section-head">
@@ -156,6 +174,34 @@ function PeoplePage() {
               <div><strong>10,000+</strong><span>Opportunities in the pipeline</span></div>
               <div><strong>95%</strong><span>AI match accuracy</span></div>
               <div><strong>3x</strong><span>Faster path to income</span></div>
+            </div>
+          </div>
+        </section>
+
+        <section className="people-whynow-sec">
+          <div className="wrap">
+            <div className="section-head">
+              <p className="eyebrow">Why now</p>
+              <h2>The timing has never been better.</h2>
+              <p>The world of work is changing fast — and it's creating room for people who are ready to grow.</p>
+            </div>
+            <div className="people-whynow-grid">
+              <article className="diff-item">
+                <span className="diff-icon blue" aria-hidden="true"><i className="fa-solid fa-chart-line"></i></span>
+                <div><strong>Massive market shift</strong><p>AI is transforming work, creating demand for reskilling, new jobs and trusted solutions.</p></div>
+              </article>
+              <article className="diff-item">
+                <span className="diff-icon green" aria-hidden="true"><i className="fa-solid fa-seedling"></i></span>
+                <div><strong>Growing demand for impact</strong><p>Companies and individuals seek sustainable, purpose-driven opportunities.</p></div>
+              </article>
+              <article className="diff-item">
+                <span className="diff-icon indigo" aria-hidden="true"><i className="fa-solid fa-graduation-cap"></i></span>
+                <div><strong>Education meets the real world</strong><p>Schools and universities need stronger links to business — and to you.</p></div>
+              </article>
+              <article className="diff-item">
+                <span className="diff-icon orange" aria-hidden="true"><i className="fa-solid fa-globe"></i></span>
+                <div><strong>Global scalability</strong><p>Digital infrastructure lets you learn, earn and reach new markets worldwide.</p></div>
+              </article>
             </div>
           </div>
         </section>
