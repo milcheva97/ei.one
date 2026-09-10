@@ -94,7 +94,7 @@ function PeoplePage() {
               <div className="cycle-node n1 green">
                 <span className="cycle-num">01</span>
                 <span className="cycle-ic" aria-hidden="true"><i className="fa-solid fa-cart-shopping"></i></span>
-                <span className="cycle-text"><span className="cycle-name">Buy</span><span className="cycle-desc">Discover and get the solutions you need</span></span>
+                <span className="cycle-text"><span className="cycle-name">Buy</span><span className="cycle-desc">Discover and get solutions</span></span>
               </div>
               <div className="cycle-node n2 blue">
                 <span className="cycle-num">02</span>
@@ -104,7 +104,7 @@ function PeoplePage() {
               <div className="cycle-node n3 green">
                 <span className="cycle-num">03</span>
                 <span className="cycle-ic" aria-hidden="true"><i className="fa-solid fa-chart-column"></i></span>
-                <span className="cycle-text"><span className="cycle-name">Sell</span><span className="cycle-desc">Represent solutions and win business</span></span>
+                <span className="cycle-text"><span className="cycle-name">Sell</span><span className="cycle-desc">Represent solutions, win business</span></span>
               </div>
               <div className="cycle-node n4 blue">
                 <span className="cycle-num">04</span>
