@@ -16827,19 +16827,14 @@ section {
   .gap-link { width: 2px; height: 44px; min-width: 0; max-width: none; flex: 0 0 auto; }
   .gap-link::before { left: 50%; right: auto; top: 2px; bottom: 12px; transform: translateX(-50%); border-top: 0; border-left: 2px dashed #e0455b; }
   .gap-link::after { left: 50%; right: auto; top: auto; bottom: 0; transform: translateX(-50%); border-left: 5px solid transparent; border-right: 5px solid transparent; border-top: 8px solid #e0455b; border-bottom: 0; }
-  .home-insight-grid { grid-template-columns: 1fr; max-width: 460px; }
-  .home-insight-fan { max-width: 460px; height: 40px; }
-  .home-insight-fan-svg, .fan-head-earn { display: none; }
-  .home-insight-fan::before {
-    content: "";
-    position: absolute;
-    left: 50%;
-    top: 2px;
-    bottom: 11px;
-    transform: translateX(-50%);
-    border-left: 2px dashed #58C913;
-  }
-  .fan-head-buy { left: 50%; }
+  .home-insight .wrap { display: flex; flex-direction: column; align-items: center; gap: 18px; }
+  .home-insight .section-head { order: 0; }
+  .home-insight-grid { display: contents; }
+  .home-insight-card { width: 100%; max-width: 460px; }
+  .home-insight-card.buy { order: 1; }
+  .home-insight-source { order: 2; margin: 0 auto; }
+  .home-insight-card.earn { order: 3; }
+  .home-insight-fan { display: none; }
   .home-twosides-grid { grid-template-columns: 1fr; max-width: 460px; }
   .engine-in { display: none; }
   .home-engine { padding: 8px 0; }
