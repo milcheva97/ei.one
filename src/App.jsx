@@ -547,9 +547,37 @@ function App() {
             <span className="path-label">Create new opportunities</span>
           </div>
         </div>
-        <p className="home-journey-note">Your journey, verified — every training, sale, project and review builds your Experience Identity.</p>
-        <div className="home-journey-cta">
-          <a className="home-gradient-btn" href="/contact">Start your journey today <i className="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+        <div className="home-verified">
+          <div className="hv-intro">
+            <p className="hv-eyebrow">Verified experience profile</p>
+            <h3>Your journey. Verified.</h3>
+            <p>Every training, sale, project and achievement builds your verified experience profile — unlocking more opportunities over time.</p>
+          </div>
+          <div className="hv-right">
+            <div className="hv-links">
+              <div className="hv-item">
+                <span className="hv-icon" aria-hidden="true"><i className="fa-solid fa-graduation-cap"></i></span>
+                <strong>Certifications</strong>
+                <span>Verified skills</span>
+              </div>
+              <div className="hv-item">
+                <span className="hv-icon" aria-hidden="true"><i className="fa-solid fa-chart-column"></i></span>
+                <strong>Sales &amp; Results</strong>
+                <span>Proven impact</span>
+              </div>
+              <div className="hv-item">
+                <span className="hv-icon" aria-hidden="true"><i className="fa-solid fa-file-lines"></i></span>
+                <strong>Projects</strong>
+                <span>Real experience</span>
+              </div>
+              <div className="hv-item">
+                <span className="hv-icon" aria-hidden="true"><i className="fa-regular fa-star"></i></span>
+                <strong>Reviews</strong>
+                <span>Trusted by others</span>
+              </div>
+            </div>
+            <a className="home-gradient-btn" href="/contact">Start your journey today <i className="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+          </div>
         </div>
       </div>
     </section>
