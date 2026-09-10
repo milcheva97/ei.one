@@ -611,58 +611,83 @@ function App() {
             </div>
           </article>
 
-          <div className="model-col">
-            <article className="model-card">
-              <div className="model-card-head">
-                <span className="model-card-icon blue" aria-hidden="true"><i className="fa-solid fa-coins"></i></span>
-                <div>
-                  <h3>Transaction fee</h3>
-                  <p className="model-card-sub">We earn when business happens.</p>
-                </div>
+          <article className="model-card">
+            <div className="model-card-head">
+              <span className="model-card-icon blue" aria-hidden="true"><i className="fa-solid fa-coins"></i></span>
+              <div>
+                <h3>Transaction fee</h3>
+                <p className="model-card-sub">We earn when business happens.</p>
               </div>
-              <div className="model-fee-highlight">
-                <strong>5–20%</strong>
-                <span>Commission per sale<br /><small>(depending on category)</small></span>
-              </div>
-              <ul className="model-checklist blue">
-                <li><i className="fa-solid fa-circle-check" aria-hidden="true"></i>Automatic tracking and payouts</li>
-                <li><i className="fa-solid fa-circle-check" aria-hidden="true"></i>Fair and transparent</li>
-                <li><i className="fa-solid fa-circle-check" aria-hidden="true"></i>Aligned incentives for long-term growth</li>
-              </ul>
-            </article>
+            </div>
+            <div className="model-fee-highlight">
+              <strong>5–20%</strong>
+              <span>Commission per sale<br /><small>(depending on category)</small></span>
+            </div>
+            <ul className="model-checklist blue">
+              <li><i className="fa-solid fa-circle-check" aria-hidden="true"></i>Automatic tracking and payouts</li>
+              <li><i className="fa-solid fa-circle-check" aria-hidden="true"></i>Fair and transparent</li>
+              <li><i className="fa-solid fa-circle-check" aria-hidden="true"></i>Aligned incentives for long-term growth</li>
+            </ul>
+          </article>
 
-            <article className="model-card">
-              <div className="model-card-head">
-                <span className="model-card-icon indigo" aria-hidden="true"><i className="fa-solid fa-chart-column"></i></span>
-                <div>
-                  <h3>Additional revenue streams</h3>
-                  <p className="model-card-sub">Growing the ecosystem with complementary services.</p>
-                </div>
+          <div className="model-card model-ecosystem">
+            <div className="eco-flow top">
+              <span>Solutions + Training + Commission</span>
+              <i className="fa-solid fa-arrow-right-long" aria-hidden="true"></i>
+            </div>
+            <div className="eco-row">
+              <div className="eco-node companies">
+                <span className="eco-icon" aria-hidden="true"><i className="fa-solid fa-building"></i></span>
+                <strong>Companies</strong>
+                <span>Provide solutions, training and opportunities.</span>
               </div>
-              <div className="model-streams">
-                <div className="model-stream">
-                  <span className="model-stream-icon" aria-hidden="true"><i className="fa-solid fa-graduation-cap"></i></span>
-                  <strong>Academy &amp; Training</strong>
-                  <span>Premium courses</span>
-                </div>
-                <div className="model-stream">
-                  <span className="model-stream-icon" aria-hidden="true"><i className="fa-solid fa-microchip"></i></span>
-                  <strong>AI Tools</strong>
-                  <span>Personalized recommendations</span>
-                </div>
-                <div className="model-stream">
-                  <span className="model-stream-icon" aria-hidden="true"><i className="fa-solid fa-user-group"></i></span>
-                  <strong>Lead Generation</strong>
-                  <span>Qualified matches</span>
-                </div>
-                <div className="model-stream">
-                  <span className="model-stream-icon" aria-hidden="true"><i className="fa-solid fa-gem"></i></span>
-                  <strong>Premium Services</strong>
-                  <span>Events, consulting and more</span>
-                </div>
+              <div className="eco-center">
+                <img src="/images/logo.png" alt="EI.one" />
               </div>
-            </article>
+              <div className="eco-node people">
+                <span className="eco-icon" aria-hidden="true"><i className="fa-solid fa-people-group"></i></span>
+                <strong>People</strong>
+                <span>Buy, learn, sell and earn.</span>
+              </div>
+            </div>
+            <div className="eco-flow bottom">
+              <i className="fa-solid fa-arrow-left-long" aria-hidden="true"></i>
+              <span>Transactions + Commissions + Growth</span>
+            </div>
+            <p className="eco-note">A self-reinforcing ecosystem</p>
           </div>
+
+          <article className="model-card">
+            <div className="model-card-head">
+              <span className="model-card-icon indigo" aria-hidden="true"><i className="fa-solid fa-chart-column"></i></span>
+              <div>
+                <h3>Additional revenue streams</h3>
+                <p className="model-card-sub">Growing the ecosystem with complementary services.</p>
+              </div>
+            </div>
+            <div className="model-streams">
+              <div className="model-stream">
+                <span className="model-stream-icon" aria-hidden="true"><i className="fa-solid fa-graduation-cap"></i></span>
+                <strong>Academy &amp; Training</strong>
+                <span>Premium courses</span>
+              </div>
+              <div className="model-stream">
+                <span className="model-stream-icon" aria-hidden="true"><i className="fa-solid fa-microchip"></i></span>
+                <strong>AI Tools</strong>
+                <span>Personalized recommendations</span>
+              </div>
+              <div className="model-stream">
+                <span className="model-stream-icon" aria-hidden="true"><i className="fa-solid fa-user-group"></i></span>
+                <strong>Lead Generation</strong>
+                <span>Qualified matches</span>
+              </div>
+              <div className="model-stream">
+                <span className="model-stream-icon" aria-hidden="true"><i className="fa-solid fa-gem"></i></span>
+                <strong>Premium Services</strong>
+                <span>Events, consulting and more</span>
+              </div>
+            </div>
+          </article>
         </div>
         <p className="home-model-note">A self-reinforcing ecosystem: more sales for companies, more income and skills for people, a stronger economy.</p>
       </div>
