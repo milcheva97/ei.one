@@ -16992,6 +16992,7 @@ section {
 .model-checklist i { font-size: 19px; }
 .model-checklist.green i { color: #58C913; }
 .model-checklist.blue i { color: #2EADD6; }
+.model-checklist.blue { margin-top: auto; margin-bottom: auto; }
 .model-fee {
   margin-top: auto; padding: 18px 20px; border-radius: 14px; text-align: center;
   background: linear-gradient(90deg, #58C913, #2EADD6); color: #fff;
@@ -17006,7 +17007,7 @@ section {
 .model-fee-highlight strong { color: #2EADD6; font-size: 40px; font-weight: 800; line-height: 1; }
 .model-fee-highlight span { color: var(--ink); font-weight: 600; font-size: 16px; line-height: 1.35; }
 .model-fee-highlight small { color: var(--muted); font-weight: 500; font-size: 14px; }
-.model-streams { display: grid; grid-template-columns: repeat(2, 1fr); gap: 26px 18px; }
+.model-streams { display: grid; grid-template-columns: repeat(2, 1fr); gap: 26px 18px; margin-top: auto; margin-bottom: auto; }
 .model-stream { display: flex; flex-direction: column; gap: 5px; }
 .model-stream-icon { font-size: 28px; margin-bottom: 4px; }
 .model-stream:nth-child(1) .model-stream-icon { color: #58C913; }
