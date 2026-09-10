@@ -237,6 +237,41 @@ function App() {
           <h2>Every product can become an opportunity.</h2>
           <p>The same solution can generate value in two ways — for customers, and for people who want to learn, sell and earn.</p>
         </div>
+        <div className="home-insight-source">
+          <span className="home-example-badge">Example opportunity</span>
+          <h3>AI Automation for SMEs</h3>
+          <p className="home-example-tagline">Automate processes. Save time. Grow faster.</p>
+          <ul className="home-example-specs">
+            <li>
+              <span className="k"><i className="fa-solid fa-coins" aria-hidden="true"></i> Price (for customers)</span>
+              <span className="v">CHF 8'000</span>
+            </li>
+            <li>
+              <span className="k"><i className="fa-solid fa-percent" aria-hidden="true"></i> Partner commission</span>
+              <span className="v">15% <small>(CHF 1'200 per sale)</small></span>
+            </li>
+            <li>
+              <span className="k"><i className="fa-solid fa-graduation-cap" aria-hidden="true"></i> Training required</span>
+              <span className="v">2 hours</span>
+            </li>
+            <li>
+              <span className="k"><i className="fa-solid fa-location-dot" aria-hidden="true"></i> Territory</span>
+              <span className="v">Switzerland</span>
+            </li>
+            <li>
+              <span className="k"><i className="fa-solid fa-building" aria-hidden="true"></i> Company</span>
+              <span className="v">TechSolutions AG</span>
+            </li>
+          </ul>
+        </div>
+        <div className="home-insight-fan" aria-hidden="true">
+          <svg className="home-insight-fan-svg" viewBox="0 0 100 100" preserveAspectRatio="none">
+            <path className="fan-buy" d="M50 2 C 42 58, 26 52, 25 98" />
+            <path className="fan-earn" d="M50 2 C 58 58, 74 52, 75 98" />
+          </svg>
+          <span className="fan-head fan-head-buy"></span>
+          <span className="fan-head fan-head-earn"></span>
+        </div>
         <div className="home-insight-grid">
           <article className="home-insight-card buy">
             <span className="home-insight-icon" aria-hidden="true"><i className="fa-solid fa-bag-shopping"></i></span>
@@ -244,10 +279,6 @@ function App() {
             <p className="home-insight-role">For customers</p>
             <p>Get the solution and improve your business.</p>
           </article>
-          <div className="home-insight-vs" aria-hidden="true">
-            <i className="fa-solid fa-arrows-left-right"></i>
-            <span>Same product.<strong>Two opportunities.</strong></span>
-          </div>
           <article className="home-insight-card earn">
             <span className="home-insight-icon" aria-hidden="true"><i className="fa-solid fa-graduation-cap"></i></span>
             <h3>Learn · Sell · <span className="hl-accent">Earn</span></h3>
