@@ -16959,6 +16959,15 @@ section {
 .home-gradient-btn:hover { transform: translateY(-2px); box-shadow: 0 16px 34px rgba(46, 173, 214, .38); }
 .home-gradient-btn i { font-size: 13px; }
 
+/* Gradient text utility */
+.grad-text {
+  background: linear-gradient(90deg, #58C913, #2EADD6);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
+
 /* Business model */
 .home-model-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; max-width: 1000px; margin: 0 auto; }
 .home-model-card {

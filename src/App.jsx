@@ -586,7 +586,7 @@ function App() {
       <div className="wrap">
         <div className="section-head">
           <p className="eyebrow">Business model</p>
-          <h2>Shared value. Multiple revenue streams.</h2>
+          <h2>Shared value.<br /><span className="grad-text">Multiple revenue streams.</span></h2>
           <p>We grow when our ecosystem transacts, learns and succeeds — with fair, transparent and aligned incentives.</p>
         </div>
         <div className="home-model-grid">
