@@ -740,8 +740,8 @@ function App() {
             <span className="quad-axis left">Transaction focused</span>
             <span className="quad-axis right">Ecosystem focused</span>
             <span className="quad-item" style={{ left: '24%', top: '20%' }}><i className="fa-solid fa-graduation-cap" style={{ color: '#2A73CC' }} aria-hidden="true"></i>Coursera</span>
-            <span className="quad-item" style={{ left: '16%', top: '40%' }}><i className="fa-brands fa-shopify" style={{ color: '#95BF47' }} aria-hidden="true"></i>Shopify</span>
-            <span className="quad-item" style={{ left: '35%', top: '40%' }}><i className="fa-brands fa-linkedin-in" style={{ color: '#0A66C2' }} aria-hidden="true"></i>LinkedIn</span>
+            <span className="quad-item" style={{ left: '17%', top: '30%' }}><i className="fa-brands fa-shopify" style={{ color: '#95BF47' }} aria-hidden="true"></i>Shopify</span>
+            <span className="quad-item" style={{ left: '36%', top: '30%' }}><i className="fa-brands fa-linkedin-in" style={{ color: '#0A66C2' }} aria-hidden="true"></i>LinkedIn</span>
             <span className="quad-item" style={{ left: '30%', top: '64%' }}><i className="fa-brands fa-amazon" style={{ color: '#FF9900' }} aria-hidden="true"></i>Amazon</span>
             <span className="quad-item" style={{ left: '26%', top: '80%' }}><i className="fa-solid fa-briefcase" style={{ color: '#1DBF73' }} aria-hidden="true"></i>Fiverr</span>
             <span className="quad-item" style={{ left: '62%', top: '62%' }}><i className="fa-solid fa-play" style={{ color: '#A435F0' }} aria-hidden="true"></i>Udemy</span>

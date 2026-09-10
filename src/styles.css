@@ -16657,6 +16657,10 @@ section {
   .segment:nth-child(odd) { border-left: 0; }
   .segment:nth-child(3) { border-left: 0; }
 }
+@media (max-width: 620px) {
+  .quad-item { font-size: 10px; gap: 4px; }
+  .quad-item i { font-size: 12px; width: 13px; }
+}
 @media (max-width: 520px) {
   .home-market-stats { grid-template-columns: 1fr; max-width: 360px; }
 }
