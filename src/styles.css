@@ -16941,6 +16941,10 @@ section {
 .hv-links { display: flex; gap: clamp(14px, 1.5vw, 26px); flex-wrap: wrap; }
 .hv-item { display: flex; flex-direction: column; align-items: center; gap: 5px; text-align: center; }
 .hv-icon { font-size: 22px; line-height: 1; color: #2EADD6; }
+.hv-item:nth-child(1) .hv-icon { color: #58C913; }
+.hv-item:nth-child(2) .hv-icon { color: #2EADD6; }
+.hv-item:nth-child(3) .hv-icon { color: #F59E0B; }
+.hv-item:nth-child(4) .hv-icon { color: #3949AB; }
 .hv-item strong { color: var(--ink); font-size: 13.5px; font-weight: 700; white-space: nowrap; }
 .hv-item span { color: var(--muted); font-size: 12px; white-space: nowrap; }
 .home-gradient-btn {
