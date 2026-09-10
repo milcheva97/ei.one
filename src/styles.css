@@ -16879,25 +16879,53 @@ section {
 .home-ai-stats span { display: block; margin-top: 8px; color: #c8d1dc; font-size: 14px; }
 
 /* Journey */
-.home-journey-steps {
-  display: grid; grid-template-columns: repeat(5, 1fr); gap: 12px; max-width: 1080px; margin: 0 auto;
+.home-journey-path {
+  position: relative;
+  max-width: 1080px;
+  margin: 20px auto 0;
+  height: clamp(340px, 40vw, 430px);
 }
-.home-journey-step { position: relative; display: flex; flex-direction: column; align-items: center; text-align: center; gap: 12px; }
-.home-journey-step:not(:last-child)::before {
-  content: ""; position: absolute; top: 31px; left: calc(50% + 34px); width: calc(100% - 60px); height: 3px;
-  background: linear-gradient(90deg, #58C913, #2EADD6); opacity: .5;
+.journey-path-svg { position: absolute; inset: 0; width: 100%; height: 100%; overflow: visible; }
+.journey-path-svg path {
+  fill: none; stroke: url(#jp-grad); stroke-width: 3;
+  vector-effect: non-scaling-stroke; stroke-linecap: round;
 }
-.home-journey-dot {
-  position: relative; z-index: 1; width: 64px; height: 64px; border-radius: 50%;
-  display: flex; align-items: center; justify-content: center;
-  background: #ffffff; border: 2px solid #cfe6be; color: #58C913; font-size: 22px;
-  box-shadow: 0 8px 20px rgba(38, 50, 56, .06);
+.path-arrow {
+  position: absolute; transform: translate(-50%, -50%);
+  width: clamp(40px, 4.2vw, 54px); color: #2FA98C; z-index: 1;
 }
-.home-journey-step.is-goal .home-journey-dot {
-  background: linear-gradient(120deg, #58C913, #2EADD6); border-color: transparent; color: #fff; transform: scale(1.08);
+.path-arrow-svg { width: 100%; height: auto; display: block; overflow: visible; }
+.path-arrow-svg path { fill: none; stroke: currentColor; stroke-width: 4; stroke-linecap: round; stroke-linejoin: round; }
+.pa1 { left: 18.5%; top: 74%; }
+.pa2 { left: 40.5%; top: 58%; }
+.pa3 { left: 63.5%; top: 42%; }
+.pa4 { left: 83.5%; top: 27%; }
+.path-node { position: absolute; transform: translate(-50%, -50%); z-index: 2; }
+.jp1 { left: 8%; top: 85%; }
+.jp2 { left: 29%; top: 71%; }
+.jp3 { left: 52%; top: 55%; }
+.jp4 { left: 75%; top: 38%; }
+.jp5 { left: 92%; top: 24%; }
+.path-dot {
+  display: block; width: 20px; height: 20px; border-radius: 50%;
+  border: 3px solid #ffffff; box-shadow: 0 4px 12px rgba(38, 50, 56, .22);
 }
-.home-journey-step h4 { margin: 0; color: var(--ink); font-size: 15px; font-weight: 700; letter-spacing: .04em; text-transform: uppercase; }
-.home-journey-step p { margin: 0; color: var(--muted); font-size: 13.5px; line-height: 1.4; }
+.path-node.blue .path-dot { background: #2EADD6; }
+.path-node.green .path-dot { background: #58C913; }
+.path-card {
+  position: absolute; bottom: calc(100% + 16px); left: 50%; transform: translateX(-50%);
+  width: clamp(128px, 14vw, 172px);
+  padding: 13px 14px; text-align: center;
+  background: #ffffff; border: 1px solid var(--line); border-radius: 14px;
+  box-shadow: 0 12px 30px rgba(38, 50, 56, .12);
+}
+.path-card h4 { margin: 0 0 4px; color: var(--ink); font-size: 13px; font-weight: 800; letter-spacing: .07em; text-transform: uppercase; }
+.path-card p { margin: 0; color: var(--muted); font-size: 12.5px; line-height: 1.35; }
+.path-label {
+  position: absolute; top: calc(100% + 12px); left: 50%; transform: translateX(-50%);
+  width: max-content; max-width: 130px; text-align: center;
+  color: var(--ink); font-weight: 700; font-size: 13.5px; line-height: 1.25;
+}
 .home-journey-note {
   max-width: 720px; margin: 36px auto 0; text-align: center; color: var(--muted); font-size: 16px; line-height: 1.6;
 }
@@ -16928,6 +16956,17 @@ section {
   .ai-core { order: 2; }
   .ai-pill { justify-content: center; }
   .home-model-grid { grid-template-columns: 1fr; max-width: 460px; }
-  .home-journey-steps { grid-template-columns: repeat(2, 1fr); gap: 26px 12px; max-width: 460px; }
-  .home-journey-step:not(:last-child)::before { display: none; }
+}
+
+@media (max-width: 760px) {
+  .home-journey-path {
+    height: auto; max-width: 400px; display: flex; flex-direction: column; gap: 18px;
+    border-left: 3px solid; border-image: linear-gradient(#2EADD6, #58C913) 1; padding-left: 22px; margin-left: 10px;
+  }
+  .journey-path-svg, .path-arrow { display: none; }
+  .path-node { position: static; transform: none; }
+  .path-dot { position: absolute; margin-left: -34px; margin-top: 4px; }
+  .path-node { position: relative; }
+  .path-card { position: static; transform: none; width: auto; text-align: left; }
+  .path-label { position: static; transform: none; max-width: none; margin-top: 8px; text-align: left; }
 }

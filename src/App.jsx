@@ -496,31 +496,55 @@ function App() {
           <h2>A journey that creates value.</h2>
           <p>Every transaction can be the start of a new opportunity. Learn, earn, build experience and grow into the best version of yourself.</p>
         </div>
-        <div className="home-journey-steps">
-          <div className="home-journey-step">
-            <span className="home-journey-dot" aria-hidden="true"><i className="fa-solid fa-cart-shopping"></i></span>
-            <h4>Customer</h4>
-            <p>Discover and buy solutions.</p>
+        <div className="home-journey-path">
+          <svg className="journey-path-svg" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true">
+            <defs>
+              <linearGradient id="jp-grad" x1="0" y1="1" x2="1" y2="0">
+                <stop offset="0" stopColor="#2EADD6" />
+                <stop offset="0.4" stopColor="#58C913" />
+                <stop offset="1" stopColor="#58C913" />
+              </linearGradient>
+            </defs>
+            <path d="M8,85 C18,82 22,75 29,71 C38,66 45,60 52,55 C61,49 68,44 75,38 C83,33 87,28 92,24" />
+          </svg>
+
+          <span className="path-arrow pa1" aria-hidden="true">
+            <svg className="path-arrow-svg" viewBox="0 0 44 40"><path d="M5,36 C16,24 25,14 37,9" /><path d="M37,9 L28.5,8.5 M37,9 L33,16.5" /></svg>
+          </span>
+          <span className="path-arrow pa2" aria-hidden="true">
+            <svg className="path-arrow-svg" viewBox="0 0 44 40"><path d="M5,36 C16,24 25,14 37,9" /><path d="M37,9 L28.5,8.5 M37,9 L33,16.5" /></svg>
+          </span>
+          <span className="path-arrow pa3" aria-hidden="true">
+            <svg className="path-arrow-svg" viewBox="0 0 44 40"><path d="M5,36 C16,24 25,14 37,9" /><path d="M37,9 L28.5,8.5 M37,9 L33,16.5" /></svg>
+          </span>
+          <span className="path-arrow pa4" aria-hidden="true">
+            <svg className="path-arrow-svg" viewBox="0 0 44 40"><path d="M5,36 C16,24 25,14 37,9" /><path d="M37,9 L28.5,8.5 M37,9 L33,16.5" /></svg>
+          </span>
+
+          <div className="path-node jp1 blue">
+            <div className="path-card"><h4>Customer</h4><p>Discover and buy solutions.</p></div>
+            <span className="path-dot" aria-hidden="true"></span>
+            <span className="path-label">Access solutions</span>
           </div>
-          <div className="home-journey-step">
-            <span className="home-journey-dot" aria-hidden="true"><i className="fa-solid fa-book-open"></i></span>
-            <h4>Learner</h4>
-            <p>Follow trainings and get certified.</p>
+          <div className="path-node jp2 green">
+            <div className="path-card"><h4>Learner</h4><p>Follow company trainings and get certified.</p></div>
+            <span className="path-dot" aria-hidden="true"></span>
+            <span className="path-label">Build skills</span>
           </div>
-          <div className="home-journey-step">
-            <span className="home-journey-dot" aria-hidden="true"><i className="fa-solid fa-arrow-trend-up"></i></span>
-            <h4>Seller</h4>
-            <p>Represent solutions and generate business.</p>
+          <div className="path-node jp3 green">
+            <div className="path-card"><h4>Seller</h4><p>Represent solutions and generate business.</p></div>
+            <span className="path-dot" aria-hidden="true"></span>
+            <span className="path-label">Earn income</span>
           </div>
-          <div className="home-journey-step">
-            <span className="home-journey-dot" aria-hidden="true"><i className="fa-solid fa-award"></i></span>
-            <h4>Expert</h4>
-            <p>Gain experience and build reputation.</p>
+          <div className="path-node jp4 green">
+            <div className="path-card"><h4>Expert</h4><p>Gain experience and unlock new opportunities.</p></div>
+            <span className="path-dot" aria-hidden="true"></span>
+            <span className="path-label">Grow your impact</span>
           </div>
-          <div className="home-journey-step is-goal">
-            <span className="home-journey-dot" aria-hidden="true"><i className="fa-solid fa-rocket"></i></span>
-            <h4>Entrepreneur</h4>
-            <p>Create your own business and grow.</p>
+          <div className="path-node jp5 green">
+            <div className="path-card"><h4>Entrepreneur</h4><p>Create your own business and grow.</p></div>
+            <span className="path-dot" aria-hidden="true"></span>
+            <span className="path-label">Create new opportunities</span>
           </div>
         </div>
         <p className="home-journey-note">Your journey, verified — every training, sale, project and review builds your Experience Identity.</p>
