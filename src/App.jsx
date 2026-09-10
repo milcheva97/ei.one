@@ -425,6 +425,25 @@ function App() {
             <a className="button secondary home-side-cta" href="/register">Create your account</a>
           </article>
         </div>
+
+        <div className="home-outcomes">
+          <div className="home-outcome">
+            <span className="home-outcome-icon green" aria-hidden="true"><i className="fa-solid fa-seedling"></i></span>
+            <span className="home-outcome-text"><strong>More business</strong>for companies</span>
+          </div>
+          <div className="home-outcome">
+            <span className="home-outcome-icon blue" aria-hidden="true"><i className="fa-solid fa-people-group"></i></span>
+            <span className="home-outcome-text"><strong>More opportunities</strong>for people</span>
+          </div>
+          <div className="home-outcome">
+            <span className="home-outcome-icon blue" aria-hidden="true"><i className="fa-solid fa-graduation-cap"></i></span>
+            <span className="home-outcome-text"><strong>More relevant</strong>education</span>
+          </div>
+          <div className="home-outcome">
+            <span className="home-outcome-icon green" aria-hidden="true"><i className="fa-solid fa-globe"></i></span>
+            <span className="home-outcome-text"><strong>A stronger,</strong>more inclusive economy</span>
+          </div>
+        </div>
       </div>
     </section>
 
