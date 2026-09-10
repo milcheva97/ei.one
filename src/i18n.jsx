@@ -4147,6 +4147,33 @@ Object.assign(fr, {
   "Every step you take builds real, verified experience — and opens the next door. This is your path on EI.one.": "Chaque pas construit une expérience réelle et vérifiée — et ouvre la porte suivante. C'est votre parcours sur EI.one.",
 })
 
+Object.assign(de, {
+  "For people": "Für Menschen",
+  "We use cookies to improve your experience. By continuing, you accept our privacy policy.": "Wir verwenden Cookies, um Ihr Erlebnis zu verbessern. Wenn Sie fortfahren, akzeptieren Sie unsere Datenschutzrichtlinie.",
+  "Live today": "Heute live",
+  "Coming soon": "Demnächst",
+  "ei.one account": "ei.one-Konto",
+  "Company learning engine": "Lern-Engine für Unternehmen",
+})
+
+Object.assign(it, {
+  "For people": "Per le persone",
+  "We use cookies to improve your experience. By continuing, you accept our privacy policy.": "Utilizziamo i cookie per migliorare la tua esperienza. Continuando, accetti la nostra informativa sulla privacy.",
+  "Live today": "Attivo oggi",
+  "Coming soon": "Prossimamente",
+  "ei.one account": "Account ei.one",
+  "Company learning engine": "Motore di apprendimento aziendale",
+})
+
+Object.assign(fr, {
+  "For people": "Pour les personnes",
+  "We use cookies to improve your experience. By continuing, you accept our privacy policy.": "Nous utilisons des cookies pour améliorer votre expérience. En continuant, vous acceptez notre politique de confidentialité.",
+  "Live today": "En ligne aujourd'hui",
+  "Coming soon": "Bientôt disponible",
+  "ei.one account": "Compte ei.one",
+  "Company learning engine": "Moteur d'apprentissage d'entreprise",
+})
+
 const dictionaries = { de, it, fr }
 const originalText = new WeakMap()
 const originalAttrs = new WeakMap()
