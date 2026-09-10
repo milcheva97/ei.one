@@ -16290,7 +16290,97 @@ section {
 .home-problem-sub { margin: 2px 0 14px; color: var(--muted); font-weight: 600; font-size: 14.5px; }
 .home-problem-card ul { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 9px; }
 .home-problem-card li { position: relative; padding-left: 18px; color: var(--ink); font-size: 15px; line-height: 1.45; }
-.home-problem-card li::before { content: ""; position: absolute; left: 0; top: 9px; width: 7px; height: 7px; border-radius: 50%; background: #cdd7e0; }
+.home-problem-card li::before { content: ""; position: absolute; left: 0; top: 9px; width: 7px; height: 7px; border-radius: 50%; background: #58C913; }
+.home-problem-card:nth-child(2) li::before { background: #2EADD6; }
+.home-problem-card:nth-child(3) li::before { background: #F59E0B; }
+/* Problem — the "broken bridge" / disconnect strip */
+.home-problem-gaps {
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  gap: 0;
+  margin: 40px auto 0;
+  max-width: 980px;
+}
+.gap-node {
+  flex: 0 1 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding: 18px 20px;
+  min-width: 150px;
+  max-width: 210px;
+  text-align: center;
+  border: 1px solid var(--line);
+  border-top: 3px solid var(--gap-accent, #cdd7e0);
+  border-radius: 14px;
+  background: #ffffff;
+  color: var(--ink);
+  font-weight: 700;
+  font-size: 13px;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  line-height: 1.35;
+  box-shadow: 0 8px 24px rgba(38, 50, 56, .06);
+}
+.gap-node-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  border-radius: 12px;
+  font-size: 17px;
+  background: color-mix(in srgb, var(--gap-accent) 12%, transparent);
+  color: var(--gap-accent);
+}
+.gap-node-green { --gap-accent: #58C913; }
+.gap-node-blue { --gap-accent: #2EADD6; }
+.gap-node-orange { --gap-accent: #F59E0B; }
+.gap-link {
+  position: relative;
+  flex: 1 1 40px;
+  min-width: 44px;
+  max-width: 120px;
+  align-self: center;
+  height: 2px;
+}
+.gap-link::before {
+  content: "";
+  position: absolute;
+  left: 2px;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  border-top: 2px dashed #e0455b;
+}
+.gap-link::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  border-left: 8px solid #e0455b;
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+}
+.gap-x {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background: #e0455b;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  box-shadow: 0 4px 10px rgba(224, 69, 91, .35);
+}
 .home-problem-note {
   max-width: 720px;
   margin: 32px auto 0;
@@ -16395,6 +16485,11 @@ section {
 
 @media (max-width: 900px) {
   .home-problem-grid { grid-template-columns: 1fr; max-width: 460px; }
+  .home-problem-gaps { flex-direction: column; align-items: center; max-width: 320px; }
+  .gap-node { width: 100%; max-width: none; }
+  .gap-link { width: 2px; height: 44px; min-width: 0; max-width: none; flex: 0 0 auto; }
+  .gap-link::before { left: 50%; right: auto; top: 2px; bottom: 12px; transform: translateX(-50%); border-top: 0; border-left: 2px dashed #e0455b; }
+  .gap-link::after { left: 50%; right: auto; top: auto; bottom: 0; transform: translateX(-50%); border-left: 5px solid transparent; border-right: 5px solid transparent; border-top: 8px solid #e0455b; border-bottom: 0; }
   .home-insight-grid { grid-template-columns: 1fr; max-width: 460px; }
   .home-insight-vs { flex-direction: row; }
   .home-twosides-grid { grid-template-columns: 1fr; max-width: 460px; }

@@ -210,6 +210,22 @@ function App() {
             </ul>
           </article>
         </div>
+        <div className="home-problem-gaps" role="img" aria-label="Solutions without reach, talent without access, knowledge without opportunities — three disconnected worlds">
+          <span className="gap-node gap-node-green">
+            <span className="gap-node-icon" aria-hidden="true"><i className="fa-solid fa-store"></i></span>
+            Solutions without reach
+          </span>
+          <span className="gap-link" aria-hidden="true"><span className="gap-x"><i className="fa-solid fa-xmark"></i></span></span>
+          <span className="gap-node gap-node-blue">
+            <span className="gap-node-icon" aria-hidden="true"><i className="fa-solid fa-user-group"></i></span>
+            Talent without access
+          </span>
+          <span className="gap-link" aria-hidden="true"><span className="gap-x"><i className="fa-solid fa-xmark"></i></span></span>
+          <span className="gap-node gap-node-orange">
+            <span className="gap-node-icon" aria-hidden="true"><i className="fa-solid fa-lightbulb"></i></span>
+            Knowledge without opportunities
+          </span>
+        </div>
         <p className="home-problem-note">These worlds are disconnected — a huge missed opportunity for people, companies and society.</p>
       </div>
     </section>
