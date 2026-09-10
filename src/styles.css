@@ -16603,9 +16603,14 @@ section {
   background: radial-gradient(circle at 75% 25%, rgba(88,201,19,.10), transparent 45%), var(--paper);
   border: 1px solid var(--line);
 }
-.home-quadrant::before, .home-quadrant::after { content: ""; position: absolute; background: var(--line); }
-.home-quadrant::before { left: 8%; right: 8%; top: 50%; height: 1px; }
-.home-quadrant::after { top: 8%; bottom: 8%; left: 50%; width: 1px; }
+.home-quadrant::before, .home-quadrant::after { content: ""; position: absolute; background: rgba(74, 144, 217, .55); }
+.home-quadrant::before { left: 7%; right: 7%; top: 50%; height: 2px; transform: translateY(-50%); }
+.home-quadrant::after { top: 7%; bottom: 7%; left: 50%; width: 2px; transform: translateX(-50%); }
+.quad-arrow { position: absolute; width: 0; height: 0; z-index: 1; }
+.quad-arrow.up { top: calc(7% - 9px); left: 50%; transform: translateX(-50%); border-left: 7px solid transparent; border-right: 7px solid transparent; border-bottom: 10px solid #4A90D9; }
+.quad-arrow.down { bottom: calc(7% - 9px); left: 50%; transform: translateX(-50%); border-left: 7px solid transparent; border-right: 7px solid transparent; border-top: 10px solid #4A90D9; }
+.quad-arrow.left { left: calc(7% - 9px); top: 50%; transform: translateY(-50%); border-top: 7px solid transparent; border-bottom: 7px solid transparent; border-right: 10px solid #4A90D9; }
+.quad-arrow.right { right: calc(7% - 9px); top: 50%; transform: translateY(-50%); border-top: 7px solid transparent; border-bottom: 7px solid transparent; border-left: 10px solid #4A90D9; }
 .quad-axis { position: absolute; color: var(--muted); font-size: 11px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; }
 .quad-axis.top { top: 10px; left: 50%; transform: translateX(-50%); }
 .quad-axis.bottom { bottom: 10px; left: 50%; transform: translateX(-50%); }

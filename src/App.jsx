@@ -731,6 +731,10 @@ function App() {
 
         <div className="home-market-mid">
           <div className="home-quadrant" role="img" aria-label="Competitive positioning: EI.one sits in the human-impact, ecosystem-focused quadrant, apart from transaction- or automation-focused platforms">
+            <span className="quad-arrow up" aria-hidden="true"></span>
+            <span className="quad-arrow down" aria-hidden="true"></span>
+            <span className="quad-arrow left" aria-hidden="true"></span>
+            <span className="quad-arrow right" aria-hidden="true"></span>
             <span className="quad-axis top">More human impact</span>
             <span className="quad-axis bottom">More AI automation</span>
             <span className="quad-axis left">Transaction focused</span>
