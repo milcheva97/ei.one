@@ -16929,6 +16929,17 @@ section {
 .home-journey-note {
   max-width: 720px; margin: 36px auto 0; text-align: center; color: var(--muted); font-size: 16px; line-height: 1.6;
 }
+.home-journey-cta { margin: 26px auto 0; text-align: center; }
+.home-gradient-btn {
+  display: inline-flex; align-items: center; gap: 12px;
+  padding: 16px 34px; border-radius: 999px;
+  background: linear-gradient(90deg, #58C913, #2EADD6);
+  color: #ffffff; font-weight: 700; font-size: 16px; text-decoration: none;
+  box-shadow: 0 12px 28px rgba(46, 173, 214, .30);
+  transition: transform .15s ease, box-shadow .15s ease;
+}
+.home-gradient-btn:hover { transform: translateY(-2px); box-shadow: 0 16px 34px rgba(46, 173, 214, .38); }
+.home-gradient-btn i { font-size: 14px; }
 
 /* Business model */
 .home-model-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; max-width: 1000px; margin: 0 auto; }

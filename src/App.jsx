@@ -548,6 +548,9 @@ function App() {
           </div>
         </div>
         <p className="home-journey-note">Your journey, verified — every training, sale, project and review builds your Experience Identity.</p>
+        <div className="home-journey-cta">
+          <a className="home-gradient-btn" href="/contact">Start your journey today <i className="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+        </div>
       </div>
     </section>
 
