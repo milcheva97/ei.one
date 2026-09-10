@@ -394,6 +394,25 @@ function App() {
             </ol>
             <a className="button home-side-cta" href="/partner">Join as a business partner</a>
           </article>
+
+          <div className="home-engine">
+            <div className="home-engine-brand">
+              <img src="/images/logo.png" alt="EI.one" />
+              <span className="home-engine-sub">Opportunity Engine</span>
+            </div>
+            <div className="home-engine-arrows" aria-hidden="true">
+              <div className="engine-in from-business">
+                <span className="engine-label">Solutions<br />+ Training<br />+ Opportunities</span>
+                <span className="engine-arrow green"><i className="fa-solid fa-arrow-right-long"></i></span>
+              </div>
+              <div className="engine-in from-people">
+                <span className="engine-arrow blue"><i className="fa-solid fa-arrow-left-long"></i></span>
+                <span className="engine-label">People<br />+ Skills<br />+ Sales<br />+ Growth</span>
+              </div>
+            </div>
+            <p className="home-engine-note">Technology that creates opportunities</p>
+          </div>
+
           <article className="home-side people">
             <h3>For people</h3>
             <ol>
