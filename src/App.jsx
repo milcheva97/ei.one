@@ -454,6 +454,24 @@ function App() {
           <h2>Your skills. Our AI. Real opportunities.</h2>
           <p>Our AI analyzes your skills, experience, interests and goals to match you with the best opportunities — and shows you how to unlock them.</p>
         </div>
+
+        <div className="home-ai-engine">
+          <div className="ai-col ai-inputs">
+            <span className="ai-pill"><i className="fa-regular fa-user" aria-hidden="true"></i>Skills &amp; Experience</span>
+            <span className="ai-pill"><i className="fa-solid fa-bullseye" aria-hidden="true"></i>Interests &amp; Goals</span>
+            <span className="ai-pill"><i className="fa-solid fa-location-dot" aria-hidden="true"></i>Location &amp; Availability</span>
+          </div>
+          <div className="ai-core">
+            <span className="ai-core-title">AI</span>
+            <span className="ai-core-sub">Opportunity Engine</span>
+          </div>
+          <div className="ai-col ai-outputs">
+            <span className="ai-pill"><i className="fa-solid fa-chart-column" aria-hidden="true"></i>Market Demand</span>
+            <span className="ai-pill"><i className="fa-solid fa-building" aria-hidden="true"></i>Company Needs</span>
+            <span className="ai-pill"><i className="fa-solid fa-graduation-cap" aria-hidden="true"></i>Learning Paths</span>
+          </div>
+        </div>
+
         <div className="home-ai-flow">
           <span>Match</span>
           <i className="fa-solid fa-arrow-right" aria-hidden="true"></i>
