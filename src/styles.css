@@ -16958,15 +16958,14 @@ section {
   .home-model-grid { grid-template-columns: 1fr; max-width: 460px; }
 }
 
-@media (max-width: 760px) {
+@media (max-width: 900px) {
   .home-journey-path {
-    height: auto; max-width: 400px; display: flex; flex-direction: column; gap: 18px;
-    border-left: 3px solid; border-image: linear-gradient(#2EADD6, #58C913) 1; padding-left: 22px; margin-left: 10px;
+    height: auto; max-width: 460px; display: flex; flex-direction: column; gap: 26px;
+    border-left: 3px solid; border-image: linear-gradient(#2EADD6, #58C913) 1; padding-left: 26px; margin: 10px auto 0;
   }
   .journey-path-svg, .path-arrow { display: none; }
-  .path-node { position: static; transform: none; }
-  .path-dot { position: absolute; margin-left: -34px; margin-top: 4px; }
-  .path-node { position: relative; }
+  .path-node { position: relative; transform: none; left: auto !important; top: auto !important; }
+  .path-dot { position: absolute; left: -37px; top: 4px; }
   .path-card { position: static; transform: none; width: auto; text-align: left; }
   .path-label { position: static; transform: none; max-width: none; margin-top: 8px; text-align: left; }
 }
