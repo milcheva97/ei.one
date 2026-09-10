@@ -801,6 +801,9 @@ function App() {
 
     <section className="home-traction">
       <div className="wrap">
+        <div className="home-traction-head">
+          <h2>Real progress.<br /><span className="grad-text">A massive opportunity ahead.</span></h2>
+        </div>
         <div className="home-why">
           <div className="home-why-col">
             <h3 className="home-why-head">Why us</h3>
