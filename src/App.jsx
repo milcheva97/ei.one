@@ -693,6 +693,108 @@ function App() {
       </div>
     </section>
 
+    <section className="home-market">
+      <div className="wrap">
+        <div className="section-head">
+          <p className="eyebrow">Market &amp; positioning</p>
+          <h2>A growing market.<br /><span className="grad-text">A unique position.</span></h2>
+          <p>We operate at the intersection of business, education, people and impact — a multi-trillion-dollar opportunity with no single player connecting all four.</p>
+        </div>
+
+        <h3 className="home-market-subhead">A large and growing market</h3>
+        <div className="home-market-stats">
+          <article className="market-stat">
+            <span className="market-stat-icon green" aria-hidden="true"><i className="fa-solid fa-chart-line"></i></span>
+            <strong>$7.5T</strong>
+            <p>Global e-commerce market (2026)</p>
+            <span className="market-stat-src">Source: eMarketer</span>
+          </article>
+          <article className="market-stat">
+            <span className="market-stat-icon blue" aria-hidden="true"><i className="fa-solid fa-graduation-cap"></i></span>
+            <strong>$404B</strong>
+            <p>Global EdTech market (2026)</p>
+            <span className="market-stat-src">Source: HolonIQ</span>
+          </article>
+          <article className="market-stat">
+            <span className="market-stat-icon indigo" aria-hidden="true"><i className="fa-solid fa-users"></i></span>
+            <strong>$1.1T</strong>
+            <p>Global HR &amp; skills development market</p>
+            <span className="market-stat-src">Source: Grand View Research</span>
+          </article>
+          <article className="market-stat">
+            <span className="market-stat-icon green" aria-hidden="true"><i className="fa-solid fa-seedling"></i></span>
+            <strong>$12T</strong>
+            <p>Sustainable &amp; green economy opportunities</p>
+            <span className="market-stat-src">Source: UN / BCG</span>
+          </article>
+        </div>
+
+        <div className="home-market-mid">
+          <div className="home-quadrant" role="img" aria-label="Competitive positioning: EI.one sits in the human-impact, ecosystem-focused quadrant, apart from transaction- or automation-focused platforms">
+            <span className="quad-axis top">More human impact</span>
+            <span className="quad-axis bottom">More AI automation</span>
+            <span className="quad-axis left">Transaction focused</span>
+            <span className="quad-axis right">Ecosystem focused</span>
+            <span className="quad-item" style={{ left: '24%', top: '20%' }}>Coursera</span>
+            <span className="quad-item" style={{ left: '16%', top: '40%' }}>Shopify</span>
+            <span className="quad-item" style={{ left: '35%', top: '40%' }}>LinkedIn</span>
+            <span className="quad-item" style={{ left: '30%', top: '64%' }}>Amazon</span>
+            <span className="quad-item" style={{ left: '26%', top: '80%' }}>Fiverr</span>
+            <span className="quad-item" style={{ left: '62%', top: '62%' }}>Udemy</span>
+            <span className="quad-item" style={{ left: '60%', top: '80%' }}>Upwork</span>
+            <span className="quad-item" style={{ left: '82%', top: '66%' }}>Salesforce</span>
+            <span className="quad-eione" style={{ left: '76%', top: '22%' }}>
+              <img src="/images/logo.png" alt="EI.one" />
+            </span>
+          </div>
+
+          <div className="home-diff">
+            <h3 className="home-market-subhead">What makes us different</h3>
+            <article className="diff-item">
+              <span className="diff-icon green" aria-hidden="true"><i className="fa-solid fa-diagram-project"></i></span>
+              <div><strong>Unique integration</strong><p>The only platform connecting business, education, people and environment.</p></div>
+            </article>
+            <article className="diff-item">
+              <span className="diff-icon blue" aria-hidden="true"><i className="fa-solid fa-microchip"></i></span>
+              <div><strong>Human + AI</strong><p>Technology that empowers people, not replaces them.</p></div>
+            </article>
+            <article className="diff-item">
+              <span className="diff-icon orange" aria-hidden="true"><i className="fa-solid fa-seedling"></i></span>
+              <div><strong>Purpose-driven</strong><p>Every transaction creates economic, social and environmental value.</p></div>
+            </article>
+            <article className="diff-item">
+              <span className="diff-icon indigo" aria-hidden="true"><i className="fa-solid fa-gem"></i></span>
+              <div><strong>Ecosystem advantage</strong><p>Network effects, data intelligence and a trusted community.</p></div>
+            </article>
+          </div>
+        </div>
+
+        <h3 className="home-market-subhead">Our target segments</h3>
+        <div className="home-segments">
+          <div className="segment">
+            <span className="segment-icon green" aria-hidden="true"><i className="fa-solid fa-building"></i></span>
+            <strong>Companies</strong>
+            <span>All sizes, across industries (especially SMEs)</span>
+          </div>
+          <div className="segment">
+            <span className="segment-icon blue" aria-hidden="true"><i className="fa-solid fa-graduation-cap"></i></span>
+            <strong>Educational Institutions</strong>
+            <span>Schools, universities, training providers</span>
+          </div>
+          <div className="segment">
+            <span className="segment-icon orange" aria-hidden="true"><i className="fa-solid fa-users"></i></span>
+            <strong>Individuals</strong>
+            <span>Students, professionals, career changers</span>
+          </div>
+          <div className="segment">
+            <span className="segment-icon indigo" aria-hidden="true"><i className="fa-solid fa-globe"></i></span>
+            <strong>Impact &amp; ESG Partners</strong>
+            <span>Organizations focused on a sustainable future</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <section className="home-traction">
       <div className="wrap">
         <div className="home-traction-inner">
