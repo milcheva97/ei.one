@@ -238,7 +238,7 @@ function App() {
           <p>The same solution can generate value in two ways — for customers, and for people who want to learn, sell and earn.</p>
         </div>
         <div className="home-insight-source">
-          <span className="home-example-badge">Example opportunity</span>
+          <span className="home-example-badge">Featured Opportunity</span>
           <h3>AI Automation for SMEs</h3>
           <p className="home-example-tagline">Automate processes. Save time. Grow faster.</p>
           <ul className="home-example-specs">
