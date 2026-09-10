@@ -16977,44 +16977,44 @@ section {
   box-shadow: 0 12px 34px rgba(38, 50, 56, .06);
 }
 .model-card.membership { background: linear-gradient(160deg, rgba(88,201,19,.06), rgba(46,173,214,.05)); }
-.model-card-head { display: flex; align-items: center; gap: 14px; margin-bottom: 18px; }
+.model-card-head { display: flex; align-items: center; gap: 16px; margin-bottom: 22px; }
 .model-card-icon {
   flex: none; display: inline-flex; align-items: center; justify-content: center;
-  width: 50px; height: 50px; border-radius: 14px; font-size: 22px;
+  width: 58px; height: 58px; border-radius: 16px; font-size: 26px;
 }
 .model-card-icon.green { background: rgba(88,201,19,.12); color: #58C913; }
 .model-card-icon.blue { background: rgba(46,173,214,.12); color: #2EADD6; }
 .model-card-icon.indigo { background: rgba(57,73,171,.12); color: #3949AB; }
-.model-card h3 { margin: 0; color: var(--ink); font-size: 18px; font-weight: 800; }
-.model-card-sub { margin: 3px 0 0; color: var(--muted); font-size: 13.5px; line-height: 1.4; }
-.model-checklist { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 11px; }
-.model-checklist li { display: flex; align-items: center; gap: 11px; color: var(--ink); font-size: 15px; }
-.model-checklist i { font-size: 16px; }
+.model-card h3 { margin: 0; color: var(--ink); font-size: 22px; font-weight: 800; }
+.model-card-sub { margin: 4px 0 0; color: var(--muted); font-size: 15px; line-height: 1.4; }
+.model-checklist { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 16px; }
+.model-checklist li { display: flex; align-items: center; gap: 13px; color: var(--ink); font-size: 17px; }
+.model-checklist i { font-size: 19px; }
 .model-checklist.green i { color: #58C913; }
 .model-checklist.blue i { color: #2EADD6; }
 .model-fee {
-  margin-top: auto; padding: 16px 18px; border-radius: 14px; text-align: center;
+  margin-top: auto; padding: 18px 20px; border-radius: 14px; text-align: center;
   background: linear-gradient(90deg, #58C913, #2EADD6); color: #fff;
 }
-.model-fee strong { display: block; font-size: 16px; font-weight: 800; }
-.model-fee span { display: block; margin-top: 2px; font-size: 12.5px; opacity: .92; }
+.model-fee strong { display: block; font-size: 19px; font-weight: 800; }
+.model-fee span { display: block; margin-top: 3px; font-size: 14px; opacity: .92; }
 .model-fee-highlight {
-  display: flex; align-items: center; gap: 16px; margin-bottom: 18px;
-  padding: 16px 20px; border-radius: 14px;
+  display: flex; align-items: center; gap: 18px; margin-bottom: 22px;
+  padding: 20px 24px; border-radius: 14px;
   background: rgba(46,173,214,.08); border: 1px solid rgba(46,173,214,.2);
 }
-.model-fee-highlight strong { color: #2EADD6; font-size: 30px; font-weight: 800; line-height: 1; }
-.model-fee-highlight span { color: var(--ink); font-weight: 600; font-size: 14px; line-height: 1.35; }
-.model-fee-highlight small { color: var(--muted); font-weight: 500; }
-.model-streams { display: grid; grid-template-columns: repeat(2, 1fr); gap: 18px 14px; }
-.model-stream { display: flex; flex-direction: column; gap: 4px; }
-.model-stream-icon { font-size: 22px; margin-bottom: 2px; }
+.model-fee-highlight strong { color: #2EADD6; font-size: 40px; font-weight: 800; line-height: 1; }
+.model-fee-highlight span { color: var(--ink); font-weight: 600; font-size: 16px; line-height: 1.35; }
+.model-fee-highlight small { color: var(--muted); font-weight: 500; font-size: 14px; }
+.model-streams { display: grid; grid-template-columns: repeat(2, 1fr); gap: 26px 18px; }
+.model-stream { display: flex; flex-direction: column; gap: 5px; }
+.model-stream-icon { font-size: 28px; margin-bottom: 4px; }
 .model-stream:nth-child(1) .model-stream-icon { color: #58C913; }
 .model-stream:nth-child(2) .model-stream-icon { color: #2EADD6; }
 .model-stream:nth-child(3) .model-stream-icon { color: #F59E0B; }
 .model-stream:nth-child(4) .model-stream-icon { color: #3949AB; }
-.model-stream strong { color: var(--ink); font-size: 14px; font-weight: 700; }
-.model-stream span { color: var(--muted); font-size: 12.5px; line-height: 1.35; }
+.model-stream strong { color: var(--ink); font-size: 16.5px; font-weight: 700; }
+.model-stream span { color: var(--muted); font-size: 14px; line-height: 1.35; }
 .model-ecosystem { justify-content: center; }
 .eco-flow { display: flex; align-items: center; justify-content: center; gap: 10px; text-align: center; color: var(--ink); font-weight: 700; font-size: 12.5px; }
 .eco-flow.top { margin-bottom: 8px; }
