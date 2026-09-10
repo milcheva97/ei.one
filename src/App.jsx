@@ -286,16 +286,6 @@ function App() {
             <p>Learn it, represent it, and earn commissions on every sale.</p>
           </article>
         </div>
-        <div className="home-insight-example">
-          <span className="home-insight-example-tag">Example opportunity</span>
-          <h4>AI Automation for SMEs</h4>
-          <div className="home-insight-example-rows">
-            <div><span>Buy it</span><strong>CHF 8'000</strong></div>
-            <div><span>Or partner &amp; earn</span><strong>15% — CHF 1'200 / sale</strong></div>
-            <div><span>Training</span><strong>2 hours</strong></div>
-          </div>
-          <p className="home-insight-example-note">Don't just buy it. Learn it. Sell it. Earn from it.</p>
-        </div>
       </div>
     </section>
 

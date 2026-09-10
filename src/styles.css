@@ -16494,19 +16494,6 @@ section {
 }
 .home-insight-vs span { font-size: 14px; line-height: 1.3; }
 .home-insight-vs strong { display: block; color: #2EADD6; }
-.home-insight-example {
-  max-width: 620px; margin: 30px auto 0; padding: 26px 30px;
-  background: #ffffff; border: 1px solid var(--line); border-radius: 18px;
-  box-shadow: 0 14px 40px rgba(38, 50, 56, .05); text-align: center;
-}
-.home-insight-example-tag { display: inline-block; margin-bottom: 8px; color: #58C913; font-size: 12px; font-weight: 800; letter-spacing: .14em; text-transform: uppercase; }
-.home-insight-example h4 { margin: 0 0 16px; color: var(--ink); font-size: 20px; }
-.home-insight-example-rows { display: flex; flex-wrap: wrap; justify-content: center; gap: 12px; }
-.home-insight-example-rows div { flex: 1 1 150px; padding: 12px 14px; background: var(--paper); border-radius: 12px; }
-.home-insight-example-rows span { display: block; color: var(--muted); font-size: 12.5px; margin-bottom: 4px; }
-.home-insight-example-rows strong { color: var(--ink); font-size: 15px; }
-.home-insight-example-note { margin: 18px 0 0; color: var(--ink); font-weight: 700; font-style: italic; }
-
 /* Two sides */
 .home-twosides-grid {
   display: grid;
