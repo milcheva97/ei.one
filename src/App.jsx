@@ -896,9 +896,9 @@ function App() {
               <g className="how-heart-label" fill="#10222E">
                 <text x="180" y="40" textAnchor="middle">BUY</text>
                 <text x="380" y="40" textAnchor="middle">SELL</text>
-                <text x="502" y="166" textAnchor="start">EARN</text>
+                <text x="480" y="144" textAnchor="middle">EARN</text>
                 <text x="280" y="410" textAnchor="middle">LEARN</text>
-                <text x="58" y="166" textAnchor="end">GROW</text>
+                <text x="80" y="144" textAnchor="middle">GROW</text>
               </g>
               {/* center loop caption */}
               <g className="how-heart-center" textAnchor="middle">

@@ -1,4 +1,6 @@
-﻿:root {
+﻿html { overflow-x: hidden; }
+
+:root {
   --ink: #263238;
   --muted: #64716d;
   --line: #dfe8e4;
@@ -1407,9 +1409,9 @@ section {
 
 .how-heart-label text {
   font-family: inherit;
-  font-size: 19px;
+  font-size: 15px;
   font-weight: 700;
-  letter-spacing: .08em;
+  letter-spacing: .04em;
 }
 
 .how-heart-center text {
@@ -13832,7 +13834,8 @@ section {
   }
 
   .nav.is-open .nav-menu {
-    display: block;
+    display: flex;
+    flex-direction: column;
   }
 
   .nav-links {
@@ -13922,31 +13925,47 @@ section {
   }
 
   .nav-menu > .lang {
-    display: flex;
+    order: -1;
+    display: block;
     width: 100%;
-    margin-top: 24px;
+    margin: 0 0 14px;
+    padding-bottom: 14px;
+    border-bottom: 1px solid #e2e8ee;
     color: #10222E;
-    font-size: 16px;
   }
 
-  .nav-menu > .lang button {
-    width: 100%;
-    justify-content: flex-start;
-    min-height: 44px;
-    padding: 0 9px;
-    font-weight: 800;
+  .nav-menu > .lang > button {
+    display: none;
   }
 
   .nav-menu > .lang .lang-menu {
-    left: 0;
-    right: auto;
-    top: calc(100% + 4px);
-    transform: translateY(8px);
+    position: static;
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    min-width: 0;
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    visibility: visible;
+    transform: none;
+    pointer-events: auto;
+    background: transparent;
+    border: 0;
+    box-shadow: none;
   }
 
-  .nav-menu > .lang:hover .lang-menu,
-  .nav-menu > .lang:focus-within .lang-menu {
-    transform: translateY(0);
+  .nav-menu > .lang .lang-menu a {
+    flex: 1;
+    min-height: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    border: 1px solid #e2e8ee;
+    border-radius: 8px;
+    font-weight: 700;
+    color: #53667d;
   }
 
   .hero .actions,
@@ -16732,7 +16751,7 @@ section {
 .quad-arrow.down { bottom: calc(7% - 9px); left: 50%; transform: translateX(-50%); border-left: 7px solid transparent; border-right: 7px solid transparent; border-top: 10px solid #4A90D9; }
 .quad-arrow.left { left: calc(7% - 9px); top: 50%; transform: translateY(-50%); border-top: 7px solid transparent; border-bottom: 7px solid transparent; border-right: 10px solid #4A90D9; }
 .quad-arrow.right { right: calc(7% - 9px); top: 50%; transform: translateY(-50%); border-top: 7px solid transparent; border-bottom: 7px solid transparent; border-left: 10px solid #4A90D9; }
-.quad-axis { position: absolute; color: var(--muted); font-size: 11px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; }
+.quad-axis { position: absolute; color: var(--muted); font-size: 10px; font-weight: 700; letter-spacing: .03em; text-transform: uppercase; }
 .quad-axis.top { top: 10px; left: 50%; transform: translateX(-50%); }
 .quad-axis.bottom { bottom: 10px; left: 50%; transform: translateX(-50%); }
 .quad-axis.left { left: 12px; top: 50%; transform: translateY(-150%); max-width: 90px; }
@@ -17309,4 +17328,28 @@ section {
   .path-dot { position: absolute; left: -37px; top: 4px; }
   .path-card { position: static; transform: none; width: auto; text-align: left; }
   .path-label { position: static; transform: none; max-width: none; margin-top: 8px; text-align: left; }
+}
+
+/* Longer translations (DE/IT/FR): let text wrap instead of overflowing on mobile */
+@media (max-width: 620px) {
+  .ai-pill,
+  .home-example-specs .k,
+  .hv-item strong,
+  .hv-item span,
+  .model-stream strong,
+  .model-stream span,
+  .home-gradient-btn,
+  .home-side-cta { white-space: normal; }
+  .ai-pill { text-align: center; }
+  h1, h2, h3, p,
+  .model-card h3,
+  .cycle-desc,
+  .path-card p,
+  .path-label,
+  .diff-item strong,
+  .segment strong,
+  .segment > span:last-child,
+  .market-stat p,
+  .why-item strong,
+  .quad-item { overflow-wrap: break-word; word-break: break-word; }
 }
