@@ -210,32 +210,6 @@ function EducationPage() {
           </div>
         </section>
 
-        <section className="education-pillars">
-          <div className="wrap">
-            <div className="education-section-head">
-              <h2>Education & Networking</h2>
-              <p>Our ecosystem connects companies, talents, educational institutions, and experts to share knowledge and create new opportunities.</p>
-            </div>
-            <div className="education-pillar-grid">
-              <article>
-                <i className="fa-solid fa-graduation-cap" aria-hidden="true"></i>
-                <h3>Education Initiatives</h3>
-                <p>Continuous development and skill building.</p>
-              </article>
-              <article>
-                <i className="fa-solid fa-users-viewfinder" aria-hidden="true"></i>
-                <h3>Talent Promotion</h3>
-                <p>Helping people reach their full potential.</p>
-              </article>
-              <article>
-                <i className="fa-solid fa-handshake-simple" aria-hidden="true"></i>
-                <h3>Cooperation</h3>
-                <p>Innovation through collaboration across borders.</p>
-              </article>
-            </div>
-          </div>
-        </section>
-
         <section className="human-center">
           <div className="wrap human-center-grid">
             <div className="human-center-copy">
