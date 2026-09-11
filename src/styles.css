@@ -1,4 +1,4 @@
-﻿html { overflow-x: hidden; }
+﻿html, body { overflow-x: clip; max-width: 100%; }
 
 :root {
   --ink: #263238;
@@ -3072,6 +3072,10 @@ section {
   align-items: start;
 }
 .footer-sections > h3 { text-align: center; }
+.footer-sections-cols a { overflow-wrap: break-word; word-break: break-word; }
+@media (max-width: 480px) {
+  .footer-sections-cols { grid-template-columns: 1fr; }
+}
 
 .site-footer h3 {
   margin-bottom: 24px;
@@ -16964,7 +16968,7 @@ section {
     width: 0; height: 0; border-left: 6px solid transparent; border-right: 6px solid transparent;
   }
   .home-insight-card.buy::after { border-top: 8px solid #58C913; }
-  .home-insight-source::after { border-top: 8px solid #2EADD6; }
+  .home-insight-source::after { border-bottom: 8px solid #2EADD6; }
   .home-twosides-grid { grid-template-columns: 1fr; max-width: 460px; }
   .engine-in { display: none; }
   .home-engine { padding: 8px 0; }
@@ -17093,35 +17097,12 @@ section {
 .n4 { left: 31.07%; top: 76.07%; }
 .n5 { left: 19.46%; top: 40%; }
 
-@media (max-width: 640px) {
-  .home-cycle {
-    width: 100%;
-    max-width: 400px;
-    aspect-ratio: auto;
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-    container-type: normal;
-  }
-  .cycle-svg, .cycle-hub { display: none; }
-  .cycle-node {
-    position: static;
-    transform: none;
-    width: 100%;
-    aspect-ratio: auto;
-    flex-direction: row;
-    justify-content: flex-start;
-    gap: 14px;
-    border-radius: 16px;
-    padding: 16px 18px;
-    text-align: left;
-  }
-  .cycle-node .cycle-num { order: -1; }
-  .cycle-text { gap: 3px; }
-  .cycle-num { font-size: 13px; }
-  .cycle-ic { font-size: 22px; width: 26px; }
-  .cycle-name { font-size: 15px; }
-  .cycle-desc { font-size: 13px; max-width: none; }
+/* Small screens: keep the circle but drop the descriptions so nodes stay round */
+@media (max-width: 720px) {
+  .home-cycle .cycle-desc { display: none; }
+  .home-cycle .cycle-name { font-size: clamp(11px, 3.4cqw, 15px); }
+  .home-cycle .cycle-num { font-size: clamp(10px, 2.6cqw, 13px); }
+  .home-cycle .cycle-ic { font-size: clamp(16px, 5cqw, 22px); }
 }
 
 /* Solution — circle left, cards right */
@@ -17486,4 +17467,7 @@ section {
   .market-stat p,
   .why-item strong,
   .quad-item { overflow-wrap: break-word; word-break: break-word; }
+  .home-verified .hv-right { width: 100%; }
+  .home-verified .hv-links { display: grid; grid-template-columns: 1fr 1fr; gap: 22px 12px; width: 100%; }
+  .home-verified .home-gradient-btn { width: 100%; justify-content: center; }
 }
