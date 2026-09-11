@@ -4184,6 +4184,10 @@ Object.assign(fr, {
   "EI.one unites emotional and artificial intelligence to connect companies, people, and education—turning economic activity into opportunities for human and business growth.": "EI.one réunit intelligence émotionnelle et artificielle pour relier entreprises, personnes et formation, transformant l'activité économique en opportunités de croissance humaine et professionnelle.",
 })
 
+Object.assign(de, { "Discover your opportunities": "Entdecken Sie Ihre Chancen" })
+Object.assign(it, { "Discover your opportunities": "Scopri le tue opportunità" })
+Object.assign(fr, { "Discover your opportunities": "Découvrez vos opportunités" })
+
 const dictionaries = { de, it, fr }
 const originalText = new WeakMap()
 const originalAttrs = new WeakMap()

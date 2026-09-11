@@ -129,14 +129,14 @@ function App() {
             </div>
           </a>
 
-          <a className="home-hero-card home-education-card" href="/education">
+          <a className="home-hero-card home-education-card" href="/people">
             <div className="home-card-copy">
               <span className="home-card-icon" aria-hidden="true"><i className="fa-solid fa-graduation-cap"></i></span>
               <h2>People</h2>
               <h3>Learn. Grow. Achieve.</h3>
               <span className="home-card-rule"></span>
               <p>Access courses, real experiences and learning paths with companies and schools.</p>
-              <span className="home-card-button">Enter Education <i className="fa-solid fa-arrow-right" aria-hidden="true"></i></span>
+              <span className="home-card-button">Discover your opportunities <i className="fa-solid fa-arrow-right" aria-hidden="true"></i></span>
             </div>
           </a>
         </div>
