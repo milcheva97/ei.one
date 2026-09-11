@@ -33,22 +33,16 @@
   display: none;
 }
 
-/* Home hero with animated WebGL shader background */
-.home-hero-shader {
+/* Home hero — dark gradient background (matches the other page heroes) */
+.hero.home-hero-shader.home-ecosystem-hero {
   position: relative;
-  background: #0e2230;
   color: #ffffff;
-}
-.home-hero-shader::after {
-  display: block;
-  content: "";
-  position: absolute;
-  inset: 0;
-  z-index: -1;
   background:
-    radial-gradient(circle at 24% 38%, rgba(88, 201, 19, .10), transparent 44%),
-    linear-gradient(180deg, rgba(9, 24, 33, .40), rgba(9, 24, 33, .60));
+    radial-gradient(circle at 14% 18%, rgba(88, 201, 19, .28), transparent 30%),
+    radial-gradient(circle at 82% 22%, rgba(46, 173, 214, .22), transparent 30%),
+    linear-gradient(135deg, #10222E 0%, #172D3C 58%, #1C5C42 100%);
 }
+.home-hero-shader::after { display: none; }
 .hero.home-hero-shader.home-ecosystem-hero h1 { color: #ffffff; }
 .home-hero-shader .home-hero-subtitle { color: rgba(255, 255, 255, .88); }
 .home-hero-shader .home-collaboration-strip {

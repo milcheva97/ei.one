@@ -106,7 +106,6 @@ function App() {
 
   <main>
     <section className="hero home-ecosystem-hero home-hero-shader" aria-labelledby="home-ecosystem-title">
-      <WebGLShader />
       <div className="home-hero-shell">
         <div className="home-hero-head">
           <div className="home-hero-title-row">
