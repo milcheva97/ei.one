@@ -6,7 +6,6 @@ const navItems = [
   ['Business', '/ecosystem'],
   ['People', '/people'],
   ['Education', '/education'],
-  ['Contact', '/contact'],
 ]
 
 const aboutLinks = [
@@ -63,6 +62,7 @@ function Header({ loginHref = '/login', registerHref = '/register', languagePage
                 ))}
               </div>
             </div>
+            <a href="/contact" onClick={closeMenu}>Contact</a>
           </div>
           <a className="nav-login" href={loginHref} onClick={closeMenu}>Log in</a>
           <a className="button nav-signup" href={registerHref} onClick={closeMenu}>Sign up</a>
