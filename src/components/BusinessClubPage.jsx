@@ -437,58 +437,6 @@ function BusinessClubPage() {
           </div>
         </section>
 
-        <section className="ecosystem-team" aria-labelledby="ecosystem-team-title">
-          <div className="wrap">
-            <div className="ecosystem-team-head">
-              <p className="business-club-kicker">The Team</p>
-              <h2 id="ecosystem-team-title">The people behind the Ecosystem.</h2>
-              <p>A multidisciplinary team building ei.one across business, education and technology.</p>
-            </div>
-            <div className="ecosystem-team-grid">
-              <article className="ecosystem-member">
-                <div className="ecosystem-member-photo"><img src="/images/team/sven-von-allmen.jpg" alt="Sven Von Allmen" loading="lazy" /></div>
-                <h3>Sven Von Allmen</h3>
-                <p>CFO</p>
-              </article>
-              <article className="ecosystem-member">
-                <div className="ecosystem-member-photo"><img src="/images/team/claudio-di-dio.jpg" alt="Claudio Di Dio" loading="lazy" /></div>
-                <h3>Claudio Di Dio</h3>
-                <p>Project Manager</p>
-              </article>
-              <article className="ecosystem-member">
-                <div className="ecosystem-member-photo"><img src="/images/team/robert-gridjac.jpg" alt="Robert Gridjac" loading="lazy" /></div>
-                <h3>Robert Gridjac</h3>
-                <p>IT Manager</p>
-              </article>
-              <article className="ecosystem-member">
-                <div className="ecosystem-member-photo"><img src="/images/team/memnune-karaguven.jpg" alt="Memnune Karagüven" loading="lazy" /></div>
-                <h3>Memnune Karagüven</h3>
-                <p>Accountant / HR Specialist</p>
-              </article>
-              <article className="ecosystem-member">
-                <div className="ecosystem-member-photo"><img src="/images/team/victor-schiopu.jpg" alt="Victor Schiopu" loading="lazy" /></div>
-                <h3>Victor Schiopu</h3>
-                <p>Executive Director</p>
-              </article>
-              <article className="ecosystem-member">
-                <div className="ecosystem-member-photo"><img src="/images/team/giulia-cacciavillani.jpg" alt="Giulia Cacciavillani" loading="lazy" /></div>
-                <h3>Giulia Cacciavillani</h3>
-                <p>Social Media Marketing</p>
-              </article>
-              <article className="ecosystem-member">
-                <div className="ecosystem-member-photo"><img src="/images/team/andrei-schiopu.jpg" alt="Andrei Schiopu" loading="lazy" /></div>
-                <h3>Andrei Schiopu</h3>
-                <p>Business Development</p>
-              </article>
-              <article className="ecosystem-member">
-                <div className="ecosystem-member-photo"><img src="/images/team/massimiliano-benzoni.jpg" alt="Massimiliano Benzoni" loading="lazy" /></div>
-                <h3>Massimiliano Benzoni</h3>
-                <p>Business Administration</p>
-              </article>
-            </div>
-          </div>
-        </section>
-
         <section className="business-club-cta" aria-labelledby="business-club-cta-title">
           <div className="wrap business-club-cta-inner">
             <h2 id="business-club-cta-title">Want to activate the ecosystem for your business?</h2>
