@@ -105,7 +105,8 @@ function App() {
 <Header />
 
   <main>
-    <section className="hero home-ecosystem-hero" aria-labelledby="home-ecosystem-title">
+    <section className="hero home-ecosystem-hero home-hero-shader" aria-labelledby="home-ecosystem-title">
+      <WebGLShader />
       <div className="home-hero-shell">
         <div className="home-hero-head">
           <div className="home-hero-title-row">
@@ -978,48 +979,6 @@ function App() {
             <p className="protagonist-quote">"Your students' experiences become your prestige."</p>
             <a className="protagonist-link" href="/education">For schools &rarr;</a>
           </article>
-        </div>
-      </div>
-    </section>
-
-    <section className="connections" aria-labelledby="connections-title">
-      <div className="wrap">
-        <div className="connections-head">
-          <p className="connections-kicker">Network signals</p>
-          <h2 id="connections-title">Who we're connected with</h2>
-          <p>For clarity, here is the nature of each relationship below.</p>
-        </div>
-        <div className="connections-grid">
-          <div className="connection-item">
-            <a className="connection-logo logo-togo" href="https://stiftung-togo.ch/" target="_blank" rel="noopener" aria-label="ToGo opening eyes">
-              <img src="/images/togo-opening-eyes.png" alt="ToGo opening eyes" />
-            </a>
-            <div className="connection-label">Supported Foundation</div>
-          </div>
-          <div className="connection-item">
-            <a className="connection-logo logo-sva" href="https://svazurich.ch/" target="_blank" rel="noopener" aria-label="SVA Zurich">
-              <img src="/images/sva-zuerich.png" alt="SVA Zürich" />
-            </a>
-            <div className="connection-label">Award Received</div>
-          </div>
-          <div className="connection-item">
-            <a className="connection-logo logo-innovation" href="https://www.standort-zuerich.ch/" target="_blank" rel="noopener" aria-label="Innovation Zurich">
-              <img src="/images/innovation-zuerich.webp" alt="Innovation Zurich" />
-            </a>
-            <div className="connection-label">Local Network</div>
-          </div>
-          <div className="connection-item">
-            <a className="connection-logo logo-eye" href="https://augenarztpraxis-baden.ch/" target="_blank" rel="noopener" aria-label="AugenarztpraxisPlus">
-              <img src="/images/augenarztpraxisplus.png" alt="AugenarztpraxisPlus" />
-            </a>
-            <div className="connection-label">Sponsor</div>
-          </div>
-          <div className="connection-item">
-            <a className="connection-logo logo-sgo" href="https://www.sgo-verein.ch/" target="_blank" rel="noopener" aria-label="SGO Verein">
-              <img src="/images/sgo.svg" alt="SGO Verein" />
-            </a>
-            <div className="connection-label">Professional Network</div>
-          </div>
         </div>
       </div>
     </section>

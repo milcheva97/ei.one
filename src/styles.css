@@ -33,6 +33,32 @@
   display: none;
 }
 
+/* Home hero with animated WebGL shader background */
+.home-hero-shader {
+  position: relative;
+  background: #0e2230;
+  color: #ffffff;
+}
+.home-hero-shader::after {
+  display: block;
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background:
+    radial-gradient(circle at 24% 38%, rgba(88, 201, 19, .10), transparent 44%),
+    linear-gradient(180deg, rgba(9, 24, 33, .40), rgba(9, 24, 33, .60));
+}
+.hero.home-hero-shader.home-ecosystem-hero h1 { color: #ffffff; }
+.home-hero-shader .home-hero-subtitle { color: rgba(255, 255, 255, .88); }
+.home-hero-shader .home-collaboration-strip {
+  border-top: 0;
+  background: rgba(255, 255, 255, .94);
+  border-radius: 16px;
+  padding: 4px 8px;
+  color: #03080d;
+}
+
 .home-hero-shell {
   position: relative;
   z-index: 1;
