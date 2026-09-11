@@ -16452,8 +16452,9 @@ section {
 }
 .home-insight {
   background:
-    radial-gradient(900px 380px at 80% -10%, rgba(46, 173, 214, .22), transparent 60%),
-    linear-gradient(120deg, #0d1d2f, #142b4a);
+    radial-gradient(circle at 16% 14%, rgba(88, 201, 19, .22), transparent 28%),
+    radial-gradient(circle at 92% 22%, rgba(46, 173, 214, .16), transparent 30%),
+    linear-gradient(135deg, #10222E 0%, #172D3C 58%, #1C5C42 100%);
 }
 .home-twosides { background: #ffffff; }
 
