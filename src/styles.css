@@ -65,7 +65,7 @@
 
 .home-hero-head {
   max-width: 1200px;
-  margin: 0 auto clamp(10px, 1.8vh, 18px);
+  margin: 0 auto;
   text-align: center;
 }
 
