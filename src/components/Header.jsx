@@ -6,6 +6,7 @@ const navItems = [
   ['Business', '/ecosystem'],
   ['People', '/people'],
   ['Education', '/education'],
+  ['Contact', '/contact'],
 ]
 
 const aboutLinks = [
