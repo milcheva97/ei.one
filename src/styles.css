@@ -17352,7 +17352,7 @@ section {
 .model-col { display: flex; flex-direction: column; gap: 24px; }
 .model-card {
   display: flex; flex-direction: column;
-  padding: 26px 26px; background: #ffffff; border: 1px solid var(--line); border-radius: 18px;
+  padding: 26px 26px; background: linear-gradient(160deg, #f4faf6, #eef6fb); border: 1px solid var(--line); border-radius: 18px;
   box-shadow: 0 12px 34px rgba(38, 50, 56, .06);
 }
 .model-card.membership { background: linear-gradient(160deg, #f2f9f4, #eef6fb); }
