@@ -3065,10 +3065,13 @@ section {
   gap: 70px;
   align-items: start;
 }
-.site-footer .footer-two-col {
+.footer-sections-cols {
+  display: grid;
   grid-template-columns: 1fr 1fr;
   column-gap: 32px;
+  align-items: start;
 }
+.footer-sections > h3 { text-align: center; }
 
 .site-footer h3 {
   margin-bottom: 24px;
