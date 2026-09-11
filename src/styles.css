@@ -12370,6 +12370,13 @@ section {
     linear-gradient(rgba(46,173,214,.08) 1px, transparent 1px);
   background-size: auto, 40px 40px, 40px 40px;
 }
+.education-page .human-center {
+  background:
+    radial-gradient(circle at 12% 10%, rgba(88, 201, 19, .10), transparent 42%),
+    radial-gradient(circle at 90% 20%, rgba(46, 173, 214, .10), transparent 44%),
+    linear-gradient(180deg, #ffffff 0%, #f3f9f5 100%);
+  background-size: auto;
+}
 
 .human-center-grid {
   display: grid;
@@ -14108,7 +14115,6 @@ section {
 
   .education-page .human-center {
     padding: 58px 0;
-    background: #ffffff;
   }
 
   .education-page .human-center-grid {
