@@ -20,7 +20,6 @@ const aboutLinks = [
   ['Our Commitments', '/engagements'],
   ['Sponsor', '/sponsor'],
   ['Investor', '/investor'],
-  ['Contact', '/contact'],
   ['Join EI.one', '/join'],
 ]
 
