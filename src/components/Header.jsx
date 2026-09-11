@@ -10,15 +10,8 @@ const navItems = [
 ]
 
 const aboutLinks = [
-  ['Enterprise', '/economy'],
   ['Partners', '/partner'],
-  ['Experience Passport', '/experience-passport'],
-  ['Talent', '/talent'],
-  ['Entrepreneur', '/entrepreneur'],
   ['Environment', '/environment'],
-  ['Projects', '/projects'],
-  ['Our Commitments', '/engagements'],
-  ['Sponsor', '/sponsor'],
   ['Investor', '/investor'],
   ['Join EI.one', '/join'],
 ]
