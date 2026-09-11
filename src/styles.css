@@ -3061,9 +3061,13 @@ section {
 
 .footer-grid {
   display: grid;
-  grid-template-columns: 1.6fr .8fr .8fr .9fr;
+  grid-template-columns: 1.6fr .8fr 1.5fr .9fr;
   gap: 70px;
   align-items: start;
+}
+.site-footer .footer-two-col {
+  grid-template-columns: 1fr 1fr;
+  column-gap: 32px;
 }
 
 .site-footer h3 {

@@ -26,10 +26,9 @@ function Footer() {
           </div>
           <div>
             <h3>Sections</h3>
-            <ul>
+            <ul className="footer-two-col">
               <li><a href="/economy">Enterprise</a></li>
               <li><a href="/partner">Partners</a></li>
-              <li><a href="/experience-passport">Experience Passport</a></li>
               <li><a href="/talent">Talent</a></li>
               <li><a href="/entrepreneur">Entrepreneur</a></li>
               <li><a href="/environment">Environment</a></li>
@@ -37,6 +36,7 @@ function Footer() {
               <li><a href="/engagements">Our Commitments</a></li>
               <li><a href="/sponsor">Sponsor</a></li>
               <li><a href="/investor">Investor</a></li>
+              <li><a href="/experience-passport">Experience Passport</a></li>
               <li><a href="/join">Join EI.one</a></li>
             </ul>
           </div>
