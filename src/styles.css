@@ -33,16 +33,22 @@
   display: none;
 }
 
-/* Home hero — dark gradient background (matches the other page heroes) */
+/* Home hero — animated WebGL shader background */
 .hero.home-hero-shader.home-ecosystem-hero {
   position: relative;
   color: #ffffff;
-  background:
-    radial-gradient(circle at 14% 18%, rgba(88, 201, 19, .28), transparent 30%),
-    radial-gradient(circle at 82% 22%, rgba(46, 173, 214, .22), transparent 30%),
-    linear-gradient(135deg, #10222E 0%, #172D3C 58%, #1C5C42 100%);
+  background: #0e2230;
 }
-.home-hero-shader::after { display: none; }
+.home-hero-shader::after {
+  display: block;
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background:
+    radial-gradient(circle at 24% 38%, rgba(88, 201, 19, .10), transparent 44%),
+    linear-gradient(180deg, rgba(9, 24, 33, .38), rgba(9, 24, 33, .58));
+}
 .hero.home-hero-shader.home-ecosystem-hero h1 { color: #ffffff; }
 .home-hero-shader .home-hero-subtitle { color: rgba(255, 255, 255, .88); }
 .home-hero-shader .home-collaboration-strip {
@@ -330,7 +336,7 @@
   margin-top: clamp(12px, 2vh, 20px);
   border: 1px solid #dfe5eb;
   border-radius: 20px;
-  background: #ffffff;
+  background: linear-gradient(135deg, #eef7f0 0%, #ffffff 42%, #ffffff 60%, #eaf5fb 100%);
   box-shadow: 0 14px 40px rgba(7, 29, 43, .06);
 }
 
@@ -396,8 +402,7 @@
 
 .home-collaboration-strip {
   min-height: 72px;
-  display: grid;
-  grid-template-columns: 1.25fr minmax(110px, 1fr) minmax(110px, 1.4fr) repeat(4, minmax(110px, 1fr));
+  display: flex;
   align-items: center;
   gap: 0;
   flex: none;
@@ -405,6 +410,39 @@
   padding-top: clamp(10px, 1.4vh, 14px);
   border-top: 1px solid #dfe5eb;
   color: #03080d;
+}
+.home-collaboration-strip > span { flex: 0 0 auto; white-space: nowrap; }
+.collab-marquee {
+  flex: 1 1 auto;
+  display: block !important;
+  overflow: hidden;
+  min-width: 0;
+  padding: 0 !important;
+  -webkit-mask: linear-gradient(90deg, transparent, #000 5%, #000 95%, transparent);
+  mask: linear-gradient(90deg, transparent, #000 5%, #000 95%, transparent);
+}
+.collab-track {
+  display: inline-flex;
+  align-items: center;
+  gap: clamp(36px, 5vw, 72px);
+  width: max-content;
+  padding-left: clamp(36px, 5vw, 72px);
+  animation: collab-scroll 32s linear infinite;
+}
+.collab-track img {
+  flex: none;
+  max-width: 150px;
+  max-height: 42px;
+  object-fit: contain;
+}
+.collab-track .fachhochschule-logo { max-width: 200px; }
+.collab-marquee:hover .collab-track { animation-play-state: paused; }
+@keyframes collab-scroll {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .collab-track { animation: none; }
 }
 
 .home-collaboration-strip > * {
