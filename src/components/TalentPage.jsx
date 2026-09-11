@@ -113,7 +113,7 @@ function TalentPage() {
                   <strong>Discover the Identity <i className="fa-solid fa-arrow-right" aria-hidden="true"></i></strong>
                 </a>
 
-                <a className="talent-module academy" href="/academy">
+                <a className="talent-module academy" href="/education">
                   <span className="talent-module-icon"><i className="fa-solid fa-graduation-cap" aria-hidden="true"></i></span>
                   <span className="talent-module-title">Academy <em>Preview</em></span>
                   <p>Sponsors and partners build the training paths. You learn where the skills are really needed - not in the abstract.</p>

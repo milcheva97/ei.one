@@ -9,10 +9,8 @@ const navItems = [
 ]
 
 const aboutLinks = [
-  ['About Us', '/about'],
   ['Enterprise', '/economy'],
   ['Partners', '/partner'],
-  ['Academy', '/academy'],
   ['Experience Passport', '/experience-passport'],
   ['Talent', '/talent'],
   ['Entrepreneur', '/entrepreneur'],

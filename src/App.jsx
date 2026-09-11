@@ -1,6 +1,5 @@
 ﻿import { WebGLShader } from './components/WebGLShader.jsx'
 import EducationPage from './components/EducationPage.jsx'
-import AcademyPage from './components/AcademyPage.jsx'
 import JoinPage from './components/JoinPage.jsx'
 import PeoplePage from './components/PeoplePage.jsx'
 import ExperiencePassportPage from './components/ExperiencePassportPage.jsx'
@@ -27,10 +26,6 @@ function App() {
 
   if (path.includes('/education')) {
     return <EducationPage />
-  }
-
-  if (path.includes('/academy')) {
-    return <AcademyPage />
   }
 
   if (path.includes('/join')) {
@@ -1144,7 +1139,7 @@ function App() {
           <p>Three modules — one to build skills, one to attest them, one to make them findable. Together they make the company a growth engine for the people who work there.</p>
         </div>
         <div className="training-grid">
-          <a className="training-card academy" href="/academy">
+          <a className="training-card academy" href="/education">
             <span className="training-icon" aria-hidden="true"><i className="fa-solid fa-graduation-cap"></i></span>
             <h3>Academy <span className="module-pill">Preview</span></h3>
             <p>Sponsors and partners of the ecosystem build the learning paths. You learn where you work.</p>
