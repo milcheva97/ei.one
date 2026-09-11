@@ -250,7 +250,7 @@ function ExperiencePassportPage() {
               <div className="identity-start-actions">
                 <a className="button identity-primary" href="/register">Create your Identity</a>
                 <a className="button identity-login" href="/login">Log in</a>
-                <a className="button identity-outline" href="/talent">Back to Talent</a>
+                <a className="button identity-outline" href="/people">Back to People</a>
               </div>
             </div>
 

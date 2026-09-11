@@ -64,47 +64,6 @@ function PeoplePage() {
           </div>
         </section>
 
-        <section className="talent-audience" aria-labelledby="talent-audience-title">
-          <div className="wrap talent-audience-grid">
-            <div className="talent-audience-copy">
-              <p className="talent-kicker">Who it's for</p>
-              <h2 id="talent-audience-title">For people who see work as real growth.</h2>
-              <p>ei.one speaks to those who live work as real growth, not just as a position.</p>
-            </div>
-
-            <div className="talent-audience-board">
-              <article>
-                <span><i className="fa-solid fa-rocket" aria-hidden="true"></i></span>
-                <div>
-                  <h3>Young people looking for their path</h3>
-                  <p>you want to discover where you fit, without relying only on the first CV you send out.</p>
-                </div>
-              </article>
-              <article>
-                <span><i className="fa-solid fa-route" aria-hidden="true"></i></span>
-                <div>
-                  <h3>Those who want to change</h3>
-                  <p>a Identity that tells your experiences better than any pitch.</p>
-                </div>
-              </article>
-              <article>
-                <span><i className="fa-solid fa-user-tie" aria-hidden="true"></i></span>
-                <div>
-                  <h3>Experienced professionals</h3>
-                  <p>you crystallize years of work into a profile that proves itself and lets you be found.</p>
-                </div>
-              </article>
-              <article>
-                <span><i className="fa-solid fa-seedling" aria-hidden="true"></i></span>
-                <div>
-                  <h3>Aspiring entrepreneurs</h3>
-                  <p>you build real experiences inside the ecosystem's companies while growing your own project.</p>
-                </div>
-              </article>
-            </div>
-          </div>
-        </section>
-
         <section className="home-solution">
           <div className="wrap">
             <div className="section-head">
@@ -224,6 +183,47 @@ function PeoplePage() {
               <article className="diff-item">
                 <span className="diff-icon orange" aria-hidden="true"><i className="fa-solid fa-globe"></i></span>
                 <div><strong>Global scalability</strong><p>Digital infrastructure lets you learn, earn and reach new markets worldwide.</p></div>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section className="talent-audience" aria-labelledby="talent-audience-title">
+          <div className="wrap talent-audience-grid">
+            <div className="talent-audience-copy">
+              <p className="talent-kicker">Who it's for</p>
+              <h2 id="talent-audience-title">For people who see work as real growth.</h2>
+              <p>ei.one speaks to those who live work as real growth, not just as a position.</p>
+            </div>
+
+            <div className="talent-audience-board">
+              <article>
+                <span><i className="fa-solid fa-rocket" aria-hidden="true"></i></span>
+                <div>
+                  <h3>Young people looking for their path</h3>
+                  <p>you want to discover where you fit, without relying only on the first CV you send out.</p>
+                </div>
+              </article>
+              <article>
+                <span><i className="fa-solid fa-route" aria-hidden="true"></i></span>
+                <div>
+                  <h3>Those who want to change</h3>
+                  <p>a Identity that tells your experiences better than any pitch.</p>
+                </div>
+              </article>
+              <article>
+                <span><i className="fa-solid fa-user-tie" aria-hidden="true"></i></span>
+                <div>
+                  <h3>Experienced professionals</h3>
+                  <p>you crystallize years of work into a profile that proves itself and lets you be found.</p>
+                </div>
+              </article>
+              <article>
+                <span><i className="fa-solid fa-seedling" aria-hidden="true"></i></span>
+                <div>
+                  <h3>Aspiring entrepreneurs</h3>
+                  <p>you build real experiences inside the ecosystem's companies while growing your own project.</p>
+                </div>
               </article>
             </div>
           </div>

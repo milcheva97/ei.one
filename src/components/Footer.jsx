@@ -29,7 +29,6 @@ function Footer() {
             <div className="footer-sections-cols">
               <ul>
                 <li><a href="/economy">Enterprise</a></li>
-                <li><a href="/talent">Talent</a></li>
                 <li><a href="/environment">Environment</a></li>
                 <li><a href="/engagements">Our Commitments</a></li>
                 <li><a href="/experience-passport">Experience Passport</a></li>

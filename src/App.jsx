@@ -12,7 +12,6 @@ import EntrepreneurPage from './components/EntrepreneurPage.jsx'
 import AboutPage from './components/AboutPage.jsx'
 import SponsorPage from './components/SponsorPage.jsx'
 import ContactPage from './components/ContactPage.jsx'
-import TalentPage from './components/TalentPage.jsx'
 import BusinessClubPage from './components/BusinessClubPage.jsx'
 import RegisterPage from './components/RegisterPage.jsx'
 import LoginPage from './components/LoginPage.jsx'
@@ -78,10 +77,6 @@ function App() {
 
   if (path.includes('/contact')) {
     return <ContactPage />
-  }
-
-  if (path.includes('/talent')) {
-    return <TalentPage />
   }
 
   if (path.includes('/ecosystem') || path.includes('/business-club')) {
@@ -978,7 +973,7 @@ function App() {
           <p>Activate the ecosystem for your company, or start building your Experience Identity.</p>
           <div className="actions cta-actions">
             <a className="button" href="/ecosystem">For Companies</a>
-            <a className="button secondary" href="/talent">For Talents</a>
+            <a className="button secondary" href="/people">For Talents</a>
             <a className="button secondary" href="/contact">Contact us</a>
           </div>
         </div>

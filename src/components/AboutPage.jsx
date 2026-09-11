@@ -431,7 +431,7 @@ function AboutPage() {
               <p>Choose the right door for you: the business ecosystem, or the talent platform.</p>
               <div className="about-final-actions">
                 <a href="/ecosystem">For Businesses</a>
-                <a href="/talent">For Talents</a>
+                <a href="/people">For Talents</a>
                 <a href="/contact">Contact us</a>
               </div>
             </div>
