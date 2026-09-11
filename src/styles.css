@@ -184,8 +184,23 @@
   pointer-events: none;
   background: linear-gradient(
     90deg,
-    #fff 0%,
-    #fff 38%,
+    #e8f4ec 0%,
+    #f4faf6 18%,
+    #ffffff 38%,
+    rgba(255, 255, 255, .97) 44%,
+    rgba(255, 255, 255, .85) 50%,
+    rgba(255, 255, 255, .60) 56%,
+    rgba(255, 255, 255, .30) 62%,
+    rgba(255, 255, 255, .10) 67%,
+    transparent 73%
+  );
+}
+.home-education-card::before {
+  background: linear-gradient(
+    90deg,
+    #e6f4f9 0%,
+    #f2fafd 18%,
+    #ffffff 38%,
     rgba(255, 255, 255, .97) 44%,
     rgba(255, 255, 255, .85) 50%,
     rgba(255, 255, 255, .60) 56%,
