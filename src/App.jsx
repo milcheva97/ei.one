@@ -165,7 +165,6 @@ function App() {
           <img className="supsi-logo"src="/images/supsi-logo-black.svg" alt="SUPSI"/>
           <img className="fachhochschule-logo"src="/images/fachhochschule.svg" alt="fachhochschule"/>
           <img className="esg-center"src="/images/esg-center.png" alt="esg center of excellence"/>
-          <strong>Innosuisse</strong>
           <img src="/images/sva-zuerich.png" alt="SVA Zürich" />
           <img src="/images/innovation-zuerich.webp" alt="Innovation Zürich" />
         </div>
