@@ -861,7 +861,6 @@ function App() {
     <section className="how-it-works" aria-labelledby="how-it-works-title">
       <div className="wrap">
         <div className="how-head">
-          <span className="how-eyebrow">How it works</span>
           <h2 id="how-it-works-title">The visual heart of the Ecosystem.</h2>
           <figure className="how-heart" role="img" aria-label="Growth cycle: Buy, Sell, Earn, Learn, Grow — repeating in a loop.">
             <svg viewBox="0 0 560 440" xmlns="http://www.w3.org/2000/svg">
