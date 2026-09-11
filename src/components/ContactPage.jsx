@@ -26,14 +26,14 @@ function ContactPage() {
                 <i className="fa-solid fa-map-location-dot" aria-hidden="true"></i>
                 <div>
                   <h3>Headquarters</h3>
-                  <p>Tödistrasse 56, 8810 Horgen, Switzerland</p>
+                  <p>Zugerstrasse 162, 8820 Wädenswil, Switzerland</p>
                 </div>
               </article>
               <article>
                 <i className="fa-solid fa-envelope-open-text" aria-hidden="true"></i>
                 <div>
                   <h3>Email &amp; Phone</h3>
-                  <p><a href="mailto:info@ei.one">info@ei.one</a> <span>|</span> <a href="tel:+41448229000">+41 44 822 90 00</a></p>
+                  <p><a href="mailto:info@ei.one">info@ei.one</a> <span>|</span> <a href="tel:+41798814747">+41 79 881 47 47</a></p>
                 </div>
               </article>
               <article>
