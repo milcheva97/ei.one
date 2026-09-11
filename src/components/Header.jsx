@@ -8,13 +8,6 @@ const navItems = [
   ['Education', '/education'],
 ]
 
-const aboutLinks = [
-  ['Partners', '/partner'],
-  ['Environment', '/environment'],
-  ['Investor', '/investor'],
-  ['Join EI.one', '/join'],
-]
-
 function Header({ loginHref = '/login', registerHref = '/register', languagePage = 'index.php' }) {
   const { language, setLanguage } = useLanguage()
   const [menuOpen, setMenuOpen] = useState(false)
@@ -54,14 +47,6 @@ function Header({ loginHref = '/login', registerHref = '/register', languagePage
             {navItems.map(([label, href]) => (
               <a href={label === 'Home' ? homeHref : href} key={label} onClick={closeMenu}>{label}</a>
             ))}
-            <div className="nav-item has-submenu about-menu">
-              <a href="/about" onClick={closeMenu}>About <i className="fa-solid fa-chevron-down" aria-hidden="true"></i></a>
-              <div className="submenu about-submenu">
-                {aboutLinks.map(([label, href]) => (
-                  <a href={href} key={label} onClick={closeMenu}>{label}</a>
-                ))}
-              </div>
-            </div>
             <a href="/contact" onClick={closeMenu}>Contact</a>
           </div>
           <a className="nav-login" href={loginHref} onClick={closeMenu}>Log in</a>
