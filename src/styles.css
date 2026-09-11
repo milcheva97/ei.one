@@ -17301,9 +17301,18 @@ section {
   flex-wrap: wrap; gap: clamp(18px, 2vw, 30px);
   max-width: 1180px; margin: 40px auto 0;
   padding: 22px 26px; border-radius: 20px;
-  background: linear-gradient(120deg, #f2f9f4, #eef6fb); border: 1px solid var(--line);
+  background:
+    radial-gradient(circle at 16% 14%, rgba(88, 201, 19, .20), transparent 34%),
+    radial-gradient(circle at 92% 22%, rgba(46, 173, 214, .16), transparent 36%),
+    linear-gradient(135deg, #10222E 0%, #172D3C 58%, #1C5C42 100%);
+  border: 1px solid rgba(255, 255, 255, .12);
 }
 .hv-intro { flex: 1 1 240px; max-width: 300px; }
+.home-verified .hv-eyebrow { color: rgba(255, 255, 255, .7); }
+.home-verified .hv-intro h3 { color: #ffffff; }
+.home-verified .hv-intro p { color: rgba(255, 255, 255, .8); }
+.home-verified .hv-item strong { color: #ffffff; }
+.home-verified .hv-item span { color: rgba(255, 255, 255, .72); }
 .hv-eyebrow { margin: 0 0 6px; color: var(--muted); font-size: 11px; font-weight: 700; letter-spacing: .16em; text-transform: uppercase; }
 .hv-intro h3 { margin: 0 0 7px; color: var(--ink); font-size: 18px; font-weight: 800; }
 .hv-intro p { margin: 0; color: var(--muted); font-size: 13px; line-height: 1.45; }
