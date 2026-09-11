@@ -17,10 +17,10 @@ function Footer() {
             <h3>Menu</h3>
             <ul>
               <li><a href={homeHref}>Home</a></li>
+              <li><a href="/ecosystem">Business</a></li>
+              <li><a href="/people">People</a></li>
               <li><a href="/education">Education</a></li>
-              <li><a href="/experience-passport">Experience</a></li>
-              <li><a href="/entrepreneur">Entrepreneur</a></li>
-              <li><a href="/economy">Enterprise</a></li>
+              <li><a href="/contact">Contact</a></li>
               <li><a href="/about">About</a></li>
             </ul>
           </div>
