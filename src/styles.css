@@ -16805,6 +16805,9 @@ section {
 .home-side.business li span { background: #58C913; }
 .home-side.people li span { background: #2EADD6; }
 .home-side-cta { margin-top: auto; align-self: flex-start; }
+.home-side.people .home-side-cta { border-color: #2EADD6; color: #2EADD6; }
+.home-side.people .home-side-cta:hover,
+.home-side.people .home-side-cta:focus-visible { background: rgba(46, 173, 214, .08); }
 
 /* Market & positioning */
 .home-market { padding: clamp(54px, 7vw, 92px) 0; background: #ffffff; border-bottom: 1px solid var(--line); }
