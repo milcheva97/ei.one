@@ -164,43 +164,6 @@ function BusinessClubPage() {
           </div>
         </section>
 
-        <section className="ecosystem-actions">
-          <div className="wrap">
-            <div className="ecosystem-actions-head">
-              <p className="business-club-kicker">The Ecosystem</p>
-              <h2>Buy. Sell. Connect. Earn. Grow.</h2>
-              <p>The Ecosystem is the digital and human place where companies and people can:</p>
-            </div>
-            <div className="ecosystem-actions-grid">
-              <article className="ecosystem-action">
-                <span className="ecosystem-action-icon" aria-hidden="true"><i className="fa-solid fa-bag-shopping"></i></span>
-                <h3>Buy</h3>
-                <p>Purchase products and services.</p>
-              </article>
-              <article className="ecosystem-action">
-                <span className="ecosystem-action-icon" aria-hidden="true"><i className="fa-solid fa-arrow-trend-up"></i></span>
-                <h3>Sell</h3>
-                <p>Sell products, services, and expertise.</p>
-              </article>
-              <article className="ecosystem-action">
-                <span className="ecosystem-action-icon" aria-hidden="true"><i className="fa-solid fa-people-arrows"></i></span>
-                <h3>Connect</h3>
-                <p>Find customers, suppliers, partners, and experts.</p>
-              </article>
-              <article className="ecosystem-action">
-                <span className="ecosystem-action-icon" aria-hidden="true"><i className="fa-solid fa-coins"></i></span>
-                <h3>Earn</h3>
-                <p>Generate new economic opportunities.</p>
-              </article>
-              <article className="ecosystem-action">
-                <span className="ecosystem-action-icon" aria-hidden="true"><i className="fa-solid fa-seedling"></i></span>
-                <h3>Grow</h3>
-                <p>Enter a system that transforms part of economic activity into development.</p>
-              </article>
-            </div>
-          </div>
-        </section>
-
         <section className="ecosystem-categories">
           <div className="wrap">
             <div className="ecosystem-categories-head">
