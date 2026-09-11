@@ -4188,6 +4188,10 @@ Object.assign(de, { "Discover your opportunities": "Entdecken Sie Ihre Chancen",
 Object.assign(it, { "Discover your opportunities": "Scopri le tue opportunità", "Enter Business": "Vai al Business" })
 Object.assign(fr, { "Discover your opportunities": "Découvrez vos opportunités", "Enter Business": "Accéder au Business" })
 
+Object.assign(de, { "An ecosystem that combines artificial intelligence and human emotion.": "Ein Ökosystem, das künstliche Intelligenz und menschliche Emotion vereint." })
+Object.assign(it, { "An ecosystem that combines artificial intelligence and human emotion.": "Un ecosistema che combina intelligenza artificiale ed emozione umana." })
+Object.assign(fr, { "An ecosystem that combines artificial intelligence and human emotion.": "Un écosystème qui combine intelligence artificielle et émotion humaine." })
+
 const dictionaries = { de, it, fr }
 const originalText = new WeakMap()
 const originalAttrs = new WeakMap()

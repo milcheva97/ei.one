@@ -113,7 +113,7 @@ function App() {
             <h1 id="home-ecosystem-title">The opportunity Ecosystem for everyone</h1>
             <span className="home-hero-line" aria-hidden="true"></span>
           </div>
-          <p className="home-hero-subtitle">EI.one unites emotional and artificial intelligence to connect companies, people, and education—turning economic activity into opportunities for human and business growth.</p>
+          <p className="home-hero-subtitle">An ecosystem that combines artificial intelligence and human emotion.</p>
         </div>
 
         <div className="home-hero-primary-grid">
