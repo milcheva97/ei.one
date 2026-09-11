@@ -16450,7 +16450,11 @@ section {
     radial-gradient(circle at 88% 12%, rgba(46, 173, 214, .06), transparent 42%),
     linear-gradient(180deg, #ffffff 0%, #f3f9f5 100%);
 }
-.home-insight { background: var(--paper); }
+.home-insight {
+  background:
+    radial-gradient(900px 380px at 80% -10%, rgba(46, 173, 214, .22), transparent 60%),
+    linear-gradient(120deg, #0d1d2f, #142b4a);
+}
 .home-twosides { background: #ffffff; }
 
 .home-problem .section-head,
@@ -16475,6 +16479,9 @@ section {
   font-size: 18px;
   line-height: 1.55;
 }
+/* Insight section is dark — override heading/subtitle colours */
+.home-insight .section-head h2 { color: #ffffff; }
+.home-insight .section-head > p { color: rgba(255, 255, 255, .82); }
 
 /* Problem */
 .home-problem-grid {
