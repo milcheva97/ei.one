@@ -105,7 +105,7 @@ function App() {
 <Header />
 
   <main>
-    <section className="hero home-ecosystem-hero home-hero-shader" aria-labelledby="home-ecosystem-title">
+    <section className="hero home-ecosystem-hero" aria-labelledby="home-ecosystem-title">
       <div className="home-hero-shell">
         <div className="home-hero-head">
           <div className="home-hero-title-row">
