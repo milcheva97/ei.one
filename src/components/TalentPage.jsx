@@ -131,47 +131,6 @@ function TalentPage() {
           </div>
         </section>
 
-        <section className="talent-audience" aria-labelledby="talent-audience-title">
-          <div className="wrap talent-audience-grid">
-            <div className="talent-audience-copy">
-              <p className="talent-kicker">Who it's for</p>
-              <h2 id="talent-audience-title">For people who see work as real growth.</h2>
-              <p>ei.one speaks to those who live work as real growth, not just as a position.</p>
-            </div>
-
-            <div className="talent-audience-board">
-              <article>
-                <span><i className="fa-solid fa-rocket" aria-hidden="true"></i></span>
-                <div>
-                  <h3>Young people looking for their path</h3>
-                  <p>you want to discover where you fit, without relying only on the first CV you send out.</p>
-                </div>
-              </article>
-              <article>
-                <span><i className="fa-solid fa-route" aria-hidden="true"></i></span>
-                <div>
-                  <h3>Those who want to change</h3>
-                  <p>a Identity that tells your experiences better than any pitch.</p>
-                </div>
-              </article>
-              <article>
-                <span><i className="fa-solid fa-user-tie" aria-hidden="true"></i></span>
-                <div>
-                  <h3>Experienced professionals</h3>
-                  <p>you crystallize years of work into a profile that proves itself and lets you be found.</p>
-                </div>
-              </article>
-              <article>
-                <span><i className="fa-solid fa-seedling" aria-hidden="true"></i></span>
-                <div>
-                  <h3>Aspiring entrepreneurs</h3>
-                  <p>you build real experiences inside the ecosystem's companies while growing your own project.</p>
-                </div>
-              </article>
-            </div>
-          </div>
-        </section>
-
         <section className="talent-final-cta" aria-labelledby="talent-final-title">
           <div className="wrap">
             <h2 id="talent-final-title">Ready to start?</h2>
