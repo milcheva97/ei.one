@@ -125,7 +125,7 @@ function App() {
               <h3>Grow your business.</h3>
               <span className="home-card-rule"></span>
               <p>Find opportunities, access services and collaborate to grow your company.</p>
-              <span className="home-card-button">Enter Enterprise <i className="fa-solid fa-arrow-right" aria-hidden="true"></i></span>
+              <span className="home-card-button">Enter Business <i className="fa-solid fa-arrow-right" aria-hidden="true"></i></span>
             </div>
           </a>
 
