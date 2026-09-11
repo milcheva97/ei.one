@@ -10,7 +10,6 @@ import PartnerPage from './components/PartnerPage.jsx'
 import InvestorPage from './components/InvestorPage.jsx'
 import EntrepreneurPage from './components/EntrepreneurPage.jsx'
 import AboutPage from './components/AboutPage.jsx'
-import SponsorPage from './components/SponsorPage.jsx'
 import ContactPage from './components/ContactPage.jsx'
 import BusinessClubPage from './components/BusinessClubPage.jsx'
 import RegisterPage from './components/RegisterPage.jsx'
@@ -48,10 +47,6 @@ function App() {
 
   if (path.includes('/environment')) {
     return <EnvironmentPage />
-  }
-
-  if (path.includes('/sponsor')) {
-    return <SponsorPage />
   }
 
   if (path.includes('/partner')) {

@@ -2,6 +2,29 @@ import { useEffect } from 'react'
 import Header from './Header.jsx'
 import Footer from './Footer.jsx'
 
+const sponsors = [
+  {
+    name: 'AugenarztpraxisPlus',
+    href: 'https://augenarztpraxis-baden.ch/',
+    logo: '/images/augenarztpraxisplus.png',
+  },
+  {
+    name: 'Garage Weber Monaco',
+    href: 'https://www.garagewebermonaco.ch/',
+    logo: '/images/garage-weber.svg',
+  },
+  {
+    name: 'PM Solving',
+    href: 'https://www.pmsolving.ch/',
+    logo: '/images/pm-solving.svg',
+  },
+  {
+    name: 'Netmaster',
+    href: 'https://netmaster.ch/',
+    logo: '/images/netmaster.png',
+  },
+]
+
 function setMeta(name, content, attr = 'name') {
   let tag = document.head.querySelector(`meta[${attr}="${name}"]`)
   if (!tag) {
@@ -420,6 +443,39 @@ function AboutPage() {
                 </p>
                 <a href="https://stiftung-togo.ch/" target="_blank" rel="noreferrer">Discover the foundation</a>
               </div>
+            </div>
+          </div>
+        </section>
+
+        <section className="sponsor-partners-section">
+          <div className="wrap">
+            <div className="sponsor-section-heading">
+              <p className="sponsor-kicker">Our sponsors</p>
+              <h2>Companies supporting the EI.one ecosystem.</h2>
+              <p>
+                We are grateful to our sponsors for their trust, collaboration, and commitment to supporting
+                innovation, education, and meaningful connections. Their contribution plays an essential role in helping us
+                build a stronger, human-centered ecosystem.
+              </p>
+            </div>
+
+            <div className="sponsor-logo-grid">
+              {sponsors.map((sponsor) => (
+                <a
+                  className="sponsor-logo-card"
+                  href={sponsor.href}
+                  target="_blank"
+                  rel="noreferrer"
+                  key={sponsor.name}
+                  aria-label={`Visit ${sponsor.name}`}
+                >
+                  <span className="sponsor-logo-frame">
+                    <img src={sponsor.logo} alt={sponsor.name} />
+                  </span>
+                  <span>{sponsor.name}</span>
+                  <i className="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
+                </a>
+              ))}
             </div>
           </div>
         </section>

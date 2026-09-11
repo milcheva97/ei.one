@@ -37,7 +37,6 @@ function Footer() {
                 <li><a href="/partner">Partners</a></li>
                 <li><a href="/entrepreneur">Entrepreneur</a></li>
                 <li><a href="/projects">Projects</a></li>
-                <li><a href="/sponsor">Sponsor</a></li>
                 <li><a href="/join">Join EI.one</a></li>
               </ul>
             </div>
