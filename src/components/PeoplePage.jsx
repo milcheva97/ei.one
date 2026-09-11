@@ -311,6 +311,17 @@ function PeoplePage() {
             </div>
           </div>
         </section>
+
+        <section className="talent-final-cta" aria-labelledby="people-final-title">
+          <div className="wrap">
+            <h2 id="people-final-title">Ready to start?</h2>
+            <p>Open your Experience Identity. Add the first experience. You decide what to show the world.</p>
+            <div className="talent-final-actions">
+              <a className="button talent-final-light" href="/register">Create your Identity</a>
+              <a className="button talent-final-outline" href="/contact">Contact us</a>
+            </div>
+          </div>
+        </section>
       </main>
 
       <Footer />
