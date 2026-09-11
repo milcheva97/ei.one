@@ -27,12 +27,17 @@ function Footer() {
           <div>
             <h3>Sections</h3>
             <ul>
-              <li><a href="/ecosystem">Ecosystem</a></li>
+              <li><a href="/economy">Enterprise</a></li>
+              <li><a href="/partner">Partners</a></li>
+              <li><a href="/experience-passport">Experience Passport</a></li>
+              <li><a href="/talent">Talent</a></li>
+              <li><a href="/entrepreneur">Entrepreneur</a></li>
               <li><a href="/environment">Environment</a></li>
               <li><a href="/projects">Projects</a></li>
               <li><a href="/engagements">Our Commitments</a></li>
               <li><a href="/sponsor">Sponsor</a></li>
               <li><a href="/investor">Investor</a></li>
+              <li><a href="/join">Join EI.one</a></li>
             </ul>
           </div>
           <div className="footer-contact">
