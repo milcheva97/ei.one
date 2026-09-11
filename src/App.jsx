@@ -154,26 +154,39 @@ function App() {
             <span><strong>Ecosystem Partners</strong><small>Collaborate with selected partners and generate impact.</small></span>
           </a>
         </div>
+      </div>
+    </section>
 
-        <div className="home-collaboration-strip" aria-label="Collaboration logos">
-          <span>In collaboration with</span>
-          <div className="collab-marquee">
-            <div className="collab-track">
-              <img className="supsi-logo" src="/images/supsi-logo-black.svg" alt="SUPSI" />
-              <img className="fachhochschule-logo" src="/images/fachhochschule.svg" alt="fachhochschule" />
-              <img className="esg-center" src="/images/esg-center.png" alt="esg center of excellence" />
-              <img src="/images/sva-zuerich.png" alt="SVA Zürich" />
-              <img src="/images/innovation-zuerich.webp" alt="Innovation Zürich" />
-              <img className="supsi-logo" src="/images/supsi-logo-black.svg" alt="" aria-hidden="true" />
-              <img className="fachhochschule-logo" src="/images/fachhochschule.svg" alt="" aria-hidden="true" />
-              <img className="esg-center" src="/images/esg-center.png" alt="" aria-hidden="true" />
-              <img src="/images/sva-zuerich.png" alt="" aria-hidden="true" />
-              <img src="/images/innovation-zuerich.webp" alt="" aria-hidden="true" />
-            </div>
+    <section className="home-collab-band" aria-label="Collaboration logos">
+      <div className="home-collaboration-strip">
+        <span>In collaboration with</span>
+        <div className="collab-marquee">
+          <div className="collab-track">
+            <img className="supsi-logo" src="/images/supsi-logo-black.svg" alt="SUPSI" />
+            <img className="fachhochschule-logo" src="/images/fachhochschule.svg" alt="fachhochschule" />
+            <img className="esg-center" src="/images/esg-center.png" alt="esg center of excellence" />
+            <img src="/images/sva-zuerich.png" alt="SVA Zürich" />
+            <img src="/images/innovation-zuerich.webp" alt="Innovation Zürich" />
+            <img className="supsi-logo" src="/images/supsi-logo-black.svg" alt="" aria-hidden="true" />
+            <img className="fachhochschule-logo" src="/images/fachhochschule.svg" alt="" aria-hidden="true" />
+            <img className="esg-center" src="/images/esg-center.png" alt="" aria-hidden="true" />
+            <img src="/images/sva-zuerich.png" alt="" aria-hidden="true" />
+            <img src="/images/innovation-zuerich.webp" alt="" aria-hidden="true" />
+            <img className="supsi-logo" src="/images/supsi-logo-black.svg" alt="" aria-hidden="true" />
+            <img className="fachhochschule-logo" src="/images/fachhochschule.svg" alt="" aria-hidden="true" />
+            <img className="esg-center" src="/images/esg-center.png" alt="" aria-hidden="true" />
+            <img src="/images/sva-zuerich.png" alt="" aria-hidden="true" />
+            <img src="/images/innovation-zuerich.webp" alt="" aria-hidden="true" />
+            <img className="supsi-logo" src="/images/supsi-logo-black.svg" alt="" aria-hidden="true" />
+            <img className="fachhochschule-logo" src="/images/fachhochschule.svg" alt="" aria-hidden="true" />
+            <img className="esg-center" src="/images/esg-center.png" alt="" aria-hidden="true" />
+            <img src="/images/sva-zuerich.png" alt="" aria-hidden="true" />
+            <img src="/images/innovation-zuerich.webp" alt="" aria-hidden="true" />
           </div>
         </div>
       </div>
     </section>
+
     <section className="home-problem">
       <div className="wrap">
         <div className="section-head">

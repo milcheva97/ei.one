@@ -339,8 +339,8 @@
   min-height: 116px;
   display: flex;
   align-items: center;
-  gap: 22px;
-  padding: 22px clamp(18px, 3vw, 44px);
+  gap: 26px;
+  padding: 26px clamp(28px, 4vw, 64px);
   color: #03080d;
   text-decoration: none;
   transition: background .2s ease, transform .2s ease;
@@ -406,6 +406,25 @@
   border-top: 1px solid #dfe5eb;
   color: #03080d;
 }
+
+/* Full-width collaboration band directly under the hero */
+.home-collab-band {
+  background: #ffffff;
+  border-bottom: 1px solid var(--line);
+  padding: 0 clamp(16px, 4vw, 48px);
+}
+.home-collab-band .home-collaboration-strip {
+  border: 0;
+  border-radius: 0;
+  margin: 0;
+  padding: 0;
+  min-height: 104px;
+  background: transparent;
+  color: #03080d;
+}
+.home-collab-band .home-collaboration-strip > * { padding: 0 24px; }
+.home-collab-band .home-collaboration-strip > span { padding-left: 0; }
+.home-collab-band .home-collaboration-strip > * + * { border-left: 0; }
 .home-collaboration-strip > span { flex: 0 0 auto; white-space: nowrap; }
 .collab-marquee {
   flex: 1 1 auto;
@@ -419,18 +438,19 @@
 .collab-track {
   display: inline-flex;
   align-items: center;
-  gap: clamp(36px, 5vw, 72px);
+  gap: clamp(44px, 5.5vw, 88px);
   width: max-content;
-  padding-left: clamp(36px, 5vw, 72px);
-  animation: collab-scroll 32s linear infinite;
+  padding-left: clamp(44px, 5.5vw, 88px);
+  animation: collab-scroll 60s linear infinite;
 }
 .collab-track img {
   flex: none;
-  max-width: 150px;
-  max-height: 42px;
+  max-width: 190px;
+  max-height: 56px;
   object-fit: contain;
 }
-.collab-track .fachhochschule-logo { max-width: 200px; }
+.collab-track .fachhochschule-logo { max-width: 250px; }
+.collab-marquee:hover .collab-track { animation-play-state: paused; }
 .collab-marquee:hover .collab-track { animation-play-state: paused; }
 @keyframes collab-scroll {
   from { transform: translateX(0); }
