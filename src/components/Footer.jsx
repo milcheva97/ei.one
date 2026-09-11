@@ -36,8 +36,8 @@ function Footer() {
               <li><a href="/engagements">Our Commitments</a></li>
               <li><a href="/sponsor">Sponsor</a></li>
               <li><a href="/investor">Investor</a></li>
-              <li><a href="/experience-passport">Experience Passport</a></li>
               <li><a href="/join">Join EI.one</a></li>
+              <li><a href="/experience-passport">Experience Passport</a></li>
             </ul>
           </div>
           <div className="footer-contact">
