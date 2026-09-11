@@ -4174,6 +4174,16 @@ Object.assign(fr, {
   "Company learning engine": "Moteur d'apprentissage d'entreprise",
 })
 
+Object.assign(de, {
+  "EI.one unites emotional and artificial intelligence to connect companies, people, and education—turning economic activity into opportunities for human and business growth.": "EI.one vereint emotionale und künstliche Intelligenz, um Unternehmen, Menschen und Bildung zu verbinden – und verwandelt wirtschaftliche Aktivität in Chancen für menschliches und geschäftliches Wachstum.",
+})
+Object.assign(it, {
+  "EI.one unites emotional and artificial intelligence to connect companies, people, and education—turning economic activity into opportunities for human and business growth.": "EI.one unisce intelligenza emotiva e artificiale per collegare aziende, persone e formazione, trasformando l'attività economica in opportunità di crescita umana e aziendale.",
+})
+Object.assign(fr, {
+  "EI.one unites emotional and artificial intelligence to connect companies, people, and education—turning economic activity into opportunities for human and business growth.": "EI.one réunit intelligence émotionnelle et artificielle pour relier entreprises, personnes et formation, transformant l'activité économique en opportunités de croissance humaine et professionnelle.",
+})
+
 const dictionaries = { de, it, fr }
 const originalText = new WeakMap()
 const originalAttrs = new WeakMap()
